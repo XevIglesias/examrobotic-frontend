@@ -1,4 +1,4 @@
-﻿/* SIMULACRO EXAMEN FINAL - SISTEMAS SECUENCIALES PROGRAMABLES */
+/* SIMULACRO EXAMEN FINAL - SISTEMAS SECUENCIALES PROGRAMABLES */
 const SIMULACRO_PDF_DATA = [
     { u: "SIMULACRO EXAMEN FINAL", q: "¿A qué número binario corresponde el número en BCD: 22?", opts: ["0010 0010", "0010", "No existe", "10110"], ans: 0, exp: "" },
     { u: "SIMULACRO EXAMEN FINAL", q: "¿A qué número binario corresponde el número en decimal: 11?", opts: ["1101", "1001", "1011", "1111"], ans: 2, exp: "" },

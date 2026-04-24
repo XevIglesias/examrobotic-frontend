@@ -1,4 +1,4 @@
-﻿/* SIMULACRO EXAMEN FINAL - DOCUMENTACION TECNICA */
+/* SIMULACRO EXAMEN FINAL - DOCUMENTACION TECNICA */
 const SIMULACRO_PDF_DATA = [
     { u: "SIMULACRO EXAMEN FINAL", q: "¿Cuáles son los documentos donde figuran las características que debe tener una instalación?", opts: ["Documentos básicos", "Plan de calidad y plan de gestión medioambiental", "Estudios de viabilidad", "Justificación de eficiencia energética"], ans: 0, exp: "" },
     { u: "SIMULACRO EXAMEN FINAL", q: "¿Cuáles son los proyectos asociados a pequeñas empresas y que son aprobados por los ayuntamientos?", opts: ["Proyectos informáticos", "Proyectos no formales", "Proyectos complejos", "Proyectos locales"], ans: 3, exp: "" },
