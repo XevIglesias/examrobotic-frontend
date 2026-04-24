@@ -10,7 +10,11 @@ function escHtml(s) {
 }
 
 window.onload = () => {
-    startExam();
+    try {
+        startExam();
+    } catch(e) {
+        document.getElementById('q-text').innerText = 'Error al cargar: ' + e.message;
+    }
 };
 
 function startExam() {

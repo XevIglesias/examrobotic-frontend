@@ -8,6 +8,8 @@
     --er-green:   #10b981;
     --er-red:     #ef4444;
     --er-amber:   #f59e0b;
+    --primary:    #1a6fd4;
+    --accent:     #1a6fd4;
 }
 
 *, *::before, *::after {
