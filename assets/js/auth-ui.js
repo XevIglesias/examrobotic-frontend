@@ -1,8 +1,11 @@
 function authInit() {
     renderHeader();
-    document.getElementById('auth-overlay').addEventListener('click', function(e) {
-        if (e.target === this) closeAuth();
-    });
+    const overlay = document.getElementById('auth-overlay');
+    if (overlay) {
+        overlay.addEventListener('click', function(e) {
+            if (e.target === this) closeAuth();
+        });
+    }
 }
 
 function renderHeader() {
@@ -31,7 +34,12 @@ function renderHeader() {
 }
 
 function openAuth(tab) {
-    document.getElementById('auth-overlay').style.display = 'flex';
+    const overlay = document.getElementById('auth-overlay');
+    if (!overlay) {
+        window.location.href = window.location.pathname.includes('/asignaturas/') ? '../../index.html' : 'index.html';
+        return;
+    }
+    overlay.style.display = 'flex';
     switchTab(tab || 'login');
     document.getElementById('auth-email').focus();
 }
