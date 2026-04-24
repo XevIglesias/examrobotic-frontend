@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <title>Mi Perfil - ExamRobotic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <script src="assets/js/tailwind-config.js"></script>
+    <style>
+        .stat-card { background:#fff; border:1.5px solid #e2e8f0; border-radius:16px; padding:24px; }
+        .bar-track { background:#f1f5f9; border-radius:99px; height:10px; overflow:hidden; }
+        .bar-fill  { height:100%; border-radius:99px; transition:width 0.8s ease; }
+        .badge-apto   { background:#dcfce7; color:#16a34a; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:99px; }
+        .badge-noapto { background:#fee2e2; color:#dc2626; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:99px; }
+        .badge-type   { background:#eff6ff; color:#3b82f6; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:99px; }
+        .streak-flame { font-size:2.5rem; line-height:1; }
+    </style>
+</head>
+<body class="bg-background text-foreground min-h-screen flex flex-col">
+
+    <header class="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="/" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shrink-0">U</div>
+                    <div class="hidden sm:block">
+                        <p class="text-sm font-extrabold tracking-tight text-foreground leading-tight">ExamRobotic</p>
+                        <p class="text-xs font-semibold text-primary uppercase tracking-wider mt-0.5">Tests de Práctica</p>
+                    </div>
+                </a>
+            </div>
+            <div id="auth-header-area"></div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+
+        <!-- Loading -->
+        <div id="state-loading" class="flex flex-col items-center justify-center py-24 gap-4">
+            <div style="width:40px;height:40px;border:4px solid #e2e8f0;border-top-color:#2563eb;border-radius:50%;animation:spin 0.8s linear infinite"></div>
+            <p class="text-muted text-sm font-semibold">Cargando tu perfil…</p>
+        </div>
+
+        <!-- Not logged in -->
+        <div id="state-nologin" style="display:none" class="flex flex-col items-center justify-center py-24 gap-4 text-center">
+            <p class="text-2xl font-bold">Inicia sesión para ver tu perfil</p>
+            <p class="text-muted">Registra tus resultados y sigue tu progreso.</p>
+            <a href="/" class="mt-2 px-6 py-3 bg-primary text-white rounded-xl font-bold text-sm">Ir al inicio</a>
+        </div>
+
+        <!-- Profile content -->
+        <div id="state-content" style="display:none">
+
+            <div class="flex items-center gap-4 mb-8">
+                <div id="avatar-big" class="w-16 h-16 rounded-full bg-blue-100 border-2 border-primary flex items-center justify-center text-primary font-bold text-2xl shrink-0"></div>
+                <div>
+                    <h1 id="profile-name" class="text-2xl font-extrabold"></h1>
+                    <p class="text-muted text-sm font-semibold">Estudiante · Grado Superior Robótica</p>
+                </div>
+            </div>
+
+            <!-- Stats row -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="stat-card text-center">
+                    <p class="text-3xl font-extrabold text-primary" id="stat-total">0</p>
+                    <p class="text-xs text-muted font-semibold uppercase tracking-wider mt-1">Tests realizados</p>
+                </div>
+                <div class="stat-card text-center">
+                    <p class="text-3xl font-extrabold" id="stat-avg" style="color:#0f172a">—</p>
+                    <p class="text-xs text-muted font-semibold uppercase tracking-wider mt-1">Nota media</p>
+                </div>
+                <div class="stat-card text-center">
+                    <p class="text-3xl font-extrabold text-primary" id="stat-time">0h</p>
+                    <p class="text-xs text-muted font-semibold uppercase tracking-wider mt-1">Tiempo estudiado</p>
+                </div>
+                <div class="stat-card text-center relative overflow-hidden">
+                    <div class="streak-flame">🔥</div>
+                    <p class="text-3xl font-extrabold text-orange-500 -mt-1" id="stat-streak">0</p>
+                    <p class="text-xs text-muted font-semibold uppercase tracking-wider mt-1">Racha (días)</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+
+                <!-- Per-subject performance -->
+                <div class="bg-white border border-border rounded-2xl p-6">
+                    <h2 class="text-base font-extrabold mb-5 uppercase tracking-wider text-muted">Rendimiento por asignatura</h2>
+                    <div id="subject-bars" class="space-y-4"></div>
+                    <p id="no-subject-data" style="display:none" class="text-muted text-sm text-center py-4">Aún no has completado ningún test.</p>
+                </div>
+
+                <!-- Streak calendar -->
+                <div class="bg-white border border-border rounded-2xl p-6">
+                    <h2 class="text-base font-extrabold mb-5 uppercase tracking-wider text-muted">Actividad reciente</h2>
+                    <div id="activity-grid" class="flex flex-wrap gap-1.5"></div>
+                    <p class="text-xs text-muted mt-3">Últimas 10 semanas · verde = día con actividad</p>
+                </div>
+            </div>
+
+            <!-- History -->
+            <div class="bg-white border border-border rounded-2xl p-6">
+                <h2 class="text-base font-extrabold mb-5 uppercase tracking-wider text-muted">Historial de intentos</h2>
+                <div id="history-list" class="space-y-2"></div>
+                <p id="no-history" style="display:none" class="text-muted text-sm text-center py-4">No hay intentos registrados todavía.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="border-t border-border py-6 text-center text-xs text-muted">
+        <p>&copy; 2026 ExamRobotic · <a href="politica-privacidad.html" class="text-primary hover:underline">Política de privacidad</a></p>
+    </footer>
+
+    <style>
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/auth-ui.js"></script>
+    <script>
+    function escHtml(s) {
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+    }
+
+    const SUBJECT_NAMES = {
+        'ip':    'Inglés Profesional',
+        'dt':    'Documentación Técnica',
+        'sdmyr': 'Sist. de Medida y Regulación',
+        'ii':    'Instalaciones Industriales',
+        'seneh': 'Sist. Eléctricos y Electrónicos',
+        'iplei': 'Instalaciones y Procesos',
+        'ssp':   'Sistemas de Potencia',
+        'sdp':   'Sistemas de Programación',
+        'adiple':'ADIPLE'
+    };
+
+    function scoreColor(s) {
+        if (s >= 7) return '#16a34a';
+        if (s >= 5) return '#f59e0b';
+        return '#ef4444';
+    }
+
+    function fmtTime(sec) {
+        const h = Math.floor(sec / 3600);
+        const m = Math.floor((sec % 3600) / 60);
+        if (h > 0) return h + 'h ' + m + 'm';
+        return m + 'm';
+    }
+
+    function fmtDate(iso) {
+        const d = new Date(iso);
+        const diff = Math.floor((Date.now() - d) / 86400000);
+        if (diff === 0) return 'Hoy';
+        if (diff === 1) return 'Ayer';
+        if (diff < 7)  return 'Hace ' + diff + ' días';
+        return d.toLocaleDateString('es-ES', { day:'numeric', month:'short' });
+    }
+
+    function calcStreak(attempts) {
+        if (!attempts.length) return 0;
+        const days = [...new Set(attempts.map(a => new Date(a.createdAt).toLocaleDateString('en-CA')))].sort().reverse();
+        const today = new Date().toLocaleDateString('en-CA');
+        const yesterday = new Date(Date.now() - 86400000).toLocaleDateString('en-CA');
+        if (days[0] !== today && days[0] !== yesterday) return 0;
+        let streak = 1;
+        for (let i = 1; i < days.length; i++) {
+            const diff = (new Date(days[i-1]) - new Date(days[i])) / 86400000;
+            if (diff === 1) streak++;
+            else break;
+        }
+        return streak;
+    }
+
+    function buildActivityGrid(attempts) {
+        const grid = document.getElementById('activity-grid');
+        const activeDays = new Set(attempts.map(a => new Date(a.createdAt).toLocaleDateString('en-CA')));
+        const days = 70;
+        const today = new Date(); today.setHours(0,0,0,0);
+        for (let i = days - 1; i >= 0; i--) {
+            const d = new Date(today); d.setDate(today.getDate() - i);
+            const key = d.toLocaleDateString('en-CA');
+            const el = document.createElement('div');
+            el.title = key;
+            el.style.cssText = `width:12px;height:12px;border-radius:3px;background:${activeDays.has(key) ? '#22c55e' : '#f1f5f9'}`;
+            grid.appendChild(el);
+        }
+    }
+
+    function buildSubjectBars(attempts) {
+        const container = document.getElementById('subject-bars');
+        const bySubject = {};
+        attempts.forEach(a => {
+            const slug = a.subject?.slug || 'unknown';
+            if (!bySubject[slug]) bySubject[slug] = [];
+            bySubject[slug].push(a.score);
+        });
+        const slugs = Object.keys(bySubject);
+        if (!slugs.length) { document.getElementById('no-subject-data').style.display='block'; return; }
+        slugs.sort((a, b) => {
+            const avgA = bySubject[a].reduce((s,v)=>s+v,0)/bySubject[a].length;
+            const avgB = bySubject[b].reduce((s,v)=>s+v,0)/bySubject[b].length;
+            return avgB - avgA;
+        }).forEach(slug => {
+            const scores = bySubject[slug];
+            const avg = scores.reduce((s,v)=>s+v,0)/scores.length;
+            const best = Math.max(...scores);
+            const name = SUBJECT_NAMES[slug] || escHtml(slug);
+            container.innerHTML += `
+                <div>
+                    <div class="flex justify-between items-baseline mb-1">
+                        <span class="text-sm font-semibold truncate max-w-[180px]">${name}</span>
+                        <span class="text-sm font-extrabold ml-2" style="color:${scoreColor(avg)}">${avg.toFixed(1)}</span>
+                    </div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width:${avg*10}%;background:${scoreColor(avg)}"></div>
+                    </div>
+                    <p class="text-xs text-muted mt-0.5">${scores.length} intento${scores.length>1?'s':''} · mejor nota: ${best.toFixed(1)}</p>
+                </div>`;
+        });
+    }
+
+    function buildHistory(attempts) {
+        const list = document.getElementById('history-list');
+        if (!attempts.length) { document.getElementById('no-history').style.display='block'; return; }
+        attempts.slice(0, 20).forEach(a => {
+            const slug = a.subject?.slug || '?';
+            const name = SUBJECT_NAMES[slug] || escHtml(slug);
+            const type = a.examType === 'simulacro' ? 'Simulacro' : 'Test';
+            const apto = a.score >= 5;
+            list.innerHTML += `
+                <div class="flex items-center justify-between py-3 border-b border-gray-100 last:border-0 gap-3">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <span class="badge-type shrink-0">${type}</span>
+                        <span class="text-sm font-semibold truncate">${name}</span>
+                    </div>
+                    <div class="flex items-center gap-3 shrink-0 text-right">
+                        <span class="text-xs text-muted hidden sm:block">${fmtTime(a.timeSpentSec)}</span>
+                        <span class="text-xs text-muted">${fmtDate(a.createdAt)}</span>
+                        <span class="text-base font-extrabold w-10 text-right" style="color:${scoreColor(a.score)}">${a.score.toFixed(1)}</span>
+                        <span class="${apto?'badge-apto':'badge-noapto'}">${apto?'APTO':'NO APTO'}</span>
+                    </div>
+                </div>`;
+        });
+    }
+
+    async function loadProfile() {
+        const user = currentUser();
+        if (!user) {
+            document.getElementById('state-loading').style.display = 'none';
+            document.getElementById('state-nologin').style.display = 'flex';
+            return;
+        }
+
+        try {
+            const attempts = await apiGet('/attempts/me');
+
+            // Header info
+            const initials = user.name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+            document.getElementById('avatar-big').textContent = initials;
+            document.getElementById('profile-name').textContent = user.name;
+
+            // Stats
+            const total = attempts.length;
+            const avg = total ? attempts.reduce((s,a)=>s+a.score,0)/total : null;
+            const totalTime = attempts.reduce((s,a)=>s+a.timeSpentSec,0);
+            const streak = calcStreak(attempts);
+
+            document.getElementById('stat-total').textContent = total;
+            document.getElementById('stat-avg').textContent = avg !== null ? avg.toFixed(1) : '—';
+            document.getElementById('stat-avg').style.color = avg !== null ? scoreColor(avg) : '#0f172a';
+            document.getElementById('stat-time').textContent = totalTime > 0 ? fmtTime(totalTime) : '0m';
+            document.getElementById('stat-streak').textContent = streak;
+
+            buildActivityGrid(attempts);
+            buildSubjectBars(attempts);
+            buildHistory(attempts);
+
+            document.getElementById('state-loading').style.display = 'none';
+            document.getElementById('state-content').style.display = 'block';
+
+        } catch (e) {
+            document.getElementById('state-loading').innerHTML = '<p class="text-red-500 font-semibold">Error al cargar el perfil. Inténtalo de nuevo.</p>';
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadProfile);
+    </script>
+    <script src="assets/js/analytics.js"></script>
+</body>
+</html>

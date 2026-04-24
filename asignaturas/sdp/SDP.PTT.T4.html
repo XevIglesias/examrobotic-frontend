@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simulacro de examen del Grado Superior de Robótica y Automatización Industrial. 40 preguntas aleatorias con temporizador y corrección automática.">
+    <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<title>Test Tema 4: Instalación y conexionado de motores eléctricos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+<header>
+    <div>
+        <h2 id="exam-title" style="font-size: 1.2rem;">Test Tema 4: Instalación y conexionado de motores eléctricos</h2>
+        <p id="q-progress" style="font-size: 0.8rem; color: #64748b;">Preparando examen...</p>
+    </div>
+    <div class="timer-box" id="timer">
+        <span>⏱</span> <span id="time-val">50:00</span>
+    </div>
+</header>
+
+<div id="quiz">
+    <div class="q-card">
+        <div id="q-unit" class="q-meta">UNIDAD 4</div>
+        <div id="q-text" class="q-text">Cargando...</div>
+        <div id="options-area" style="display: grid; gap: 10px;"></div>
+        <div id="explanation" class="exp-box"></div>
+    </div>
+    
+    <div class="nav-footer">
+        <button class="btn" style="background:#e2e8f0; color: #333;" onclick="move(-1)">Anterior</button>
+        <button class="btn btn-next" id="btn-next" onclick="move(1)">Siguiente</button>
+        <button class="btn btn-finish" id="btn-finish" style="display:none" onclick="finish()">Finalizar Examen</button>
+        <button class="btn" id="btn-menu-review" style="display:none; background: var(--primary); color: white;" onclick="window.history.back()">Volver al Menú</button>
+    </div>
+
+    <div class="dot-grid" id="dot-grid"></div>
+</div>
+
+<div id="results">
+    <p style="font-weight: 800; color: var(--accent); letter-spacing: 2px;">NOTA FINAL</p>
+    <div class="score-badge" id="res-score">0.0</div>
+    <div class="score-sub" id="res-msg">Resultado</div>
+    <div style="display: flex; gap: 15px; justify-content: center; margin-top: 40px;">
+        <button class="btn btn-next" style="max-width:250px; background: var(--accent);" onclick="showReview()">Revisar Errores</button>
+        <button class="btn" style="max-width:250px; background:#e2e8f0; color: #333;" onclick="location.reload()">Generar Nuevo Test</button>
+        <button class="btn" style="max-width:250px; background: var(--primary); color: white;" onclick="window.history.back()">Volver al Menú</button>
+    </div>
+</div>
+
+
+<script src="../../data/sdp/t4.js" defer></script>
+<script src="../../assets/js/api.js" defer></script>
+    <script src="../../assets/js/quiz-engine.js" defer></script>
+    <script src="../../assets/js/analytics.js"></script>
+</body>
+</html>
