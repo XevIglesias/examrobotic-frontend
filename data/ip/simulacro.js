@@ -21,10 +21,8 @@ const SIMULACRO_PDF_DATA = [
     { u: "SIMULACRO EXAMEN FINAL", q: "What is the most appropriate connector for adding information?", opts: ["Although", "Besides", "Instead", "Therefore"], ans: 1, exp: "" },
     { u: "SIMULACRO EXAMEN FINAL", q: "Which of these words is a possessive pronoun?", opts: ["Me", "She", "Their", "Theirs"], ans: 3, exp: "" },
     { u: "SIMULACRO EXAMEN FINAL", q: 'Choose the correct preposition of place for this sentence: "The cat is _____ the sofa."', opts: ["On", "Between", "At", "next"], ans: 0, exp: "" },
-    {
-        u: "SIMULACRO EXAMEN FINAL", q: 'Choose the correct question tag for this sentence: "Let\'s go for a walk, _____ ?"', opts: ["did we", "shall we", "don't we", "haven't we"], ans: 1, exp: "" },
-    {
-        u: "SIMULACRO EXAMEN FINAL", q: 'Choose the correct question tag. "She didn\'t call you, _____ ?"', opts: ["did she", "will she", "does she", "has she"], ans: 0, exp: "" },
+    {u: "SIMULACRO EXAMEN FINAL", q: 'Choose the correct question tag for this sentence: "Let\'s go for a walk, _____ ?"', opts: ["did we", "shall we", "don't we", "haven't we"], ans: 1, exp: "" },
+    {u: "SIMULACRO EXAMEN FINAL", q: 'Choose the correct question tag. "She didn\'t call you, _____ ?"', opts: ["did she", "will she", "does she", "has she"], ans: 0, exp: "" },
     { u: "SIMULACRO EXAMEN FINAL", q: "Choose the correct sentence in the Past Simple tense.", opts: ["We watch a great movie yesterday.", "She study for the exam last night.", "They played football in the park last week.", "He stops at the supermarket on his way home."], ans: 2, exp: "" },
     { u: "SIMULACRO EXAMEN FINAL", q: "Choose the correct sentence in the Past Simple tense.", opts: ["She buyed a new dress last weekend.", "We ate lunch at 2 p.m. yesterday.", "He has seen that film before.", "They gived me a present for my birthday."], ans: 1, exp: "" },
     { u: "SIMULACRO EXAMEN FINAL", q: "Choose the correct sentence using the verb To Be in the past tense.", opts: ["They wasn't at home last night.", "We was at the cinema.", "I was late for the meeting.", "She were very tired after work."], ans: 2, exp: "" },
