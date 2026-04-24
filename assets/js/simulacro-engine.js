@@ -9,13 +9,11 @@ function escHtml(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
 }
 
-window.onload = () => {
-    try {
-        startExam();
-    } catch(e) {
-        document.getElementById('q-text').innerText = 'Error al cargar: ' + e.message;
-    }
-};
+try {
+    startExam();
+} catch(e) {
+    document.getElementById('q-text').innerText = 'Error al cargar: ' + e.message;
+}
 
 function startExam() {
     // 32 preguntas del PDF + 8 aleatorias del pool existente

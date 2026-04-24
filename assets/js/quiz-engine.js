@@ -9,10 +9,11 @@ function escHtml(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
 }
 
-// Al cargar la página, se inicia el test de forma automática
-window.onload = () => {
+try {
     startExam();
-};
+} catch(e) {
+    document.getElementById('q-text').innerText = 'Error al cargar: ' + e.message;
+}
 
 function startExam() {
     // Escoge 40 preguntas aleatorias de la base de 80
