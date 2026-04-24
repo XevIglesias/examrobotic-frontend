@@ -1,3 +1,4 @@
+document.getElementById('q-text').innerText = 'JS iniciado...';
 let activeQs = [];
 let userAns = [];
 let current = 0;
