@@ -56,4 +56,7 @@ button:focus {
     background-size: cover !important;
     background-position: center !important;
     color: transparent !important; /* Oculta la letra U */
+    user-select: none !important; /* Evita que la U se pueda seleccionar con el ratón */
+    font-size: 0 !important; /* Elimina el tamaño del texto para ocultarlo por completo */
+    border-radius: 50% !important; /* Hace que el contenedor sea un círculo perfecto (estilo GitHub) */
 }
