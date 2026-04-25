@@ -45,6 +45,14 @@ function updateTime() {
 function showQ() {
     const q = activeQs[current];
     document.getElementById('q-progress').innerText = `Pregunta ${current+1} de 40`;
+    
+    // Update visual progress bar if exists
+    const pBar = document.getElementById('progress-bar');
+    if (pBar) {
+        const percent = ((current + 1) / 40) * 100;
+        pBar.style.width = percent + '%';
+    }
+
     document.getElementById('q-unit').innerText = q.u;
     document.getElementById('q-text').innerText = q.q; 
     

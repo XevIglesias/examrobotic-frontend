@@ -1,143 +1,222 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <link rel="icon" href="assets/img/favicon.svg?v=3" type="image/svg\+xml">
-    <title>Mi Perfil - ExamRobotic</title>
+    <link rel="icon" href="assets/img/favicon.svg?v=2" type="image/svg+xml">
+    <title>Mi Perfil - EXAMROBOTIC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/menu.css?v=4">
     <script src="assets/js/tailwind-config.js"></script>
     <style>
-        .stat-card { background:#fff; border:1.5px solid #e2e8f0; border-radius:16px; padding:24px; }
-        .bar-track { background:#f1f5f9; border-radius:99px; height:10px; overflow:hidden; }
-        .bar-fill  { height:100%; border-radius:99px; transition:width 0.8s ease; }
-        .badge-apto   { background:#dcfce7; color:#16a34a; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:99px; }
-        .badge-noapto { background:#fee2e2; color:#dc2626; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:99px; }
-        .badge-type   { background:#eff6ff; color:#3b82f6; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:99px; }
-        .streak-flame { font-size:2.5rem; line-height:1; }
+        @keyframes spin  { to { transform: rotate(360deg); } }
+        @keyframes fadein { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+        .stat-card {
+            background: #fff;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 24px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            transition: box-shadow 0.2s;
+        }
+        .stat-card:hover { box-shadow: 0 4px 20px rgba(37,99,235,0.10); }
+        .stat-icon {
+            width: 40px; height: 40px;
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 4px;
+        }
+        .bar-track { background:#f1f5f9; border-radius:99px; height:8px; overflow:hidden; flex:1; }
+        .bar-fill   { height:100%; border-radius:99px; transition:width 0.9s cubic-bezier(.22,1,.36,1); }
+
+        .badge-apto   { background:#dcfce7; color:#16a34a; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:99px; white-space:nowrap; }
+        .badge-noapto { background:#fee2e2; color:#dc2626; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:99px; white-space:nowrap; }
+        .badge-type   { background:#eff6ff; color:#3b82f6; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:99px; white-space:nowrap; }
+
+        #state-content { animation: fadein 0.4s ease; }
     </style>
 </head>
 <body class="bg-background text-foreground min-h-screen flex flex-col">
 
     <header class="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-4">
-                <a href="/" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shrink-0">U</div>
-                    <div class="hidden sm:block">
-                        <p class="text-sm font-extrabold tracking-tight text-foreground leading-tight">ExamRobotic</p>
-                        <p class="text-xs font-semibold text-primary uppercase tracking-wider mt-0.5">Tests de PrÃ¡ctica</p>
-                    </div>
-                </a>
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='/'">
+                <div class="relative">
+                    <img src="assets/img/robot-avatar.png" class="w-12 h-12 rounded-xl object-cover shadow-lg shadow-primary/20 border border-blue-100" alt="Logo">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-black text-foreground leading-none">EXAM<span class="text-primary">ROBOTIC</span></h1>
+                    <p class="text-[10px] font-bold text-muted uppercase tracking-widest mt-1">Plataforma Test</p>
+                </div>
             </div>
-            <div id="auth-header-area"></div>
+            <div class="flex items-center gap-6">
+                <div id="auth-header-area"></div>
+            </div>
         </div>
     </header>
 
-    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+    <main class="flex-grow w-full py-10">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col xl:flex-row gap-8">
 
-        <!-- Loading -->
-        <div id="state-loading" class="flex flex-col items-center justify-center py-24 gap-4">
-            <div style="width:40px;height:40px;border:4px solid #e2e8f0;border-top-color:#2563eb;border-radius:50%;animation:spin 0.8s linear infinite"></div>
-            <p class="text-muted text-sm font-semibold">Cargando tu perfilâ€¦</p>
-        </div>
+                <!-- Sidebar Izquierdo -->
+                <aside class="hidden xl:block w-[180px] shrink-0">
+                    <div class="sticky top-24">
+                        <div class="bg-gray-50 border-2 border-dashed border-gray-200 h-[600px] flex flex-col items-center justify-center text-center p-4 rounded-2xl">
+                            <div class="text-gray-400">
+                                <p class="text-[10px] font-bold uppercase tracking-widest mb-2 opacity-60">Publicidad</p>
+                                <div class="w-10 h-10 bg-gray-200 rounded-full mb-4 mx-auto flex items-center justify-center">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+                                </div>
+                                <p class="text-[10px] italic leading-tight">Banner Lateral<br>Izquierdo</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
 
-        <!-- Not logged in -->
-        <div id="state-nologin" style="display:none" class="flex flex-col items-center justify-center py-24 gap-4 text-center">
-            <p class="text-2xl font-bold">Inicia sesiÃ³n para ver tu perfil</p>
-            <p class="text-muted">Registra tus resultados y sigue tu progreso.</p>
-            <a href="/" class="mt-2 px-6 py-3 bg-primary text-white rounded-xl font-bold text-sm">Ir al inicio</a>
-        </div>
+                <!-- Contenido Principal -->
+                <div class="flex-grow min-w-0">
 
-        <!-- Profile content -->
-        <div id="state-content" style="display:none">
+                    <!-- Loading -->
+                    <div id="state-loading" class="flex flex-col items-center justify-center py-24 gap-4">
+                        <div style="width:40px;height:40px;border:4px solid #e2e8f0;border-top-color:#2563eb;border-radius:50%;animation:spin 0.8s linear infinite"></div>
+                        <p class="text-muted text-sm font-semibold">Cargando tu perfil...</p>
+                    </div>
 
-            <div class="flex items-center gap-4 mb-8">
-                <div id="avatar-big" class="w-16 h-16 rounded-full bg-blue-100 border-2 border-primary flex items-center justify-center text-primary font-bold text-2xl shrink-0"></div>
-                <div>
-                    <h1 id="profile-name" class="text-2xl font-extrabold"></h1>
-                    <p class="text-muted text-sm font-semibold">Estudiante Â· Grado Superior RobÃ³tica</p>
+                    <!-- Not logged in -->
+                    <div id="state-nologin" style="display:none" class="flex flex-col items-center justify-center py-24 gap-4 text-center">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5" class="mb-2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                        <p class="text-2xl font-bold">Inicia sesi&oacute;n para ver tu perfil</p>
+                        <p class="text-muted">Registra tus resultados y sigue tu progreso.</p>
+                        <a href="/" class="mt-2 px-6 py-3 bg-primary text-white rounded-xl font-bold text-sm hover:opacity-90 transition-opacity">Ir al inicio</a>
+                    </div>
+
+                    <!-- Profile content -->
+                    <div id="state-content" style="display:none">
+
+                        <!-- Cabecera de perfil -->
+                        <div class="bg-white border border-border rounded-2xl p-6 mb-6 flex items-center gap-5">
+                            <div id="avatar-big" class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 border-2 border-primary/30 flex items-center justify-center text-primary font-black text-3xl shrink-0 shadow-sm"></div>
+                            <div class="flex-grow min-w-0">
+                                <p id="profile-name" class="text-2xl font-black text-foreground leading-tight truncate"></p>
+                                <p class="text-muted text-sm font-semibold mt-0.5">Estudiante &middot; Grado Superior Rob&oacute;tica</p>
+                            </div>
+                            <a href="/" class="hidden sm:flex items-center gap-2 px-4 py-2 text-sm font-bold text-muted border border-border rounded-xl hover:bg-gray-50 transition-colors shrink-0">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+                                Volver
+                            </a>
+                        </div>
+
+                        <!-- Stats row -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <div class="stat-card">
+                                <div class="stat-icon bg-blue-50">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                                </div>
+                                <p class="text-3xl font-black text-primary" id="stat-total">0</p>
+                                <p class="text-xs text-muted font-semibold uppercase tracking-wider">Tests</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon bg-amber-50">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                                </div>
+                                <p class="text-3xl font-black" id="stat-avg" style="color:#0f172a">&#8212;</p>
+                                <p class="text-xs text-muted font-semibold uppercase tracking-wider">Nota media</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon bg-purple-50">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                </div>
+                                <p class="text-3xl font-black text-purple-600" id="stat-time">0m</p>
+                                <p class="text-xs text-muted font-semibold uppercase tracking-wider">Tiempo en tests</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon bg-orange-50">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#f97316" stroke="none"><path d="M12 2C9 7 6 9 6 13a6 6 0 0012 0c0-4-3-6-6-11zm0 16a4 4 0 01-4-4c0-2.5 1.5-4 4-7 2.5 3 4 4.5 4 7a4 4 0 01-4 4z"/></svg>
+                                </div>
+                                <p class="text-3xl font-black text-orange-500" id="stat-streak">0</p>
+                                <p class="text-xs text-muted font-semibold uppercase tracking-wider">Racha (d&iacute;as)</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <!-- Rendimiento por asignatura -->
+                            <div class="bg-white border border-border rounded-2xl p-6">
+                                <h2 class="text-sm font-extrabold mb-5 uppercase tracking-wider text-muted">Rendimiento por asignatura</h2>
+                                <div id="subject-bars" class="space-y-5"></div>
+                                <p id="no-subject-data" style="display:none" class="text-muted text-sm text-center py-4">A&uacute;n no has completado ning&uacute;n test.</p>
+                            </div>
+
+                            <!-- Actividad reciente -->
+                            <div class="bg-white border border-border rounded-2xl p-6">
+                                <h2 class="text-sm font-extrabold mb-5 uppercase tracking-wider text-muted">Actividad reciente</h2>
+                                <div id="activity-grid" class="flex flex-wrap gap-1"></div>
+                                <p class="text-xs text-muted mt-4">&Uacute;ltimas 10 semanas &middot; <span class="inline-block w-3 h-3 rounded-sm bg-green-400 align-middle"></span> d&iacute;a con actividad</p>
+                            </div>
+                        </div>
+
+                        <!-- Historial -->
+                        <div class="bg-white border border-border rounded-2xl p-6">
+                            <h2 class="text-sm font-extrabold mb-5 uppercase tracking-wider text-muted">Historial de intentos</h2>
+                            <div id="history-list"></div>
+                            <p id="no-history" style="display:none" class="text-muted text-sm text-center py-4">No hay intentos registrados todav&iacute;a.</p>
+                        </div>
+
+                    </div>
                 </div>
+
+                <!-- Sidebar Derecho -->
+                <aside class="hidden xl:block w-[180px] shrink-0">
+                    <div class="sticky top-24">
+                        <div class="bg-gray-50 border-2 border-dashed border-gray-200 h-[600px] flex flex-col items-center justify-center text-center p-4 rounded-2xl">
+                            <div class="text-gray-400">
+                                <p class="text-[10px] font-bold uppercase tracking-widest mb-2 opacity-60">Publicidad</p>
+                                <div class="w-10 h-10 bg-gray-200 rounded-full mb-4 mx-auto flex items-center justify-center">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                                </div>
+                                <p class="text-[10px] italic leading-tight">Banner Lateral<br>Derecho</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
             </div>
-
-            <!-- Stats row -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div class="stat-card text-center">
-                    <p class="text-3xl font-extrabold text-primary" id="stat-total">0</p>
-                    <p class="text-xs text-muted font-semibold uppercase tracking-wider mt-1">Tests realizados</p>
-                </div>
-                <div class="stat-card text-center">
-                    <p class="text-3xl font-extrabold" id="stat-avg" style="color:#0f172a">â€”</p>
-                    <p class="text-xs text-muted font-semibold uppercase tracking-wider mt-1">Nota media</p>
-                </div>
-                <div class="stat-card text-center">
-                    <p class="text-3xl font-extrabold text-primary" id="stat-time">0h</p>
-                    <p class="text-xs text-muted font-semibold uppercase tracking-wider mt-1">Tiempo estudiado</p>
-                </div>
-                <div class="stat-card text-center relative overflow-hidden">
-                    <div class="streak-flame">ðŸ”¥</div>
-                    <p class="text-3xl font-extrabold text-orange-500 -mt-1" id="stat-streak">0</p>
-                    <p class="text-xs text-muted font-semibold uppercase tracking-wider mt-1">Racha (dÃ­as)</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-
-                <!-- Per-subject performance -->
-                <div class="bg-white border border-border rounded-2xl p-6">
-                    <h2 class="text-base font-extrabold mb-5 uppercase tracking-wider text-muted">Rendimiento por asignatura</h2>
-                    <div id="subject-bars" class="space-y-4"></div>
-                    <p id="no-subject-data" style="display:none" class="text-muted text-sm text-center py-4">AÃºn no has completado ningÃºn test.</p>
-                </div>
-
-                <!-- Streak calendar -->
-                <div class="bg-white border border-border rounded-2xl p-6">
-                    <h2 class="text-base font-extrabold mb-5 uppercase tracking-wider text-muted">Actividad reciente</h2>
-                    <div id="activity-grid" class="flex flex-wrap gap-1.5"></div>
-                    <p class="text-xs text-muted mt-3">Ãšltimas 10 semanas Â· verde = dÃ­a con actividad</p>
-                </div>
-            </div>
-
-            <!-- History -->
-            <div class="bg-white border border-border rounded-2xl p-6">
-                <h2 class="text-base font-extrabold mb-5 uppercase tracking-wider text-muted">Historial de intentos</h2>
-                <div id="history-list" class="space-y-2"></div>
-                <p id="no-history" style="display:none" class="text-muted text-sm text-center py-4">No hay intentos registrados todavÃ­a.</p>
-            </div>
-
         </div>
     </main>
 
     <footer class="border-t border-border py-6 text-center text-xs text-muted">
-        <p>&copy; 2026 ExamRobotic Â· <a href="politica-privacidad.html" class="text-primary hover:underline">PolÃ­tica de privacidad</a></p>
+        <p>&copy; 2026 ExamRobotic &middot;
+            <a href="aviso-legal.html" class="text-primary hover:underline">Aviso Legal</a> &middot;
+            <a href="politica-privacidad.html" class="text-primary hover:underline">Privacidad</a> &middot;
+            <a href="politica-cookies.html" class="text-primary hover:underline">Cookies</a>
+        </p>
     </footer>
-
-    <style>
-        @keyframes spin { to { transform: rotate(360deg); } }
-    </style>
 
     <script src="assets/js/api.js"></script>
     <script src="assets/js/auth-ui.js"></script>
     <script>
     function escHtml(s) {
-      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
     }
 
     const SUBJECT_NAMES = {
-        'ip':    'InglÃ©s Profesional',
-        'dt':    'DocumentaciÃ³n TÃ©cnica',
-        'sdmyr': 'Sist. de Medida y RegulaciÃ³n',
-        'ii':    'Instalaciones Industriales',
-        'seneh': 'Sist. ElÃ©ctricos y ElectrÃ³nicos',
-        'iplei': 'Instalaciones y Procesos',
+        'ip':    'Ingl&eacute;s Profesional',
+        'dt':    'Documentaci&oacute;n T&eacute;cnica',
+        'sdmyr': 'Sist. de Medida y Regulaci&oacute;n',
+        'ii':    'Inform&aacute;tica Industrial',
+        'seneh': 'Sist. El&eacute;ctricos y Electr&oacute;nicos',
+        'iplei': 'Itinerario Personal I',
         'ssp':   'Sistemas de Potencia',
-        'sdp':   'Sistemas de ProgramaciÃ³n',
-        'adiple':'ADIPLE'
+        'sdp':   'Sistemas de Programaci&oacute;n',
+        'adiple':'Itinerario Personal II'
     };
 
     function scoreColor(s) {
@@ -150,7 +229,7 @@
         const h = Math.floor(sec / 3600);
         const m = Math.floor((sec % 3600) / 60);
         if (h > 0) return h + 'h ' + m + 'm';
-        return m + 'm';
+        return m > 0 ? m + 'm' : '< 1m';
     }
 
     function fmtDate(iso) {
@@ -158,7 +237,7 @@
         const diff = Math.floor((Date.now() - d) / 86400000);
         if (diff === 0) return 'Hoy';
         if (diff === 1) return 'Ayer';
-        if (diff < 7)  return 'Hace ' + diff + ' dÃ­as';
+        if (diff < 7)  return 'Hace ' + diff + ' d&iacute;as';
         return d.toLocaleDateString('es-ES', { day:'numeric', month:'short' });
     }
 
@@ -185,9 +264,12 @@
         for (let i = days - 1; i >= 0; i--) {
             const d = new Date(today); d.setDate(today.getDate() - i);
             const key = d.toLocaleDateString('en-CA');
+            const active = activeDays.has(key);
             const el = document.createElement('div');
             el.title = key;
-            el.style.cssText = `width:12px;height:12px;border-radius:3px;background:${activeDays.has(key) ? '#22c55e' : '#f1f5f9'}`;
+            el.style.cssText = `width:13px;height:13px;border-radius:3px;background:${active ? '#22c55e' : '#e2e8f0'};transition:transform 0.1s`;
+            el.onmouseenter = () => el.style.transform = 'scale(1.3)';
+            el.onmouseleave = () => el.style.transform = 'scale(1)';
             grid.appendChild(el);
         }
     }
@@ -198,55 +280,78 @@
         attempts.forEach(a => {
             const slug = a.subject?.slug || 'unknown';
             if (!bySubject[slug]) bySubject[slug] = [];
-            bySubject[slug].push(a.score);
+            bySubject[slug].push(a.score ?? 0);
         });
-        const slugs = Object.keys(bySubject);
-        if (!slugs.length) { document.getElementById('no-subject-data').style.display='block'; return; }
+
+        // Filtrar asignaturas donde la mejor nota es 0 (tests de prueba sin responder)
+        const slugs = Object.keys(bySubject).filter(slug => Math.max(...bySubject[slug]) > 0);
+
+        if (!slugs.length) {
+            document.getElementById('no-subject-data').style.display = 'block';
+            return;
+        }
+
         slugs.sort((a, b) => {
             const avgA = bySubject[a].reduce((s,v)=>s+v,0)/bySubject[a].length;
             const avgB = bySubject[b].reduce((s,v)=>s+v,0)/bySubject[b].length;
             return avgB - avgA;
         }).forEach(slug => {
             const scores = bySubject[slug];
-            const avg = scores.reduce((s,v)=>s+v,0)/scores.length;
+            const realScores = scores.filter(s => s > 0);
+            const avg = realScores.length ? realScores.reduce((s,v)=>s+v,0)/realScores.length : 0;
             const best = Math.max(...scores);
             const name = SUBJECT_NAMES[slug] || escHtml(slug);
+            const color = scoreColor(avg);
+            const pct = Math.min(100, avg * 10).toFixed(0);
             container.innerHTML += `
                 <div>
-                    <div class="flex justify-between items-baseline mb-1">
-                        <span class="text-sm font-semibold truncate max-w-[180px]">${name}</span>
-                        <span class="text-sm font-extrabold ml-2" style="color:${scoreColor(avg)}">${avg.toFixed(1)}</span>
+                    <div class="flex justify-between items-center mb-1.5">
+                        <span class="text-sm font-bold text-foreground">${name}</span>
+                        <span class="text-sm font-extrabold" style="color:${color}">${avg.toFixed(1)}</span>
                     </div>
-                    <div class="bar-track">
-                        <div class="bar-fill" style="width:${avg*10}%;background:${scoreColor(avg)}"></div>
+                    <div class="flex items-center gap-3">
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:0%;background:${color}" data-width="${pct}%"></div>
+                        </div>
                     </div>
-                    <p class="text-xs text-muted mt-0.5">${scores.length} intento${scores.length>1?'s':''} Â· mejor nota: ${best.toFixed(1)}</p>
+                    <p class="text-xs text-muted mt-1">${scores.length} intento${scores.length>1?'s':''} &middot; mejor: <strong style="color:${scoreColor(best)}">${best.toFixed(1)}</strong></p>
                 </div>`;
         });
+
+        // Animar barras con delay
+        setTimeout(() => {
+            document.querySelectorAll('.bar-fill[data-width]').forEach(el => {
+                el.style.width = el.dataset.width;
+            });
+        }, 100);
     }
 
     function buildHistory(attempts) {
         const list = document.getElementById('history-list');
-        if (!attempts.length) { document.getElementById('no-history').style.display='block'; return; }
-        attempts.slice(0, 20).forEach(a => {
+        if (!attempts.length) {
+            document.getElementById('no-history').style.display = 'block';
+            return;
+        }
+        list.innerHTML = attempts.slice(0, 25).map(a => {
             const slug = a.subject?.slug || '?';
             const name = SUBJECT_NAMES[slug] || escHtml(slug);
             const type = a.examType === 'simulacro' ? 'Simulacro' : 'Test';
-            const apto = a.score >= 5;
-            list.innerHTML += `
-                <div class="flex items-center justify-between py-3 border-b border-gray-100 last:border-0 gap-3">
-                    <div class="flex items-center gap-3 min-w-0">
-                        <span class="badge-type shrink-0">${type}</span>
-                        <span class="text-sm font-semibold truncate">${name}</span>
-                    </div>
-                    <div class="flex items-center gap-3 shrink-0 text-right">
-                        <span class="text-xs text-muted hidden sm:block">${fmtTime(a.timeSpentSec)}</span>
-                        <span class="text-xs text-muted">${fmtDate(a.createdAt)}</span>
-                        <span class="text-base font-extrabold w-10 text-right" style="color:${scoreColor(a.score)}">${a.score.toFixed(1)}</span>
-                        <span class="${apto?'badge-apto':'badge-noapto'}">${apto?'APTO':'NO APTO'}</span>
-                    </div>
-                </div>`;
-        });
+            const score = a.score ?? 0;
+            const apto = score >= 5;
+            const color = scoreColor(score);
+            return `<div class="flex items-center justify-between py-3 border-b border-gray-100 last:border-0 gap-3 hover:bg-gray-50 rounded-lg px-2 -mx-2 transition-colors">
+                <div class="flex items-center gap-3 min-w-0">
+                    <span class="badge-type shrink-0">${type}</span>
+                    <span class="text-sm font-semibold truncate">${name}</span>
+                </div>
+                <div class="flex items-center gap-3 shrink-0">
+                    <span class="text-xs text-muted hidden sm:block">${fmtTime(a.timeSpentSec ?? 0)}</span>
+                    <span class="text-xs text-muted">${fmtDate(a.createdAt)}</span>
+                    <span class="text-base font-extrabold w-10 text-right" style="color:${color}">${score.toFixed(1)}</span>
+                    <span class="${apto?'badge-apto':'badge-noapto'}">${apto?'APTO':'NO APTO'}</span>
+                </div>
+            </div>`;
+        }).join('');
     }
 
     async function loadProfile() {
@@ -260,20 +365,29 @@
         try {
             const attempts = await apiGet('/attempts/me');
 
-            // Header info
+            // Datos de cabecera
             const initials = user.name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
             document.getElementById('avatar-big').textContent = initials;
             document.getElementById('profile-name').textContent = user.name;
 
-            // Stats
+            // Stats — calcular solo con scores v&aacute;lidos
             const total = attempts.length;
-            const avg = total ? attempts.reduce((s,a)=>s+a.score,0)/total : null;
-            const totalTime = attempts.reduce((s,a)=>s+a.timeSpentSec,0);
+            const validScores = attempts.map(a => a.score ?? 0).filter(s => s > 0);
+            const avg = validScores.length ? validScores.reduce((s,v)=>s+v,0)/validScores.length : null;
+            const totalTime = attempts.reduce((s,a)=>s+(a.timeSpentSec??0),0);
             const streak = calcStreak(attempts);
 
             document.getElementById('stat-total').textContent = total;
-            document.getElementById('stat-avg').textContent = avg !== null ? avg.toFixed(1) : 'â€”';
-            document.getElementById('stat-avg').style.color = avg !== null ? scoreColor(avg) : '#0f172a';
+
+            const avgEl = document.getElementById('stat-avg');
+            if (avg !== null) {
+                avgEl.textContent = avg.toFixed(1);
+                avgEl.style.color = scoreColor(avg);
+            } else {
+                avgEl.innerHTML = '&#8212;';
+                avgEl.style.color = '#94a3b8';
+            }
+
             document.getElementById('stat-time').textContent = totalTime > 0 ? fmtTime(totalTime) : '0m';
             document.getElementById('stat-streak').textContent = streak;
 
@@ -285,12 +399,16 @@
             document.getElementById('state-content').style.display = 'block';
 
         } catch (e) {
-            document.getElementById('state-loading').innerHTML = '<p class="text-red-500 font-semibold">Error al cargar el perfil. IntÃ©ntalo de nuevo.</p>';
+            console.error(e);
+            document.getElementById('state-loading').innerHTML =
+                '<p style="color:#ef4444;font-weight:600;text-align:center">Error al cargar el perfil. Int&eacute;ntalo de nuevo.<br><br>' +
+                '<button onclick="location.reload()" style="padding:8px 20px;background:#2563eb;color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer">Reintentar</button></p>';
         }
     }
 
     document.addEventListener('DOMContentLoaded', loadProfile);
     </script>
     <script src="assets/js/analytics.js"></script>
+    <script src="assets/js/cookie-cmp.js"></script>
 </body>
 </html>

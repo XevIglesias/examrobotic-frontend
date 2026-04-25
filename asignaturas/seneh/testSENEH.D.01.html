@@ -3,49 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Test de autoevaluación de Sistemas Eléctricos, Neumáticos e Hidráulicos. Selecciona una unidad y practica.">
-    <link rel="icon" href="../../assets/img/favicon.svg?v=3" type="image/svg\+xml">
-    <title>Sistemas eléctricos, neumáticos e hidráulicos - ExamRobotic</title>
+    <meta name="description" content="Test de autoevaluaci&oacute;n de Sistemas El&eacute;ctricos, Neum&aacute;ticos e Hidr&aacute;ulicos. Selecciona una unidad y practica.">
+    <link rel="icon" href="../../assets/img/favicon.svg?v=2" type="image/svg+xml">
+    <title>EXAMROBOTIC - Sistemas El&eacute;ctricos, Neum&aacute;ticos e Hidr&aacute;ulicos</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="../../assets/css/menu.css">
+    <link rel="stylesheet" href="../../assets/css/menu.css?v=4">
     <script src="../../assets/js/tailwind-config.js"></script>
 </head>
 <body class="bg-background text-foreground min-h-screen flex flex-col">
 
-    <header class="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shrink-0 cursor-pointer" onclick="window.location.href='../../index.html'">
-                    U
+                                                    <header class="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='/'">
+                <div class="relative">
+                    <img src="../../assets/img/robot-avatar.png" class="w-12 h-12 rounded-xl object-cover shadow-lg shadow-primary/20 border border-blue-100" alt="Logo">
+                    
                 </div>
                 <div>
-                    <h1 class="text-sm md:text-lg font-extrabold tracking-tight text-foreground leading-tight">Grado Superior de Robótica y<br class="md:hidden"> Automatización Industrial</h1>
-                    <p class="text-xs font-semibold text-primary uppercase tracking-wider mt-0.5">Plataforma de Evaluación</p>
+                    <h1 class="text-2xl font-black text-foreground leading-none">EXAM<span class="text-primary">ROBOTIC</span></h1>
+                    <p class="text-[10px] font-bold text-muted uppercase tracking-widest mt-1">Plataforma Test</p>
                 </div>
             </div>
-            
-            <div id="auth-header-area"></div>
+            <div class="flex items-center gap-6">
+                
+                <div id="auth-header-area"></div>
+            </div>
         </div>
     </header>
 
-    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+    <main class="flex-grow w-full py-10">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col xl:flex-row gap-8">
+                
+                            <!-- Sidebar Izquierdo (Publicidad) -->
+            <aside class="hidden xl:block w-[180px] shrink-0">
+                <div class="sticky top-24">
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-200 h-[600px] flex flex-col items-center justify-center text-center p-4 rounded-2xl">
+                        <div class="text-gray-400">
+                            <p class="text-[10px] font-bold uppercase tracking-widest mb-2 opacity-60">Publicidad</p>
+                            <div class="w-10 h-10 bg-gray-200 rounded-full mb-4 mx-auto flex items-center justify-center">
+                                <span class="text-lg">??</span>
+                            </div>
+                            <p class="text-[10px] italic leading-tight">Banner Lateral<br>Izquierdo</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+                <!-- Contenido Principal -->
+                <div class="flex-grow min-w-0">
         
-        <div class="mb-10 flex items-start sm:items-center gap-4 border-b border-border pb-6">
+                        <div class="mb-10 flex items-start sm:items-center gap-4 border-b border-border pb-6">
             <button onclick="window.history.back()" class="w-10 h-10 shrink-0 bg-white border border-border rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors mt-1 sm:mt-0" title="Volver">
-                <span class="text-xl leading-none font-bold text-muted">←</span>
+                <span class="text-xl leading-none font-bold text-muted">&larr;</span>
             </button>
             <div class="flex-grow">
                 <div class="flex items-center gap-2 mb-1">
                     <span class="text-xs font-bold bg-primary/10 text-primary px-2 py-0.5 rounded uppercase tracking-wider">Asignatura</span>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground mb-1">Sistemas eléctricos, neumáticos e hidráulicos</h2>
-                <p class="text-muted text-base md:text-lg">Completa los test de autoevaluación de cada unidad para avanzar.</p>
+                <h2 class="text-xl md:text-2xl font-extrabold text-foreground mb-1">Sistemas el&eacute;ctricos, neum&aacute;ticos e hidr&aacute;ulicos</h2>
+                <p class="text-muted text-base md:text-lg">Completa los test de autoevaluaci&oacute;n de cada unidad para avanzar.</p>
             </div>
         </div>
 
@@ -57,11 +80,11 @@
                         1
                     </div>
                     <div class="flex-grow">
-                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors"> Introducción a los sistemas electromecánicos, neumáticos e hidráulicos</h3>
-                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Fundamento de la electromecánica, hidráulica y neumática</p>
+                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors"> Introducci&oacute;n a los sistemas electromec&aacute;nicos, neum&aacute;ticos e hidr&aacute;ulicos</h3>
+                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Fundamento de la electromec&aacute;nica, hidr&aacute;ulica y neum&aacute;tica</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -72,11 +95,11 @@
                         2
                     </div>
                     <div class="flex-grow">
-                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors"> Reconocimiento de dispositivos electromecánicos, neumáticos e hidráulicos</h3>
-                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Técnicas de conexión y dispositivos de control</p>
+                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors"> Reconocimiento de dispositivos electromec&aacute;nicos, neum&aacute;ticos e hidr&aacute;ulicos</h3>
+                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">T&eacute;cnicas de conexi&oacute;n y dispositivos de control</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -87,11 +110,11 @@
                         3
                     </div>
                     <div class="flex-grow">
-                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Dibujo de croquis y esquemas de sistemas de control eléctrico cableados, neumáticos e hidráulicos</h3>
-                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Simbología y representación de esquemas</p>
+                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Dibujo de croquis y esquemas de sistemas de control el&eacute;ctrico cableados, neum&aacute;ticos e hidr&aacute;ulicos</h3>
+                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Simbolog&iacute;a y representaci&oacute;n de esquemas</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -103,10 +126,10 @@
                     </div>
                     <div class="flex-grow">
                         <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Procedimientos para el arranque de motores</h3>
-                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Prevención de riesgos eléctricos, procedimientos de arranque para motores trifásicos</p>
+                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Prevenci&oacute;n de riesgos el&eacute;ctricos, procedimientos de arranque para motores trif&aacute;sicos</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -117,11 +140,11 @@
                         5
                     </div>
                     <div class="flex-grow">
-                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Elementos de protección y medida</h3>
-                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Relés de tendsión, reles de protección, Diagrama de bloques</p>
+                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Elementos de protecci&oacute;n y medida</h3>
+                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Rel&eacute;s de tendsi&oacute;n, reles de protecci&oacute;n, Diagrama de bloques</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -136,7 +159,7 @@
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Codificadores, multiplexores, comparadores binarios</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
             </article>
 
@@ -146,11 +169,11 @@
                         7
                     </div>
                     <div class="flex-grow">
-                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Sistemas de numeración y códigos</h3>
+                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Sistemas de numeraci&oacute;n y c&oacute;digos</h3>
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Sistema decimal, binario, octal, hexadecimal, codigo BCD</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -161,11 +184,11 @@
                         8
                     </div>
                     <div class="flex-grow">
-                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Autómatas programables</h3>
+                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Aut&oacute;matas programables</h3>
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Sistemas programados, lenguaje KOP</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -176,11 +199,11 @@
                         9
                     </div>
                     <div class="flex-grow">
-                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Programación de esquemas cableados</h3>
-                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Programación en KOP, programación de contadores y temporizadores</p>
+                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Programaci&oacute;n de esquemas cableados</h3>
+                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Programaci&oacute;n en KOP, programaci&oacute;n de contadores y temporizadores</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -191,11 +214,11 @@
                         10
                     </div>
                     <div class="flex-grow">
-                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Programación con OMRON</h3>
-                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Serie CxxH, Serie CPM2A, Serie CQM1, Cable RS232 de conexión</p>
+                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Programaci&oacute;n con OMRON</h3>
+                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Serie CxxH, Serie CPM2A, Serie CQM1, Cable RS232 de conexi&oacute;n</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -210,7 +233,7 @@
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Cableado del s7-300 y s7-400, cinta transportadora, control de tolva</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -221,11 +244,11 @@
                         12
                     </div>
                     <div class="flex-grow">
-                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Elementos de neumática</h3>
-                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">El aire comprimido, cilindros neumáticos, válvulas</p>
+                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Elementos de neum&aacute;tica</h3>
+                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">El aire comprimido, cilindros neum&aacute;ticos, v&aacute;lvulas</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -236,11 +259,11 @@
                         13
                     </div>
                     <div class="flex-grow">
-                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Hidráulica aplicada</h3>
-                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Tipos de bombas hidráulicas, válvulas, fluidos hidráulicos</p>
+                        <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Hidr&aacute;ulica aplicada</h3>
+                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Tipos de bombas hidr&aacute;ulicas, v&aacute;lvulas, fluidos hidr&aacute;ulicos</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -252,10 +275,10 @@
                     </div>
                     <div class="flex-grow">
                         <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Examen REAL</h3>
-                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Práctica para el examen con todas las preguntas</p>
+                        <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Pr&aacute;ctica para el examen con todas las preguntas</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -273,3 +296,32 @@
                     </div>
                 </div>
             </article>
+        </div>
+    </div>
+
+            <!-- Sidebar Derecho (Publicidad) -->
+            <aside class="hidden xl:block w-[180px] shrink-0">
+                <div class="sticky top-24">
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-200 h-[600px] flex flex-col items-center justify-center text-center p-4 rounded-2xl">
+                        <div class="text-gray-400">
+                            <p class="text-[10px] font-bold uppercase tracking-widest mb-2 opacity-60">Publicidad</p>
+                            <div class="w-10 h-10 bg-gray-200 rounded-full mb-4 mx-auto flex items-center justify-center">
+                                <span class="text-lg">??</span>
+                            </div>
+                            <p class="text-[10px] italic leading-tight">Banner Lateral<br>Derecho</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</main>
+
+    <script src="../../assets/js/api.js"></script>
+    <script src="../../assets/js/auth-ui.js"></script>
+    <script src="../../assets/js/analytics.js"></script>
+</body>
+</html><script src="../../assets/js/cookie-cmp.js"></script>
+
+
+

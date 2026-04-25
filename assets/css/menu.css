@@ -29,13 +29,14 @@ button:focus {
 
 /* Tarjeta formato lista */
 .list-card {
-    transition: transform 0.2s ease, border-left-color 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.18s ease, border-left-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
     border-left: 4px solid transparent;
 }
 .list-card:hover {
-    transform: translateX(5px);
-    border-left-color: #1a6fd4;
-    box-shadow: 0 4px 16px -4px rgba(11,32,64,0.1);
+    transform: translateX(4px);
+    border-left-color: #2563eb;
+    box-shadow: 0 4px 20px -4px rgba(37,99,235,0.13);
+    background-color: #f8faff;
 }
 .list-card:hover .arrow-icon {
     transform: translateX(5px);
@@ -43,11 +44,12 @@ button:focus {
 
 /* Número de unidad */
 .number-badge {
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
 .list-card:hover .number-badge {
-    background-color: #1a6fd4;
+    background-color: #2563eb;
     color: #ffffff;
+    transform: scale(1.08);
 }
 
 /* Reemplazar la letra "U" por el icono del avatar en el header */

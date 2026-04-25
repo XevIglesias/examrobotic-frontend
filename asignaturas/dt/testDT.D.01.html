@@ -1,51 +1,74 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Test de autoevaluación de Documentación Técnica. Selecciona una unidad y practica con preguntas de normativas, CAD y presupuestos.">
-    <link rel="icon" href="../../assets/img/favicon.svg?v=3" type="image/svg\+xml">
-    <title>Documentación Técnica - ExamRobotic</title>
+    <link rel="icon" href="../../assets/img/favicon.svg?v=2" type="image/svg+xml">
+    <title>EXAMROBOTIC - Documentaci&oacute;n T&eacute;cnica</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="../../assets/css/menu.css">
+    <link rel="stylesheet" href="../../assets/css/menu.css?v=4">
     <script src="../../assets/js/tailwind-config.js"></script>
 </head>
 <body class="bg-background text-foreground min-h-screen flex flex-col">
 
-    <header class="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shrink-0 cursor-pointer" onclick="window.location.href='../../index.html'">
-                    U
+                                                    <header class="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='/'">
+                <div class="relative">
+                    <img src="../../assets/img/robot-avatar.png" class="w-12 h-12 rounded-xl object-cover shadow-lg shadow-primary/20 border border-blue-100" alt="Logo">
+                    
                 </div>
                 <div>
-                    <h1 class="text-sm md:text-lg font-extrabold tracking-tight text-foreground leading-tight">Grado Superior de Robótica y<br class="md:hidden"> Automatización Industrial</h1>
-                    <p class="text-xs font-semibold text-primary uppercase tracking-wider mt-0.5">Plataforma de Evaluación</p>
+                    <h1 class="text-2xl font-black text-foreground leading-none">EXAM<span class="text-primary">ROBOTIC</span></h1>
+                    <p class="text-[10px] font-bold text-muted uppercase tracking-widest mt-1">Plataforma Test</p>
                 </div>
             </div>
-            
-            <div id="auth-header-area"></div>
+            <div class="flex items-center gap-6">
+                
+                <div id="auth-header-area"></div>
+            </div>
         </div>
     </header>
 
-    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        <main class="flex-grow w-full py-10">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col xl:flex-row gap-8">
+                            <!-- Sidebar Izquierdo (Publicidad) -->
+            <aside class="hidden xl:block w-[180px] shrink-0">
+                <div class="sticky top-24">
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-200 h-[600px] flex flex-col items-center justify-center text-center p-4 rounded-2xl">
+                        <div class="text-gray-400">
+                            <p class="text-[10px] font-bold uppercase tracking-widest mb-2 opacity-60">Publicidad</p>
+                            <div class="w-10 h-10 bg-gray-200 rounded-full mb-4 mx-auto flex items-center justify-center">
+                                <span class="text-lg">??</span>
+                            </div>
+                            <p class="text-[10px] italic leading-tight">Banner Lateral<br>Izquierdo</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+                <!-- Contenido Principal -->
+                <div class="flex-grow min-w-0">
+
         
-        <div class="mb-10 flex items-start sm:items-center gap-4 border-b border-border pb-6">
+                        <div class="mb-10 flex items-start sm:items-center gap-4 border-b border-border pb-6">
             <button onclick="window.history.back()" class="w-10 h-10 shrink-0 bg-white border border-border rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors mt-1 sm:mt-0" title="Volver">
-                <span class="text-xl leading-none font-bold text-muted">←</span>
+                <span class="text-xl leading-none font-bold text-muted">&larr;</span>
             </button>
             <div class="flex-grow">
                 <div class="flex items-center gap-2 mb-1">
                     <span class="text-xs font-bold bg-primary/10 text-primary px-2 py-0.5 rounded uppercase tracking-wider">Asignatura</span>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground mb-1">Documentación técnica</h2>
-                <p class="text-muted text-base md:text-lg">Completa los test de autoevaluación de cada unidad para avanzar.</p>
+                <h2 class="text-xl md:text-2xl font-extrabold text-foreground mb-1">D</h2>
+                <p class="text-muted text-base md:text-lg">C</p>
             </div>
         </div>
 
@@ -61,7 +84,7 @@
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Conceptos fundamentales sobre normativas, tipos de documentos, trámites y legalización.</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -76,7 +99,7 @@
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Simbología normalizada, normas de dibujo e interpretación de esquemas y planos aplicados.</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -91,7 +114,7 @@
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Diseño asistido por ordenador, creación de planos en 2D, cajetines y trazados técnicos.</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -106,7 +129,7 @@
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Simulación y diseño de esquemas eléctricos, neumáticos y de control con software especializado.</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -121,7 +144,7 @@
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Cuadros de precios, mediciones, cálculo de costes y elaboración de presupuestos detallados.</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -136,7 +159,7 @@
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Redacción de memorias, pliegos de condiciones, manuales de usuario y mantenimiento.</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -151,7 +174,7 @@
                         <p class="text-sm text-muted line-clamp-1 md:line-clamp-2">Práctica para el examen con todas las preguntas</p>
                     </div>
                     <div class="hidden sm:flex shrink-0 items-center justify-center">
-                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">→</span></span>
+                        <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
                     </div>
                 </div>
             </article>
@@ -172,10 +195,33 @@
 
 
         </div>
+    
+                </div>
+
+                            <!-- Sidebar Derecho (Publicidad) -->
+            <aside class="hidden xl:block w-[180px] shrink-0">
+                <div class="sticky top-24">
+                    <div class="bg-gray-50 border-2 border-dashed border-gray-200 h-[600px] flex flex-col items-center justify-center text-center p-4 rounded-2xl">
+                        <div class="text-gray-400">
+                            <p class="text-[10px] font-bold uppercase tracking-widest mb-2 opacity-60">Publicidad</p>
+                            <div class="w-10 h-10 bg-gray-200 rounded-full mb-4 mx-auto flex items-center justify-center">
+                                <span class="text-lg">??</span>
+                            </div>
+                            <p class="text-[10px] italic leading-tight">Banner Lateral<br>Derecho</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            </div>
+        </div>
     </main>
 
     <script src="../../assets/js/api.js"></script>
     <script src="../../assets/js/auth-ui.js"></script>
     <script src="../../assets/js/analytics.js"></script>
 </body>
-</html>
+</html><script src="../../assets/js/cookie-cmp.js"></script>
+
+
+
+

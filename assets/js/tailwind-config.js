@@ -6,9 +6,9 @@ tailwind.config = {
             },
             colors: {
                 background: '#f9fafb',
-                foreground: '#0b2040',
-                primary:    '#1a6fd4',
-                border:     '#d1dce5',
+                foreground: '#000000',
+                primary:    '#2563eb',
+                border:     '#e5e7eb',
                 card:       '#ffffff',
                 muted:      '#64748b',
             },

@@ -25,7 +25,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Cabecera */
+/* Cabecera — layout controlado por Tailwind en el div interior */
 header {
     position: sticky;
     top: 0;
@@ -33,28 +33,46 @@ header {
     background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--er-border);
-    padding: 14px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+/* Forzar Manrope en el logo para que sea igual en todas las páginas */
+header h1 {
+    font-family: 'Manrope', sans-serif !important;
+}
+
+/* Ocultar perfil/auth en páginas de quiz */
+#auth-header-area {
+    display: none !important;
 }
 
 .timer-box {
     display: flex;
     align-items: center;
-    gap: 8px;
-    background-color: var(--er-dark);
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
     color: #ffffff;
-    padding: 8px 16px;
-    border-radius: 8px;
-    font-family: monospace;
-    font-size: 1.2rem;
-    font-weight: 800;
+    padding: 9px 22px;
+    border-radius: 50px;
+    font-family: 'Manrope', monospace;
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    box-shadow: 0 0 0 1px rgba(37,99,235,0.25), 0 4px 16px rgba(15,23,42,0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.timer-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.05) 50%, transparent 100%);
+    pointer-events: none;
 }
 
 .timer-low {
-    background-color: var(--er-red);
-    animation: blink 1s step-start infinite;
+    background: linear-gradient(135deg, #7f1d1d 0%, #dc2626 100%) !important;
+    box-shadow: 0 0 0 2px rgba(239,68,68,0.4), 0 4px 20px rgba(220,38,38,0.35) !important;
+    animation: pulse-red 1.2s ease-in-out infinite;
 }
 
 /* Contenedor principal */
@@ -236,6 +254,11 @@ header {
 /* Animaciones */
 @keyframes blink {
     50% { opacity: 0.45; }
+}
+
+@keyframes pulse-red {
+    0%, 100% { box-shadow: 0 0 0 2px rgba(239,68,68,0.4), 0 4px 20px rgba(220,38,38,0.35); }
+    50%       { box-shadow: 0 0 0 4px rgba(239,68,68,0.25), 0 4px 28px rgba(220,38,38,0.55); }
 }
 
 /* Responsive móvil */
