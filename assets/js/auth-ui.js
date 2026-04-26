@@ -36,33 +36,43 @@ function renderHeader() {
 function openAuth(tab) {
     const overlay = document.getElementById('auth-overlay');
     if (!overlay) {
+        // Si no hay modal en esta página (ej. test), redirigimos al login principal o simplemente no hacemos nada
         window.location.href = window.location.pathname.includes('/asignaturas/') ? '../../index.html' : 'index.html';
         return;
     }
     overlay.style.display = 'flex';
     switchTab(tab || 'login');
-    document.getElementById('auth-email').focus();
+    const emailField = document.getElementById('auth-email');
+    if (emailField) emailField.focus();
 }
 
 function closeAuth() {
-    document.getElementById('auth-overlay').style.display = 'none';
+    const overlay = document.getElementById('auth-overlay');
+    if (overlay) overlay.style.display = 'none';
     clearAuthError();
 }
 
 function switchTab(tab) {
-    document.getElementById('tab-login').classList.toggle('tab-active', tab === 'login');
-    document.getElementById('tab-register').classList.toggle('tab-active', tab === 'register');
-    document.getElementById('form-login').style.display = tab === 'login' ? 'flex' : 'none';
-    document.getElementById('form-register').style.display = tab === 'register' ? 'flex' : 'none';
+    const tabLogin = document.getElementById('tab-login');
+    const tabReg = document.getElementById('tab-register');
+    const formLogin = document.getElementById('form-login');
+    const formReg = document.getElementById('form-register');
+
+    if (tabLogin) tabLogin.classList.toggle('tab-active', tab === 'login');
+    if (tabReg) tabReg.classList.toggle('tab-active', tab === 'register');
+    if (formLogin) formLogin.style.display = tab === 'login' ? 'flex' : 'none';
+    if (formReg) formReg.style.display = tab === 'register' ? 'flex' : 'none';
     clearAuthError();
 }
 
 function clearAuthError() {
-    document.getElementById('auth-error').textContent = '';
+    const err = document.getElementById('auth-error');
+    if (err) err.textContent = '';
 }
 
 function showAuthError(msg) {
-    document.getElementById('auth-error').textContent = msg;
+    const err = document.getElementById('auth-error');
+    if (err) err.textContent = msg;
 }
 
 async function doLogin(e) {

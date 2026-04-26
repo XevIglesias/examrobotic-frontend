@@ -12,13 +12,17 @@ function escHtml(s) {
 // Función auxiliar para escribir texto de forma segura
 function setSafeText(id, text) {
     const el = document.getElementById(id);
-    if (el) el.innerText = text;
+    if (el && text !== undefined && text !== null) {
+        el.innerText = text;
+    }
 }
 
 // Función auxiliar para escribir HTML de forma segura
 function setSafeHtml(id, html) {
     const el = document.getElementById(id);
-    if (el) el.innerHTML = html;
+    if (el && html !== undefined && html !== null) {
+        el.innerHTML = html;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
