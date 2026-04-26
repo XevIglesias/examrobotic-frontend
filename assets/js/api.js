@@ -74,7 +74,9 @@ function applyProgression(subjectSlug) {
   // Contar cuántos temas numéricos hay
   const totalThemes = cards.filter(c => {
     const b = c.querySelector('.number-badge');
-    return b && !isNaN(parseInt(b.innerText));
+    if (!b) return false;
+    const text = b.innerText.trim();
+    return !isNaN(parseInt(text));
   }).length;
 
   let completedCount = 0;
@@ -82,7 +84,7 @@ function applyProgression(subjectSlug) {
     if (progress[i]) completedCount++;
   }
 
-  const allThemesDone = completedCount === totalThemes;
+  const allThemesDone = completedCount >= totalThemes;
 
   cards.forEach(card => {
     const badge = card.querySelector('.number-badge');
@@ -95,13 +97,11 @@ function applyProgression(subjectSlug) {
     let lockReason = '';
 
     if (!isNaN(themeNum)) {
-      // Es un tema numérico
       if (isThemeLocked(subjectSlug, themeNum)) {
         locked = true;
         lockReason = 'Consigue un 10 en el tema anterior para desbloquear';
       }
     } else if (badgeText === 'E') {
-      // Es el examen REAL
       if (!allThemesDone) {
         locked = true;
         lockReason = 'Consigue un 10 en TODOS los temas para desbloquear el examen real';
@@ -110,20 +110,26 @@ function applyProgression(subjectSlug) {
 
     if (locked) {
       card.classList.add('locked-card');
-      card.style.opacity = '0.5';
+      card.style.opacity = '0.6';
       card.style.filter = 'grayscale(1)';
       card.style.pointerEvents = 'none';
       card.style.cursor = 'not-allowed';
-      card.title = lockReason;
+      card.setAttribute('title', lockReason);
       
+      // Añadir candado al título si no existe
       const title = card.querySelector('h3');
-      if (title && !title.innerHTML.includes('🔒')) title.innerHTML += ' 🔒';
+      if (title && !title.querySelector('.lock-icon')) {
+        title.innerHTML += ` <span class="lock-icon" style="color: #f59e0b; margin-left: 8px;">🔒</span>`;
+      }
 
-      const btn = card.querySelector('.hidden.sm\\:flex span');
-      if (btn) {
-        btn.innerText = 'Bloqueado';
-        btn.classList.remove('text-primary');
-        btn.classList.add('text-gray-400');
+      // Cambiar texto del botón "Iniciar"
+      const btnContainer = card.querySelector('.hidden.sm\\:flex') || card.querySelector('.flex.shrink-0');
+      if (btnContainer) {
+        const btnText = btnContainer.querySelector('span');
+        if (btnText) {
+          btnText.innerHTML = 'Bloqueado';
+          btnText.style.color = '#9ca3af'; // Gris
+        }
       }
     }
   });
