@@ -1,0 +1,1093 @@
+{
+  "cuestionarios": [
+    {
+      "metadatos": {
+        "comenzado_el": "domingo, 19 de octubre de 2025, 14:11",
+        "estado": "Finalizado",
+        "finalizado_en": "domingo, 19 de octubre de 2025, 14:12",
+        "tiempo_empleado": "36 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué representación binaria corresponde al número BCD: 22?",
+          "opciones": [
+            "A. 0010 0010",
+            "B. 0010",
+            "C. No existe",
+            "D. 10110"
+          ],
+          "respuesta_correcta": "0010 0010"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Cuál es la representación en binario del número decimal: 11?",
+          "opciones": [
+            "A. 1101",
+            "B. 1001",
+            "C. 1011",
+            "D. 1111"
+          ],
+          "respuesta_correcta": "1011"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿A qué valor decimal equivale el número binario: 1101?:",
+          "opciones": [
+            "A. 1101",
+            "B. 14",
+            "C. 13",
+            "D. 12"
+          ],
+          "respuesta_correcta": "13"
+        },
+        {
+          "numero": 4,
+          "enunciado": "De los siguientes sistemas de numeración, ¿cuál emplea ocho símbolos distintos?:",
+          "opciones": [
+            "A. El binario",
+            "B. El decimal",
+            "C. El octal",
+            "D. El hexadecimal"
+          ],
+          "respuesta_correcta": "El octal"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: magnitudes que pueden adoptar valores discretos, es decir, únicamente dos niveles posibles: 0 o 1?",
+          "opciones": [
+            "A. Señales digitales",
+            "B. Señales analógicas",
+            "C. Circuitos secuenciales",
+            "D. Circuitos combinacionales"
+          ],
+          "respuesta_correcta": "Señales digitales"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: recursos que nos facilitan entender de manera gráfica el comportamiento y resultado de las puertas lógicas?",
+          "opciones": [
+            "A. Señales digitales",
+            "B. Tablas de verdad",
+            "C. Puertas lógicas",
+            "D. Circuitos secuenciales"
+          ],
+          "respuesta_correcta": "Tablas de verdad"
+        },
+        {
+          "numero": 7,
+          "enunciado": "En los mapas de Karnaugh, tanto en minterms como en maxterms, ¿de qué forma deben organizarse los conjuntos de números?",
+          "opciones": [
+            "A. En potencias de 10",
+            "B. En potencias de 8",
+            "C. En potencias de 16",
+            "D. En potencias de 2"
+          ],
+          "respuesta_correcta": "En potencias de 2"
+        },
+        {
+          "numero": 8,
+          "enunciado": "Las agrupaciones en un mapa de Karnaugh no pueden realizarse de forma:",
+          "opciones": [
+            "A. Horizontal",
+            "B. Diagonal",
+            "C. Vertical",
+            "D. Se pueden hacer de las 3 formas"
+          ],
+          "respuesta_correcta": "Diagonal"
+        },
+        {
+          "numero": 9,
+          "enunciado": "Si encontramos la siguiente expresión lógica: $Q=A^{*}B^{*}C,$ ¿a qué función lógica alude?",
+          "opciones": [
+            "A. NOR",
+            "B. OR",
+            "C. AND",
+            "D. NAND"
+          ],
+          "respuesta_correcta": "AND"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Una ecuación con maxterms recibe el nombre de:",
+          "opciones": [
+            "A. Una suma de sumas",
+            "B. Una suma de productos",
+            "C. Un producto de productos",
+            "D. Un producto de sumas"
+          ],
+          "respuesta_correcta": "Un producto de sumas"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "miércoles, 26 de noviembre de 2025, 19:06",
+        "estado": "Finalizado",
+        "finalizado_en": "miércoles, 26 de noviembre de 2025, 19:06",
+        "tiempo_empleado": "29 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: es la encargada de ejecutar el programa de usuario y, tal como señala su nombre, la información almacenada se pierde al apagar el dispositivo?",
+          "opciones": [
+            "A. ROM",
+            "B. RAM",
+            "C. Firmware",
+            "D. REM"
+          ],
+          "respuesta_correcta": "RAM"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Con qué nombre se conoce al componente considerado el \"cerebro\" de un autómata?",
+          "opciones": [
+            "A. Los módulos de E/S",
+            "B. El puerto de comunicación",
+            "C. La CPU",
+            "D. La ROM"
+          ],
+          "respuesta_correcta": "A la CPU"
+        },
+        {
+          "numero": 3,
+          "enunciado": "De los siguientes valores, ¿cuál no corresponde a un estándar de señal analógica?",
+          "opciones": [
+            "A. 1-20 mA",
+            "B. 0-10 VDC",
+            "C. 4-20 mA",
+            "D. 0-20 mA"
+          ],
+          "respuesta_correcta": "1-20 mA"
+        },
+        {
+          "numero": 4,
+          "enunciado": "De los siguientes lenguajes de programación, ¿cuál se conoce también como GRAFCET?",
+          "opciones": [
+            "A. SCL",
+            "B. LD",
+            "C. SFC",
+            "D. ST"
+          ],
+          "respuesta_correcta": "SFC"
+        },
+        {
+          "numero": 5,
+          "enunciado": "De los siguientes lenguajes de programación, ¿cuál emplea una representación gráfica basada en funciones lógicas?",
+          "opciones": [
+            "A. IL",
+            "B. SCL",
+            "C. LD",
+            "D. FBD"
+          ],
+          "respuesta_correcta": "FBD"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Qué tipo de cable se utilizará para establecer la conexión entre un ordenador y un autómata programable?",
+          "opciones": [
+            "A. RJ-10",
+            "B. RJ-35",
+            "C. JR-45",
+            "D. RJ-45"
+          ],
+          "respuesta_correcta": "RJ-45"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿Con qué nombre se conoce al lenguaje de programación formado por diagramas de contactos o de escalera?:",
+          "opciones": [
+            "A. SFC",
+            "B. FBD",
+            "C. IL",
+            "D. LD o KOP"
+          ],
+          "respuesta_correcta": "LD o KOP"
+        },
+        {
+          "numero": 8,
+          "enunciado": "Los autómatas programables también reciben el nombre de:",
+          "opciones": [
+            "A. PCL",
+            "B. PC",
+            "C. PLC",
+            "D. LCP"
+          ],
+          "respuesta_correcta": "PLC"
+        },
+        {
+          "numero": 9,
+          "enunciado": "Los autómatas programables que integran todos sus componentes en una única unidad reciben el nombre de:",
+          "opciones": [
+            "A. Autómatas modulares",
+            "B. Autómatas compactos",
+            "C. No pueden ir en una sola unidad",
+            "D. Las dos primeras respuestas son correctas"
+          ],
+          "respuesta_correcta": "Autómatas compactos"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Cuando hablamos de I/O, nos estamos refiriendo a:",
+          "opciones": [
+            "A. Entradas y salidas",
+            "B. Zona de memoria de un PLC",
+            "C. Sistema de comunicación",
+            "D. Ninguna de ellas"
+          ],
+          "respuesta_correcta": "Entradas y salidas"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "sábado, 20 de diciembre de 2025, 20:28",
+        "estado": "Finalizado",
+        "finalizado_en": "sábado, 20 de diciembre de 2025, 20:31",
+        "tiempo_empleado": "2 minutos 31 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: bloques de funciones especiales que permiten generar eventos en función de un tiempo previamente establecido?",
+          "opciones": [
+            "A. Contadores",
+            "B. Temporizadores",
+            "C. Biestables",
+            "D. Ninguna es correcta"
+          ],
+          "respuesta_correcta": "Temporizadores"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Con qué denominación se conoce el lenguaje FBD según Siemens?",
+          "opciones": [
+            "A. KOP",
+            "B. FUP",
+            "C. PLC",
+            "D. SCL"
+          ],
+          "respuesta_correcta": "FUP"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Con qué nombre se conoce al tipo de circuitos que toman la señal de salida y la retroalimentan como señal de entrada?",
+          "opciones": [
+            "A. Biestables",
+            "B. Realimentados",
+            "C. Paralelo",
+            "D. Ninguna es correcta"
+          ],
+          "respuesta_correcta": "Realimentados"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué tipo de lenguaje es el que utiliza el dispositivo LOGO?",
+          "opciones": [
+            "A. SFC",
+            "B. ST",
+            "C. FBD",
+            "D. IL"
+          ],
+          "respuesta_correcta": "FBD"
+        },
+        {
+          "numero": 5,
+          "enunciado": "El contador del autómata LOGO lleva a cabo su control mediante:",
+          "opciones": [
+            "A. 2 entradas y 1 parámetro",
+            "B. 3 entradas y 2 parámetros",
+            "C. 3 entradas y 1 parámetro",
+            "D. 2 entradas y 2 parámetros"
+          ],
+          "respuesta_correcta": "3 entradas y 1 parámetro"
+        },
+        {
+          "numero": 6,
+          "enunciado": "Las marcas o bits auxiliares se emplean en las operaciones externas de la memoria del autómata. ¿Es correcta esta afirmación?:",
+          "opciones": [
+            "A. Si",
+            "B. No, solo en interiores",
+            "C. No, en interiores y exteriores",
+            "D. El autómata no tiene memoria interna"
+          ],
+          "respuesta_correcta": "No, solo en interiores"
+        },
+        {
+          "numero": 7,
+          "enunciado": "Los flancos descendentes están asociados a la función:",
+          "opciones": [
+            "A. OR",
+            "B. AND",
+            "C. NAND",
+            "D. NOR"
+          ],
+          "respuesta_correcta": "NAND"
+        },
+        {
+          "numero": 8,
+          "enunciado": "Si un pulsador está vinculado a un flanco positivo, el pulso se detecta:",
+          "opciones": [
+            "A. Mientras el pulsador permanece accionado",
+            "B. Cuando el pulsador no está asociado",
+            "C. En el momento exacto en que se acciona el pulsador",
+            "D. En el momento exacto en que se suelta el pulsador"
+          ],
+          "respuesta_correcta": "Cuando justo se acciona el pulsador"
+        },
+        {
+          "numero": 9,
+          "enunciado": "TOF hace referencia a:",
+          "opciones": [
+            "A. Temporizador a la desconexión",
+            "B. Temporizador a la conexión",
+            "C. Generador de impulsos",
+            "D. Temporizador con memoria"
+          ],
+          "respuesta_correcta": "Temporizador a la desconexión"
+        },
+        {
+          "numero": 10,
+          "enunciado": "TON hace referencia a:",
+          "opciones": [
+            "A. Temporizador a la conexión",
+            "B. Temporizador a la desconexión",
+            "C. Generador de impulsos",
+            "D. Temporizador con memoria"
+          ],
+          "respuesta_correcta": "Temporizador a la conexión"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "jueves, 22 de enero de 2026, 11:07",
+        "estado": "Finalizado",
+        "finalizado_en": "jueves, 22 de enero de 2026, 11:10",
+        "tiempo_empleado": "2 minutos 44 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: también pueden denominarse funciones, disponen de programas propios y tienen la capacidad de invocarlos o llamar a otros bloques?",
+          "opciones": [
+            "A. FC",
+            "B. FB",
+            "C. OB",
+            "D. DB"
+          ],
+          "respuesta_correcta": "FC"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: son equivalentes a los FC, pero requieren tener siempre un bloque de datos (DB) asociado?",
+          "opciones": [
+            "A. FC",
+            "B. FB",
+            "C. OB",
+            "D. DB"
+          ],
+          "respuesta_correcta": "FB"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Cuál de estas direcciones de entradas y salidas no es válida?",
+          "opciones": [
+            "A. %Q3.3",
+            "B. %Q1.0",
+            "C. %I2.5",
+            "D. %14.8"
+          ],
+          "respuesta_correcta": "%14.8"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Cuántos bits contiene 1 palabra?",
+          "opciones": [
+            "A. 24",
+            "B. 16",
+            "C. 8",
+            "D. 32"
+          ],
+          "respuesta_correcta": "16"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Cuántos bytes componen 1 doble palabra?",
+          "opciones": [
+            "A. 6 bytes",
+            "B. 4 bytes",
+            "C. 2 bytes",
+            "D. 8 bytes"
+          ],
+          "respuesta_correcta": "4 bytes"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Qué lenguaje de programación no es compatible con los S7-1200?",
+          "opciones": [
+            "A. KOP",
+            "B. AWL",
+            "C. FUP",
+            "D. SCL"
+          ],
+          "respuesta_correcta": "AWL"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿Qué tipo de función lógica se utiliza en este segmento?",
+          "opciones": [
+            "A. OR",
+            "B. NAND",
+            "C. XOR",
+            "D. AND"
+          ],
+          "respuesta_correcta": "AND"
+        },
+        {
+          "numero": 8,
+          "enunciado": "¿Qué tipo de función lógica está presente en este segmento?",
+          "opciones": [
+            "A. OR",
+            "B. AND",
+            "C. Las dos anteriores",
+            "D. Ninguna de las dos primeras"
+          ],
+          "respuesta_correcta": "Las dos anteriores"
+        },
+        {
+          "numero": 9,
+          "enunciado": "El símbolo % en una variable señala que...",
+          "opciones": [
+            "A. Es simbólica",
+            "B. Es un número",
+            "C. Es de tipo absoluto",
+            "D. Es un temporizador"
+          ],
+          "respuesta_correcta": "Es de tipo absoluto"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Con el fin de evitar señales permanentes se emplearán...",
+          "opciones": [
+            "A. Marcas",
+            "B. Biestables",
+            "C. Flancos",
+            "D. Contadores"
+          ],
+          "respuesta_correcta": "Flancos"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "jueves, 22 de enero de 2026, 11:26",
+        "estado": "Finalizado",
+        "finalizado_en": "jueves, 22 de enero de 2026, 11:27",
+        "tiempo_empleado": "1 minutos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: al recibir un pulso, este temporizador inicia su funcionamiento tras esperar el tiempo programado (PT). La señal de entrada debe mantenerse activa para que se ejecute la salida. Si se desactiva, el tiempo se reinicia y la salida pasa a 0?",
+          "opciones": [
+            "A. ΤΟΝ",
+            "B. TOF",
+            "C. TR",
+            "D. TONR"
+          ],
+          "respuesta_correcta": "ΤΟΝ"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿A qué categoría de marcas alude esta imagen?",
+          "opciones": [
+            "A. Marcas de sistema",
+            "B. Marcas de arranque",
+            "C. Marcas de ciclo",
+            "D. Marcas de potencia"
+          ],
+          "respuesta_correcta": "Marcas de ciclo"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Con qué temporizador se corresponde este cronograma?",
+          "opciones": [
+            "A. ΤΟΝ",
+            "B. TOF",
+            "C. TONR",
+            "D. TP"
+          ],
+          "respuesta_correcta": "TONR"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿En qué momento se ejecuta el OB de arranque (OB100)?",
+          "opciones": [
+            "A. Únicamente una vez al pasar de RUN a STOP",
+            "B. Dos veces al pasar de RUN a STOP",
+            "C. Únicamente una vez al pasar de STOP a RUN",
+            "D. El OB100 no es un OB de arranque"
+          ],
+          "respuesta_correcta": "Solamente una vez cuando pase de STOP a RUN"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Para qué finalidad se emplea un contador CTD?",
+          "opciones": [
+            "A. Contar",
+            "B. Descontar",
+            "C. Las dos anteriores son correctas",
+            "D. Es un tipo de temporizador"
+          ],
+          "respuesta_correcta": "Descontar"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Qué significado tiene TOF?",
+          "opciones": [
+            "A. Temporizador de impulsos",
+            "B. Temporizador con retardo a la conexión",
+            "C. Temporizador con retardo a la desconexión",
+            "D. Temporizador con retardo a la conexión con memoria"
+          ],
+          "respuesta_correcta": "Temporizador con retardo a la desconexión"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿Qué categoría de temporizadores admiten los S7-1200?",
+          "opciones": [
+            "A. IEC",
+            "B. SIMATIC",
+            "C. Los dos tipos",
+            "D. Ninguno de ellos"
+          ],
+          "respuesta_correcta": "IEC"
+        },
+        {
+          "numero": 8,
+          "enunciado": "En este contador CTUD, ¿cuál es la función de la entrada PV?",
+          "opciones": [
+            "A. Carga el valor de preselección (PV) en el contador",
+            "B. Entrada para incrementar",
+            "C. Entrada para decrementar",
+            "D. Valor de preselección al que se le activa la salida QU"
+          ],
+          "respuesta_correcta": "Valor de preselección al que se le activa la salida QU"
+        },
+        {
+          "numero": 9,
+          "enunciado": "En la siguiente imagen, ¿qué representa la salida ET?",
+          "opciones": [
+            "A. Tiempo de preselección en formato TIME",
+            "B. Dato de salida del tiempo transcurrido",
+            "C. Salida de activación",
+            "D. Ninguna de ellas"
+          ],
+          "respuesta_correcta": "Dato de salida del tiempo transcurrido"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Al usar la función IN_RANG con valores MAX y MIN de 25 y 15 respectivamente, la salida Q se activará cuando el valor VAL sea:",
+          "opciones": [
+            "A. 27",
+            "B. 16",
+            "C. 14",
+            "D. No existe dicha función"
+          ],
+          "respuesta_correcta": "16"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "domingo, 25 de enero de 2026, 14:07",
+        "estado": "Finalizado",
+        "finalizado_en": "domingo, 25 de enero de 2026, 14:07",
+        "tiempo_empleado": "29 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: representa los diferentes estados de un sistema secuencial. Su símbolo es un cuadrado con un número en su interior y puede ser de paso o inicial?",
+          "opciones": [
+            "A. Macroetapas",
+            "B. Transiciones",
+            "C. Etapas",
+            "D. Homing"
+          ],
+          "respuesta_correcta": "Etapas"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: constituye una parte del GRAFCET que únicamente se inicializa al comenzar el proceso. En los PLC tiene lugar al pasar de STOP a RUN y recibe el nombre de arranque en caliente?",
+          "opciones": [
+            "A. Parada",
+            "B. Rearme",
+            "C. Selección de secuencias",
+            "D. Homing o secuencia de inicialización"
+          ],
+          "respuesta_correcta": "Homing o secuencia de inicialización"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: son condiciones que posibilitan el flujo de información de una etapa a la siguiente?",
+          "opciones": [
+            "A. Etapas",
+            "B. Macroetapas",
+            "C. Homing",
+            "D. Transiciones"
+          ],
+          "respuesta_correcta": "Transiciones"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿A qué tipo de acción alude la siguiente imagen?",
+          "opciones": [
+            "A. Acción condicionada a un límite de tiempo",
+            "B. Acciones por flancos",
+            "C. Acciones por eventos",
+            "D. Acción condicionada"
+          ],
+          "respuesta_correcta": "Acciones por flancos"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿A qué tipo de acción alude la siguiente imagen?",
+          "opciones": [
+            "A. Condicionada",
+            "B. Continua",
+            "C. Con retardo a la conexión",
+            "D. Con retardo a la desconexión"
+          ],
+          "respuesta_correcta": "Continua"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿A qué variante de GRAFCET se corresponde la siguiente imagen?",
+          "opciones": [
+            "A. De secuencia continua",
+            "B. Etapas fuente y pozo",
+            "C. Secuencia de inicialización",
+            "D. De secuencias opcionales"
+          ],
+          "respuesta_correcta": "De secuencias opcionales"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿Cuál de las siguientes opciones refleja correctamente la regla de sintaxis del GRAFCET?",
+          "opciones": [
+            "A. Es fundamental que la lectura se realice de abajo hacia arriba",
+            "B. Es fundamental que la lectura se realice de arriba hacia abajo",
+            "C. Ambas son correctas",
+            "D. Ninguna es correcta"
+          ],
+          "respuesta_correcta": "Será de suma importancia que la lectura se realiza de arriba hacia abajo"
+        },
+        {
+          "numero": 8,
+          "enunciado": "GRAFCET constituye:",
+          "opciones": [
+            "A. Un lenguaje de programación",
+            "B. Un tipo de memoria",
+            "C. Un tipo de diagrama",
+            "D. Un esquema eléctrico"
+          ],
+          "respuesta_correcta": "Un tipo de diagrama"
+        },
+        {
+          "numero": 9,
+          "enunciado": "SFC constituye:",
+          "opciones": [
+            "A. Un esquema eléctrico",
+            "B. Un tipo de datos empleado en las secuencias",
+            "C. Un lenguaje de programación",
+            "D. Un tipo de PLC"
+          ],
+          "respuesta_correcta": "Un lenguaje de programación"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Una etapa pozo es:",
+          "opciones": [
+            "A. Una etapa inicial",
+            "B. Una etapa que invoca al GRAFCET parcial",
+            "C. Una etapa que carece de transición de salida",
+            "D. Una etapa de finalización"
+          ],
+          "respuesta_correcta": "Una etapa que no tiene transición de salida"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "lunes, 26 de enero de 2026, 17:57",
+        "estado": "Finalizado",
+        "finalizado_en": "lunes, 26 de enero de 2026, 17:58",
+        "tiempo_empleado": "33 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Con qué acción se corresponde la siguiente imagen?",
+          "opciones": [
+            "A. Desactivación",
+            "B. Activación",
+            "C. Continua",
+            "D. Condicionada"
+          ],
+          "respuesta_correcta": "Condicionada"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Con qué acción se corresponde la siguiente imagen?",
+          "opciones": [
+            "A. Desactivación",
+            "B. Activación",
+            "C. Por pulsos",
+            "D. Limite"
+          ],
+          "respuesta_correcta": "Limite"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Con qué acción se corresponde la siguiente imagen?",
+          "opciones": [
+            "A. Con contadores",
+            "B. Con Actuadores",
+            "C. Con temporizadores",
+            "D. Condicionadas a eventos"
+          ],
+          "respuesta_correcta": "Condicionadas a eventos"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué concepto se corresponde con esta definición: en esta zona se programan las etapas y transiciones del GRAFCET. Dicha zona se escribe como un bloque FC que es invocado desde el bloque principal OB1?",
+          "opciones": [
+            "A. Zona secuencial",
+            "B. Zona combinacional",
+            "C. Zona de acciones",
+            "D. Zona de inicialización"
+          ],
+          "respuesta_correcta": "Zona secuencial"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué concepto se corresponde con esta definición: zona en la que se ejecutan las acciones correspondientes a cada etapa. Se recomienda usar un único FC para programar estas zonas, especialmente cuando se trabaja con acciones sobre las salidas?",
+          "opciones": [
+            "A. Zona de inicialización",
+            "B. Zona secuencial",
+            "C. Zona de acciones",
+            "D. Saltos y retornos desde múltiples etapas"
+          ],
+          "respuesta_correcta": "Zona de acciones"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Qué concepto se corresponde con esta definición: zona que agrupa todo lo que debe ocurrir para que se inicie la ejecución del programa?",
+          "opciones": [
+            "A. Zona de inicialización",
+            "B. Zona secuencial",
+            "C. Zona de acciones",
+            "D. Saltos y retornos desde múltiples etapas"
+          ],
+          "respuesta_correcta": "Zona de inicialización"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿Con qué nombre se identifica al GRAFCET que aloja el OB1?",
+          "opciones": [
+            "A. Director",
+            "B. Jefe",
+            "C. Maestro",
+            "D. Líder"
+          ],
+          "respuesta_correcta": "Maestro"
+        },
+        {
+          "numero": 8,
+          "enunciado": "¿Cuál de estas opciones no corresponde a una zona de programación del GRAFCET?",
+          "opciones": [
+            "A. Zona secuencial",
+            "B. Zona combinacional",
+            "C. Zona de acciones",
+            "D. Zona de inicialización"
+          ],
+          "respuesta_correcta": "Zona combinacional"
+        },
+        {
+          "numero": 9,
+          "enunciado": "¿Qué significado tiene encontrar la transición 3s/X1 en un GRAFCET?",
+          "opciones": [
+            "A. Se trata de una acción temporizada",
+            "B. Se trata de una transición temporizada",
+            "C. Las dos anteriores son correctas",
+            "D. Ninguna de las dos primeras es correcta"
+          ],
+          "respuesta_correcta": "Es una transición temporizada"
+        },
+        {
+          "numero": 10,
+          "enunciado": "¿Qué tipo de elementos son las variables que vinculamos a las etapas?",
+          "opciones": [
+            "A. Salidas",
+            "B. Entradas",
+            "C. Controladores",
+            "D. Marcas"
+          ],
+          "respuesta_correcta": "Marcas"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "martes, 27 de enero de 2026, 19:21",
+        "estado": "Finalizado",
+        "finalizado_en": "martes, 27 de enero de 2026, 19:22",
+        "tiempo_empleado": "1 minutos 20 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: \"constan de dos partes: la representación del GRAFCET principal y una cadena que se ejecutará\"?",
+          "opciones": [
+            "A. Modo por pasos",
+            "B. Macroetapas",
+            "C. Parada",
+            "D. Ninguna es correcta"
+          ],
+          "respuesta_correcta": "Macroetapas"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: \"este tipo de válvulas se gestiona mediante dos señales, una destinada al avance y otra al retroceso\"?",
+          "opciones": [
+            "A. Acciones sobre válvulas monoestables",
+            "B. Acciones sobre válvulas biestables",
+            "C. Acciones sobre actuadores eléctricos tipo motor",
+            "D. Ninguna es correcta"
+          ],
+          "respuesta_correcta": "Acciones sobre válvulas biestables"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: \"consiste en interrumpir el funcionamiento del proceso ante cualquier tipo de incidencia, deteniendo los movimientos de la máquina de forma brusca\"?",
+          "opciones": [
+            "A. Modo por pasos",
+            "B. Macroetapas",
+            "C. Parada",
+            "D. Ninguna es correcta"
+          ],
+          "respuesta_correcta": "Parada"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: \"presentan la particularidad de regresar a su posición de reposo cuando no se actúan sobre ellas, por lo que su control no requiere ninguna condición adicional\"?",
+          "opciones": [
+            "A. Acciones sobre válvulas monoestables",
+            "B. Acciones sobre válvulas biestables",
+            "C. Acciones sobre actuadores eléctricos tipo motor",
+            "D. Ninguna es correcta"
+          ],
+          "respuesta_correcta": "Acciones sobre válvulas monoestables"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿De qué modo solemos encontrar habitualmente una parada?",
+          "opciones": [
+            "A. Normalmente abierta (NO)",
+            "B. Normalmente cerrada (NC)",
+            "C. Ninguna es correcta",
+            "D. Las dos primeras son correctas"
+          ],
+          "respuesta_correcta": "Normalmente cerrada (NC)"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Con qué nombre se conoce al GRAFCET que aparece a la izquierda de la imagen?",
+          "opciones": [
+            "A. GRAFCET líder",
+            "B. GRAFCET Profesor",
+            "C. GRAFCET Maestro",
+            "D. Ninguna de las anteriores es correcta"
+          ],
+          "respuesta_correcta": "GRAFCET Maestro"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿Qué bloque se utilizará para llevar a cabo la inicialización?",
+          "opciones": [
+            "A. OB10",
+            "B. OB1000",
+            "C. OB200",
+            "D. OB100"
+          ],
+          "respuesta_correcta": "OB100"
+        },
+        {
+          "numero": 8,
+          "enunciado": "¿Qué significa Gn?",
+          "opciones": [
+            "A. Número de etapas",
+            "B. Número de transiciones",
+            "C. Número de GRAFCET",
+            "D. Número de funciones"
+          ],
+          "respuesta_correcta": "Número de GRAFCET"
+        },
+        {
+          "numero": 9,
+          "enunciado": "En los procesos automatizados, ¿existe un modo de operación manual?",
+          "opciones": [
+            "A. Si, siempre",
+            "B. No, nunca",
+            "C. En la minoría de los procesos",
+            "D. Todas son correctas"
+          ],
+          "respuesta_correcta": "Si, siempre"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Las acciones en el modo por pasos se llevarán a cabo...",
+          "opciones": [
+            "A. sobre válvulas monoestables",
+            "B. sobre válvulas biestables",
+            "C. sobre actuadores eléctricos tipo motor",
+            "D. Todas son correctas"
+          ],
+          "respuesta_correcta": "Todas son correctas"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "martes, 27 de enero de 2026, 19:59",
+        "estado": "Finalizado",
+        "finalizado_en": "martes, 27 de enero de 2026, 20:00",
+        "tiempo_empleado": "21 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: \"su sintaxis será PIWxxx para señales analógicas y PQWxxx para señales digitales, donde xxx señala el número del canal analógico\"?",
+          "opciones": [
+            "A. Direccionamiento a zonas de memoria",
+            "B. Direccionamiento a la entrada",
+            "C. Direccionamiento a la salida",
+            "D. Direccionamiento a la periferia"
+          ],
+          "respuesta_correcta": "Direccionamiento a la periferia"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: \"se utiliza para transferir datos hacia la zona de memoria del PLC que se desee\"?",
+          "opciones": [
+            "A. MOVE",
+            "B. Temporizadores",
+            "C. Contadores",
+            "D. Biestables"
+          ],
+          "respuesta_correcta": "MOVE"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: \"un número en coma flotante escala el valor para encuadrarlo dentro de un rango máximo y mínimo, y ese valor resultante es una variable en formato INT\"?",
+          "opciones": [
+            "A. SCALE_X",
+            "B. NORM_X",
+            "C. MOVE",
+            "D. Ninguna de las anteriores"
+          ],
+          "respuesta_correcta": "SCALE_X"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué concepto se corresponde con esta descripción: \"al conectar un hardware, es necesario conocer la naturaleza de la señal admitida: si la tensión o intensidad es unipolar (valores positivos) o bipolar (valores negativos y positivos)\"?",
+          "opciones": [
+            "A. Tipo de dispositivo",
+            "B. Tipo de función",
+            "C. Tipo de señal",
+            "D. Todas son correctas"
+          ],
+          "respuesta_correcta": "Tipo de señal"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿A qué categoría de datos pertenecen los datos numéricos (enteros y reales), los caracteres y los booleanos?",
+          "opciones": [
+            "A. Compuestos",
+            "B. Simples",
+            "C. Mixtos",
+            "D. Todas son correctas"
+          ],
+          "respuesta_correcta": "Simples"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Cuál es el tamaño del tipo de dato REAL?",
+          "opciones": [
+            "A. 16 bits",
+            "B. 8 bits",
+            "C. 32 bits",
+            "D. Ninguna de ellas"
+          ],
+          "respuesta_correcta": "32 bits"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿Qué categorías de datos ofrece el entorno STEP 7?",
+          "opciones": [
+            "A. Simples",
+            "B. Compuestos",
+            "C. Mixtos",
+            "D. Las dos primeras son ciertas"
+          ],
+          "respuesta_correcta": "Las dos primeras son ciertas"
+        },
+        {
+          "numero": 8,
+          "enunciado": "¿Es posible realizar operaciones matemáticas básicas en STEP 7?",
+          "opciones": [
+            "A. No",
+            "B. Si",
+            "C. Solo se podrá sumar y restar",
+            "D. Solo se podrá multiplicar y dividir"
+          ],
+          "respuesta_correcta": "Si"
+        },
+        {
+          "numero": 9,
+          "enunciado": "La salida OUT representa…",
+          "opciones": [
+            "A. El resultado de la operación",
+            "B. No mostrará nada",
+            "C. Un valor booleano siempre",
+            "D. Ninguna es correcta"
+          ],
+          "respuesta_correcta": "El resultado de la operación"
+        },
+        {
+          "numero": 10,
+          "enunciado": "La salida del bloque SCALE_X se presenta en formato de…",
+          "opciones": [
+            "A. Entero",
+            "B. Decimal",
+            "C. Coma flotante",
+            "D. Las dos primeras son correctas"
+          ],
+          "respuesta_correcta": "Entero"
+        }
+      ]
+    }
+  ]
+}

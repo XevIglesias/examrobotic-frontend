@@ -1,0 +1,688 @@
+{
+  "cuestionarios": [
+    {
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "Select the grammatically correct sentence in the Present Simple.",
+          "opciones": [
+            "A. She go always to the gym.",
+            "B. She goes always to the gym.",
+            "C. She always goes to the gym.",
+            "D. She always go to the gym."
+          ],
+          "respuesta_correcta": "She always goes to the gym."
+        },
+        {
+          "numero": 2,
+          "enunciado": "Select the correct option to complete the sentence.",
+          "opciones": [
+            "A. She be a doctor.",
+            "B. She is a doctor.",
+            "C. She are a doctor.",
+            "D. She am a doctor."
+          ],
+          "respuesta_correcta": "She is a doctor."
+        },
+        {
+          "numero": 3,
+          "enunciado": "Identify which of the options below are all correct ways to express the same idea.",
+          "opciones": [
+            "A. I have not got a pet.",
+            "B. I haven't got a pet",
+            "C. I don't have a pet.",
+            "D. All the above are correct."
+          ],
+          "respuesta_correcta": "All the above are correct."
+        },
+        {
+          "numero": 4,
+          "enunciado": "Identify the sentence where the adverb of frequency is placed correctly.",
+          "opciones": [
+            "A. They never are late for work.",
+            "B. They are late never for work.",
+            "C. They are never late for work.",
+            "D. They are late for work never."
+          ],
+          "respuesta_correcta": "They are never late for work."
+        },
+        {
+          "numero": 5,
+          "enunciado": "Identify the correctly spelled gerund form.",
+          "opciones": [
+            "A. Crying",
+            "B. Runing",
+            "C. Makeing",
+            "D. Swiming"
+          ],
+          "respuesta_correcta": "Crying"
+        },
+        {
+          "numero": 6,
+          "enunciado": "Identify which of the following is NOT a use of the Present Continuous.",
+          "opciones": [
+            "A. To describe actions happening at the moment of speaking.",
+            "B. To express temporary actions.",
+            "C. To talk about future arrangements or plans.",
+            "D. To talk about habits and routines."
+          ],
+          "respuesta_correcta": "To talk about habits and routines."
+        },
+        {
+          "numero": 7,
+          "enunciado": "Identify the sentence that uses a stative verb correctly.",
+          "opciones": [
+            "A. She is knowing the answer",
+            "B. I remember your name",
+            "C. They are believing in ghosts.",
+            "D. I'm wanting pizza"
+          ],
+          "respuesta_correcta": "I remember your name"
+        },
+        {
+          "numero": 8,
+          "enunciado": "Identify which of the following sentences is written in the Present Continuous.",
+          "opciones": [
+            "A. He studies for his exam.",
+            "B. He study for his exam.",
+            "C. He is studying for his exam.",
+            "D. He studying for his exam."
+          ],
+          "respuesta_correcta": "He is studying for his exam."
+        },
+        {
+          "numero": 9,
+          "enunciado": "Identify which of the following statements about the verb 'to have got' is correct.",
+          "opciones": [
+            "A. It is commonly used in British English.",
+            "B. It is only used in the present tense.",
+            "C. For the other verb tenses we use the verb 'to have'.",
+            "D. All the above are correct."
+          ],
+          "respuesta_correcta": "All the above are correct."
+        },
+        {
+          "numero": 10,
+          "enunciado": "Identify the sentence that correctly applies the spelling rules for third-person singular verbs in the Present Simple.",
+          "opciones": [
+            "A. She watches TV in the evening.",
+            "B. She go to school early.",
+            "C. He study at the library.",
+            "D. He fix his car every Sunday."
+          ],
+          "respuesta_correcta": "She watches TV in the evening."
+        }
+      ]
+    },
+    {
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "Select the grammatically correct option to express a preference.",
+          "opciones": [
+            "A. I like pizza",
+            "B. I liking pizza",
+            "C. I am like pizza",
+            "D. I likes pizza"
+          ],
+          "respuesta_correcta": "I like pizza"
+        },
+        {
+          "numero": 2,
+          "enunciado": "Select the correct sentence using some/any/no.",
+          "opciones": [
+            "A. There isn't no milk in the fridge.",
+            "B. There is no milk in the fridge.",
+            "C. There is any food left.",
+            "D. I don't have some pencils."
+          ],
+          "respuesta_correcta": "There is no milk in the fridge."
+        },
+        {
+          "numero": 3,
+          "enunciado": "Select the correctly formed wh-question.",
+          "opciones": [
+            "A. Where are you going?",
+            "B. Where you are going?",
+            "C. Are you where going?",
+            "D. Are where going you?"
+          ],
+          "respuesta_correcta": "Where are you going?"
+        },
+        {
+          "numero": 4,
+          "enunciado": "Select the sentence that uses the connectors \"first,\" \"then,\" and \"however\" in the correct order.",
+          "opciones": [
+            "A. First, we went to the store. Then, we bought some groceries. However, we forgot the milk.",
+            "B. Then, we forgot the milk. First, we went to the store. However, we bought some groceries.",
+            "C. However, we went to the store first. Then, we bought some groceries.",
+            "D. Then, we went to the store first. However, we forgot the milk."
+          ],
+          "respuesta_correcta": "First, we went to the store. Then, we bought some groceries. However, we forgot the milk."
+        },
+        {
+          "numero": 5,
+          "enunciado": "Fill in the blank with the correct preposition: I have a meeting _____ Monday morning.",
+          "opciones": [
+            "A. In",
+            "B. At",
+            "C. On",
+            "D. By"
+          ],
+          "respuesta_correcta": "On"
+        },
+        {
+          "numero": 6,
+          "enunciado": "Locate the CORRECT sentence.",
+          "opciones": [
+            "A. There is some apples on the table.",
+            "B. Are there any apples on the table?",
+            "C. There isn't some milk in the fridge",
+            "D. Is there some oranges in the box?"
+          ],
+          "respuesta_correcta": "Are there any apples on the table?"
+        },
+        {
+          "numero": 7,
+          "enunciado": "Locate the INCORRECT question.",
+          "opciones": [
+            "A. Why do you study in the library?",
+            "B. When she takes her last exam?",
+            "C. Who is your brother?",
+            "D. Where does he live?"
+          ],
+          "respuesta_correcta": "When she takes her last exam?"
+        },
+        {
+          "numero": 8,
+          "enunciado": "Identify the correct question used to ask about quantity.",
+          "opciones": [
+            "A. How apples do you buy in the supermarket?",
+            "B. How much apples do you buy in the supermarket?",
+            "C. How many apples do you buy in the supermarket?",
+            "D. How often apples do you buy in the supermarket?"
+          ],
+          "respuesta_correcta": "How many apples do you buy in the supermarket?"
+        },
+        {
+          "numero": 9,
+          "enunciado": "Identify the most appropriate connector for adding information.",
+          "opciones": [
+            "A. Although",
+            "B. Besides",
+            "C. Instead",
+            "D. Therefore"
+          ],
+          "respuesta_correcta": "Besides"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Identify which of these words is a possessive pronoun.",
+          "opciones": [
+            "A. Me",
+            "B. She",
+            "C. Their",
+            "D. Theirs"
+          ],
+          "respuesta_correcta": "Theirs"
+        }
+      ]
+    },
+    {
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "Select the correct preposition of place: \"The cat is _____ the sofa.\"",
+          "opciones": [
+            "A. On",
+            "B. Between",
+            "C. At",
+            "D. next"
+          ],
+          "respuesta_correcta": "On"
+        },
+        {
+          "numero": 2,
+          "enunciado": "Select the correct question tag for this sentence: \"Let's go for a walk, _____ ?\"",
+          "opciones": [
+            "A. did we",
+            "B. shall we",
+            "C. don't we",
+            "D. haven't we"
+          ],
+          "respuesta_correcta": "shall we"
+        },
+        {
+          "numero": 3,
+          "enunciado": "Select the correct question tag: \"She didn't call you, _____ ?\"",
+          "opciones": [
+            "A. did she",
+            "B. will she",
+            "C. does she",
+            "D. has she"
+          ],
+          "respuesta_correcta": "did she"
+        },
+        {
+          "numero": 4,
+          "enunciado": "Select the grammatically correct sentence in the Past Simple tense.",
+          "opciones": [
+            "A. We watch a great movie yesterday.",
+            "B. She study for the exam last night.",
+            "C. They played football in the park last week.",
+            "D. He stops at the supermarket on his way home."
+          ],
+          "respuesta_correcta": "They played football in the park last week."
+        },
+        {
+          "numero": 5,
+          "enunciado": "Select the correctly formed sentence in the Past Simple tense.",
+          "opciones": [
+            "A. She buyed a new dress last weekend.",
+            "B. We ate lunch at 2 p.m. yesterday.",
+            "C. He has seen that film before.",
+            "D. They gived me a present for my birthday."
+          ],
+          "respuesta_correcta": "We ate lunch at 2 p.m. yesterday."
+        },
+        {
+          "numero": 6,
+          "enunciado": "Select the correct sentence using the verb To Be in the past tense.",
+          "opciones": [
+            "A. They wasn't at home last night.",
+            "B. We was at the cinema.",
+            "C. I was late for the meeting.",
+            "D. She were very tired after work."
+          ],
+          "respuesta_correcta": "I was late for the meeting."
+        },
+        {
+          "numero": 7,
+          "enunciado": "Select the sentence that is NOT correct in the Past Continuous tense.",
+          "opciones": [
+            "A. While I was walking home, I saw an accident.",
+            "B. He was cooking when I called him.",
+            "C. We were playing soccer at 6 p.m. yesterday.",
+            "D. She were reading a book when I arrived."
+          ],
+          "respuesta_correcta": "She were reading a book when I arrived."
+        },
+        {
+          "numero": 8,
+          "enunciado": "Fill in the blank using the Present Perfect Simple tense: \"She _____ London several times.\"",
+          "opciones": [
+            "A. have visit",
+            "B. has visited",
+            "C. have visited",
+            "D. has visit"
+          ],
+          "respuesta_correcta": "has visited"
+        },
+        {
+          "numero": 9,
+          "enunciado": "Fill in the blanks using the Present Perfect and Past Simple tenses: \"She _____ Lilly yesterday, but she _____ her today.\"",
+          "opciones": [
+            "A. seed / haven't seen",
+            "B. has seen / saw",
+            "C. saw / hasn't seen",
+            "D. sees / hasn't seen"
+          ],
+          "respuesta_correcta": "saw / hasn't seen"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Fill in the blank with the correct verb form: \"When we were kids, we _____ cartoons every morning.\"",
+          "opciones": [
+            "A. used to watch",
+            "B. use to watched",
+            "C. was used to watch",
+            "D. using to watch"
+          ],
+          "respuesta_correcta": "used to watch"
+        }
+      ]
+    },
+    {
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "Select the correct future simple form to complete the sentence: She _____ you as soon as she arrives.",
+          "opciones": [
+            "A. will called",
+            "B. is calling",
+            "C. calls",
+            "D. will call"
+          ],
+          "respuesta_correcta": "will call"
+        },
+        {
+          "numero": 2,
+          "enunciado": "Select the grammatically correct imperative sentence.",
+          "opciones": [
+            "A. You must to turn left.",
+            "B. Stop talking and listen carefully.",
+            "C. You turning left now.",
+            "D. Turns left quickly!"
+          ],
+          "respuesta_correcta": "Stop talking and listen carefully."
+        },
+        {
+          "numero": 3,
+          "enunciado": "Select the correct sentence using the future perfect tense.",
+          "opciones": [
+            "A. I will have finished my homework before 6 PM.",
+            "B. I finish my homework before 6 PM.",
+            "C. I will finish my homework before 6 PM.",
+            "D. I am finishing my homework before 6 PM."
+          ],
+          "respuesta_correcta": "I will have finished my homework before 6 PM."
+        },
+        {
+          "numero": 4,
+          "enunciado": "Select the correct superlative adjective to complete the sentence: That was _____ movie I have ever seen!",
+          "opciones": [
+            "A. Funnier",
+            "B. the most funny",
+            "C. the funniest",
+            "D. funnier than"
+          ],
+          "respuesta_correcta": "the funniest"
+        },
+        {
+          "numero": 5,
+          "enunciado": "Fill in the blank with the correct comparative adjective: This hotel is _____ than the one we stayed in last year.",
+          "opciones": [
+            "A. more expensive",
+            "B. most expensive",
+            "C. expensiver",
+            "D. expensive"
+          ],
+          "respuesta_correcta": "more expensive"
+        },
+        {
+          "numero": 6,
+          "enunciado": "Fill in the gap with the correct option to express purpose: This tool is useful _____ cutting paper.",
+          "opciones": [
+            "A. In",
+            "B. to",
+            "C. for",
+            "D. by"
+          ],
+          "respuesta_correcta": "for"
+        },
+        {
+          "numero": 7,
+          "enunciado": "Select the correct preposition of movement: She walked _____ the bridge to get to the other side.",
+          "opciones": [
+            "A. Off",
+            "B. into",
+            "C. through",
+            "D. across"
+          ],
+          "respuesta_correcta": "across"
+        },
+        {
+          "numero": 8,
+          "enunciado": "Identify the correct sentence using the present simple for scheduled events.",
+          "opciones": [
+            "A. The train leaves at 8 AM.",
+            "B. The train is leaving at 8 AM.",
+            "C. The train will leave at 8 AM.",
+            "D. The train going to leave at 8 AM"
+          ],
+          "respuesta_correcta": "The train leaves at 8 AM."
+        },
+        {
+          "numero": 9,
+          "enunciado": "Fill in the blank with the correct verb form: I like _____ my bills online.",
+          "opciones": [
+            "A. paying",
+            "B. payed",
+            "C. pay",
+            "D. pays"
+          ],
+          "respuesta_correcta": "paying"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Identify which of these is an irregular adjective.",
+          "opciones": [
+            "A. Taller",
+            "B. better",
+            "C. happier",
+            "D. slower"
+          ],
+          "respuesta_correcta": "better"
+        }
+      ]
+    },
+    {
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "Select the correct relative pronoun to complete the sentence.",
+          "opciones": [
+            "A. She has a friend which works in a hospital.",
+            "B. She has a friend who works in a hospital.",
+            "C. She has a friend where works in a hospital.",
+            "D. She has a friend whose works in a hospital."
+          ],
+          "respuesta_correcta": "She has a friend who works in a hospital."
+        },
+        {
+          "numero": 2,
+          "enunciado": "Select the correctly formed Second Conditional sentence.",
+          "opciones": [
+            "A. If I have a million dollars, I buy a big house.",
+            "B. If I had a million dollars, I would buy a big house.",
+            "C. If I has a million dollars, I bought a big house.",
+            "D. If I had a million dollars, I buy a big house."
+          ],
+          "respuesta_correcta": "If I had a million dollars, I would buy a big house."
+        },
+        {
+          "numero": 3,
+          "enunciado": "Select the correct option from the choices below.",
+          "opciones": [
+            "A. I can't buy this jacket because I don't have too much money.",
+            "B. I can't buy this jacket because I don't have too many money.",
+            "C. I can't buy this jacket because I don't have very much money.",
+            "D. I can't buy this jacket because I don't have too money."
+          ],
+          "respuesta_correcta": "I can't buy this jacket because I don't have too much money."
+        },
+        {
+          "numero": 4,
+          "enunciado": "Fill in the blank with the correct demonstrative pronoun.",
+          "opciones": [
+            "A. This book on the table is mine.",
+            "B. These book on the table is mine.",
+            "C. Those book on the table is mine.",
+            "D. Them book on the table is mine."
+          ],
+          "respuesta_correcta": "This book on the table is mine."
+        },
+        {
+          "numero": 5,
+          "enunciado": "Locate the correct relative pronoun in the options below.",
+          "opciones": [
+            "A. I will never forget the day who I met my best friend.",
+            "B. I will never forget the day which I met my best friend.",
+            "C. I will never forget the day when I met my best friend.",
+            "D. I will never forget the day where I met my best friend"
+          ],
+          "respuesta_correcta": "I will never forget the day when I met my best friend."
+        },
+        {
+          "numero": 6,
+          "enunciado": "Locate the correct sentence.",
+          "opciones": [
+            "A. The dress is not big enough. It is enough small for me.",
+            "B. The dress is not big enough. It is too small for me.",
+            "C. The dress is not big enough. It is too many for me.",
+            "D. The dress is not big enough. It is very for me."
+          ],
+          "respuesta_correcta": "The dress is not big enough. It is too small for me."
+        },
+        {
+          "numero": 7,
+          "enunciado": "Identify the sentence that follows the Third Conditional structure.",
+          "opciones": [
+            "A. If we leave earlier, we wouldn't have missed the flight.",
+            "B. If we had left earlier, we wouldn't have missed the flight.",
+            "C. If we left earlier, we wouldn't have missed the flight.",
+            "D. If we leaving earlier, we wouldn't have missed the flight."
+          ],
+          "respuesta_correcta": "If we had left earlier, we wouldn't have missed the flight."
+        },
+        {
+          "numero": 8,
+          "enunciado": "Identify the correctly used quantifier.",
+          "opciones": [
+            "A. There are too many people in the room. We need more space.",
+            "B. There are too much people in the room. We need more space.",
+            "C. There are enough people in the room. We need more space.",
+            "D. There are very people in the room. We need more space."
+          ],
+          "respuesta_correcta": "There are too many people in the room. We need more space."
+        },
+        {
+          "numero": 9,
+          "enunciado": "Identify the grammatically correct sentence.",
+          "opciones": [
+            "A. I was very frightened after watching that horror film.",
+            "B. I was very frightening after watching that horror film.",
+            "C. I was very frighten after watching that horror film.",
+            "D. I was very frightful after watching that horror film."
+          ],
+          "respuesta_correcta": "I was very frightened after watching that horror film."
+        },
+        {
+          "numero": 10,
+          "enunciado": "Identify the grammatically correct sentence using a relative pronoun.",
+          "opciones": [
+            "A. My grandparents, who house is in the countryside, love gardening.",
+            "B. My grandparents, which house is in the countryside, love gardening.",
+            "C. My grandparents, whose house is in the countryside, love gardening.",
+            "D. My grandparents, that house is in the countryside, love gardening."
+          ],
+          "respuesta_correcta": "My grandparents, whose house is in the countryside, love gardening."
+        }
+      ]
+    },
+    {
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "Select the correct passive form of the following active sentence: \"The manager wrote the email\".",
+          "opciones": [
+            "A. The email writes the manager.",
+            "B. The email was written by the manager.",
+            "C. The email is wrote by the manager.",
+            "D. The email was writing by the manager."
+          ],
+          "respuesta_correcta": "The email was written by the manager."
+        },
+        {
+          "numero": 2,
+          "enunciado": "Select the correct reported speech transformation for: Sarah said: \"I called Mark yesterday\".",
+          "opciones": [
+            "A. Sarah said that she had called Mark the previous day.",
+            "B. Sarah said that she calls Mark yesterday.",
+            "C. Sarah said that Mark called her yesterday.",
+            "D. Sarah said that she was calling Mark the previous day."
+          ],
+          "respuesta_correcta": "Sarah said that she had called Mark the previous day."
+        },
+        {
+          "numero": 3,
+          "enunciado": "Select the correct sentence using \"much\".",
+          "opciones": [
+            "A. There are much people at the event.",
+            "B. There is much information online.",
+            "C. I have much friends on social media.",
+            "D. Much companies use digital tools."
+          ],
+          "respuesta_correcta": "There is much information online."
+        },
+        {
+          "numero": 4,
+          "enunciado": "Identify which preposition is used to introduce the agent in a passive voice sentence.",
+          "opciones": [
+            "A. by",
+            "B. for",
+            "C. to",
+            "D. All answers are incorrect"
+          ],
+          "respuesta_correcta": "by"
+        },
+        {
+          "numero": 5,
+          "enunciado": "Identify the most accurate definition of a quantifier.",
+          "opciones": [
+            "A. A word that describes a noun",
+            "B. A word that indicates quantity without an exact number",
+            "C. A word that replaces a noun",
+            "D. A word that shows possession"
+          ],
+          "respuesta_correcta": "A word that indicates quantity without an exact number"
+        },
+        {
+          "numero": 6,
+          "enunciado": "Identify which of the following is an example of the Saxon genitive.",
+          "opciones": [
+            "A. Maria's phone",
+            "B. The phone of Maria",
+            "C. The phone's Maria",
+            "D. The Maria phone"
+          ],
+          "respuesta_correcta": "Maria's phone"
+        },
+        {
+          "numero": 7,
+          "enunciado": "Identify which of these indefinite pronouns refers to people.",
+          "opciones": [
+            "A. Something",
+            "B. Anywhere",
+            "C. Nobody",
+            "D. Everything"
+          ],
+          "respuesta_correcta": "Nobody"
+        },
+        {
+          "numero": 8,
+          "enunciado": "Identify which quantifier is used with countable nouns.",
+          "opciones": [
+            "A. Much",
+            "B. Little",
+            "C. Many",
+            "D. A little"
+          ],
+          "respuesta_correcta": "Many"
+        },
+        {
+          "numero": 9,
+          "enunciado": "Identify the sentence that correctly uses a modal verb.",
+          "opciones": [
+            "A. She must to finish the report today.",
+            "B. He can speaks three languages.",
+            "C. You should take a break.",
+            "D. They might goes to the party."
+          ],
+          "respuesta_correcta": "You should take a break."
+        },
+        {
+          "numero": 10,
+          "enunciado": "Identify which type of speech uses quotation marks (\"\").",
+          "opciones": [
+            "A. Reported speech",
+            "B. Direct speech",
+            "C. Indirect speech",
+            "D. All answers are correct"
+          ],
+          "respuesta_correcta": "Direct speech"
+        }
+      ]
+    }
+  ]
+}

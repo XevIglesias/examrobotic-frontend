@@ -1,0 +1,726 @@
+{
+  "cuestionarios": [
+    {
+      "metadatos": {
+        "comenzado_el": "domingo, 19 de octubre de 2025, 13:49",
+        "estado": "Finalizado",
+        "finalizado_en": "domingo, 19 de octubre de 2025, 13:50",
+        "tiempo_empleado": "35 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué elemento de los listados no corresponde a un parámetro característico de la onda de CA?",
+          "opciones": [
+            "A. Voltaje.",
+            "B. Amplitud.",
+            "C. Longitud de onda.",
+            "D. Periodo."
+          ],
+          "respuesta_correcta": "Voltaje."
+        },
+        {
+          "numero": 2,
+          "enunciado": "Respecto a la frecuencia de la red eléctrica:",
+          "opciones": [
+            "A. Está presente tanto en CC como en CA.",
+            "B. La frecuencia en Europa es de 60 Hz y en EEUU de 50 Hz.",
+            "C. A frecuencias elevadas, la longitud de onda resulta menor.",
+            "D. Todas las respuestas anteriores son correctas."
+          ],
+          "respuesta_correcta": "A frecuencias elevadas, la longitud de onda resulta menor."
+        },
+        {
+          "numero": 3,
+          "enunciado": "Respecto a la potencia eléctrica:",
+          "opciones": [
+            "A. Se describe como la cantidad de energía eléctrica que consume un circuito en un intervalo de tiempo determinado.",
+            "B. La expresión para calcularla es idéntica en CC y CA.",
+            "C. La potencia reactiva es equivalente a la potencia aparente.",
+            "D. La potencia activa se expresa en voltamperios reactivos."
+          ],
+          "respuesta_correcta": "Se describe como la cantidad de energía eléctrica que consume un circuito en un intervalo de tiempo determinado."
+        },
+        {
+          "numero": 4,
+          "enunciado": "Respecto al factor de potencia:",
+          "opciones": [
+            "A. Refleja la relación entre la potencia aparente y la activa.",
+            "B. Cuanto más se acerque al valor 1, más favorable resulta.",
+            "C. No puede adoptar valores fuera del intervalo comprendido entre 0 y 1.",
+            "D. Todas las afirmaciones anteriores son correctas."
+          ],
+          "respuesta_correcta": "Todas las afirmaciones anteriores son correctas."
+        },
+        {
+          "numero": 5,
+          "enunciado": "En la conexión en estrella:",
+          "opciones": [
+            "A. La intensidad de fase es igual a la de línea.",
+            "B. Se conectan en serie los terminales positivos con los negativos de impedancias distintas.",
+            "C. La tensión de línea y la de fase presentan el mismo valor.",
+            "D. Siempre se encuentra equilibrado."
+          ],
+          "respuesta_correcta": "La intensidad de fase es igual a la de línea."
+        },
+        {
+          "numero": 6,
+          "enunciado": "En un sistema equilibrado:",
+          "opciones": [
+            "A. Hay dos impedancias, una de valor positivo y otra negativo.",
+            "B. Dispone de una fuente de igual amplitud y frecuencia.",
+            "C. Solo se presenta con conexión en triángulo, nunca en estrella.",
+            "D. Las impedancias son de signo negativo."
+          ],
+          "respuesta_correcta": "Dispone de una fuente de igual amplitud y frecuencia."
+        },
+        {
+          "numero": 7,
+          "enunciado": "En una conexión en triángulo:",
+          "opciones": [
+            "A. La intensidad de línea y la de fase son equivalentes.",
+            "B. La potencia del circuito equivale al triple del producto entre la intensidad de fase y la tensión de fase.",
+            "C. Los terminales de polaridad positiva se agrupan en un punto común.",
+            "D. Posee un conductor neutro en la unión de sus terminales positivos."
+          ],
+          "respuesta_correcta": "La potencia del circuito equivale al triple del producto entre la intensidad de fase y la tensión de fase."
+        },
+        {
+          "numero": 8,
+          "enunciado": "Señala la afirmación verdadera respecto a la tensión nominal:",
+          "opciones": [
+            "A. Es la tensión máxima alcanzable por un circuito y se mide en vatios (W).",
+            "B. Es la tensión a la que opera habitualmente un circuito y se mide en voltios (V).",
+            "C. Es la tensión máxima alcanzable por un circuito y se mide en voltios (V).",
+            "D. Es la tensión a la que opera habitualmente un circuito y se mide en vatios (W)."
+          ],
+          "respuesta_correcta": "Es la tensión a la que funciona normalmente un circuito y se mide en voltios (V)."
+        },
+        {
+          "numero": 9,
+          "enunciado": "Señala la afirmación falsa respecto a la intensidad nominal:",
+          "opciones": [
+            "A. Su unidad de medida son los amperios (A).",
+            "B. En CA, los elementos del circuito originan un desfase de la intensidad respecto a la tensión.",
+            "C. Para el transporte de energía eléctrica se emplean intensidades reducidas.",
+            "D. Una conexión deficiente del circuito generará una sobretensión, pero en ningún caso un aumento de la intensidad."
+          ],
+          "respuesta_correcta": "Una mala conexión del circuito provocará una sobretensión, pero nunca un incremento en la intensidad del circuito."
+        },
+        {
+          "numero": 10,
+          "enunciado": "La corriente alterna:",
+          "opciones": [
+            "A. Presenta un flujo de electrones constante en la misma dirección.",
+            "B. Se genera en baterías.",
+            "C. Se abrevia como CC.",
+            "D. Resulta más sencilla de producir, transformar y transportar que la CC."
+          ],
+          "respuesta_correcta": "Es más fácil de producir, transformar y transportar que la CC."
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "estado": "Sin finalizar"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué ángulo de desfase presentan las espiras del núcleo de hierro de una máquina de corriente continua?",
+          "opciones": [
+            "A. 120°",
+            "B. 180°",
+            "C. 90°",
+            "D. Ninguna de las anteriores es correcta."
+          ],
+          "respuesta_correcta": "No indicada en el documento"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Cuál es el comportamiento de los motores síncronos durante el proceso de arranque?",
+          "opciones": [
+            "A. Requieren asistencia externa y no son capaces de arrancar de forma autónoma.",
+            "B. Son los motores con mejor comportamiento en el arranque.",
+            "C. Cuando la potencia es elevada, su rendimiento en el arranque es el peor.",
+            "D. Ninguna de las anteriores es correcta."
+          ],
+          "respuesta_correcta": "No indicada en el documento"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué modalidad de excitación se emplea habitualmente cuando se necesitan motores de corriente continua con mayor estabilidad?",
+          "opciones": [
+            "A. Excitación en serie.",
+            "B. Excitación independiente.",
+            "C. Excitación en ramales.",
+            "D. Excitación en paralelo."
+          ],
+          "respuesta_correcta": "No indicada en el documento"
+        },
+        {
+          "numero": 4,
+          "enunciado": "En un alternador eléctrico, la sección giratoria recibe el nombre de:",
+          "opciones": [
+            "A. El devanado primario.",
+            "B. El inductor.",
+            "C. El estator.",
+            "D. El devanado secundario."
+          ],
+          "respuesta_correcta": "No indicada en el documento"
+        },
+        {
+          "numero": 5,
+          "enunciado": "La circulación de la intensidad del campo magnético alrededor de una corriente es proporcional a la misma, de acuerdo con:",
+          "opciones": [
+            "A. La ley de Faraday.",
+            "B. La ley de Ampère.",
+            "C. La ley de Lenz.",
+            "D. La teoría eléctrica de Rudolph."
+          ],
+          "respuesta_correcta": "No indicada en el documento"
+        },
+        {
+          "numero": 6,
+          "enunciado": "La sección fija del motor que actúa como inductor recibe el nombre de:",
+          "opciones": [
+            "A. Estator.",
+            "B. Rotor.",
+            "C. Jaula de ardilla.",
+            "D. Alternador."
+          ],
+          "respuesta_correcta": "No indicada en el documento"
+        },
+        {
+          "numero": 7,
+          "enunciado": "Los motores que incorporan un rotor de jaula de ardilla son de tipo:",
+          "opciones": [
+            "A. Síncrono.",
+            "B. Asíncrono.",
+            "C. De anillos rozantes.",
+            "D. Secuencial."
+          ],
+          "respuesta_correcta": "No indicada en el documento"
+        },
+        {
+          "numero": 8,
+          "enunciado": "Señala la afirmación falsa:",
+          "opciones": [
+            "A. Si en un transformador se desea reducir la tensión a la mitad, se deberá mantener una relación de transformación m=1/2.",
+            "B. Un transformador eléctrico puede modificar tanto la tensión como la intensidad de un sistema.",
+            "C. Si en un transformador se desea reducir la tensión a la mitad, se deberá emplear el doble de espiras en el bobinado primario respecto al secundario.",
+            "D. Los transformadores son máquinas síncronas estáticas."
+          ],
+          "respuesta_correcta": "No indicada en el documento"
+        },
+        {
+          "numero": 9,
+          "enunciado": "Si un motor presenta las mismas características que otro, salvo un mayor número de pares de polos, su velocidad será:",
+          "opciones": [
+            "A. Mayor.",
+            "B. Menor.",
+            "C. Igual.",
+            "D. No puede conservar las mismas características con un mayor número de polos."
+          ],
+          "respuesta_correcta": "No indicada en el documento"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Un motor admite las siguientes tensiones de trabajo: 230/400 V. Si la red suministra 400 V, ¿qué tipo de acoplamiento debe utilizarse para conectarlo?",
+          "opciones": [
+            "A. Estrella.",
+            "B. Triángulo.",
+            "C. Imbricado.",
+            "D. Devanado."
+          ],
+          "respuesta_correcta": "No indicada en el documento"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "miércoles, 14 de enero de 2026, 15:14",
+        "estado": "Finalizado",
+        "finalizado_en": "miércoles, 14 de enero de 2026, 15:18",
+        "tiempo_empleado": "4 minutos 9 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué nombre reciben los tiristores bidireccionales más empleados en arranques suaves de motores?",
+          "opciones": [
+            "A. TRIAC",
+            "B. SCR",
+            "C. MT1",
+            "D. GTO"
+          ],
+          "respuesta_correcta": "TRIAC"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Cuál es la principal ventaja de una pinza amperimétrica frente a un amperímetro convencional?",
+          "opciones": [
+            "A. Su rango de medida es más amplio.",
+            "B. La pinza es capaz de medir otros parámetros adicionales.",
+            "C. La pinza no necesita interrumpir el circuito para realizar la medición en serie.",
+            "D. La precisión de la pinza es superior."
+          ],
+          "respuesta_correcta": "La pinza no requiere cortar el circuito para medir en serie"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿De qué bloques se compone un variador de frecuencia?",
+          "opciones": [
+            "A. Bloque rectificador, bloque de paso y bloque inversor.",
+            "B. Bloque amplificador, bloque de paso y bloque reductor.",
+            "C. Bloque amplificador, bloque intermedio y bloque reductor.",
+            "D. Bloque rectificador, bloque intermedio y bloque inversor."
+          ],
+          "respuesta_correcta": "Circuito rectificador, circuito intermedio y circuito inversor"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué instrumento de medida eléctrica posibilita determinar la tensión de un circuito?",
+          "opciones": [
+            "A. Voltajímetro.",
+            "B. Multímetro.",
+            "C. Pinza amperimétrica.",
+            "D. Tacómetro."
+          ],
+          "respuesta_correcta": "Multímetro"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué instrumento de medida eléctrica posibilita conocer las revoluciones a las que gira el eje de un motor?",
+          "opciones": [
+            "A. Tacómetro.",
+            "B. Multímetro.",
+            "C. Osciloscopio.",
+            "D. Secuencímetro."
+          ],
+          "respuesta_correcta": "Tacómetro"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Cómo recibe el nombre la técnica, ampliamente extendida, mediante la cual se modifica el ciclo de trabajo de una señal periódica?",
+          "opciones": [
+            "A. Duty Cycle Technique (DCT).",
+            "B. Silicon Component Rectification (SCR).",
+            "C. Pulse-Width Modulation (PWM).",
+            "D. Ninguna de las anteriores es correcta."
+          ],
+          "respuesta_correcta": "Pulse-Width Modulation (PWM)"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿Qué permite visualizar un osciloscopio?",
+          "opciones": [
+            "A. Las señales eléctricas.",
+            "B. Las revoluciones a las que gira el eje de un motor.",
+            "C. La temperatura variable a la que se encuentran los conductores.",
+            "D. Ninguna de las anteriores."
+          ],
+          "respuesta_correcta": "Las señales eléctricas"
+        },
+        {
+          "numero": 8,
+          "enunciado": "¿Qué parámetro del motor queda limitado cuando se le aplican tensiones superiores a la nominal?",
+          "opciones": [
+            "A. Velocidad del motor.",
+            "B. Par motor.",
+            "C. Frecuencia.",
+            "D. Intensidad."
+          ],
+          "respuesta_correcta": "Par motor."
+        },
+        {
+          "numero": 9,
+          "enunciado": "Señala la afirmación verdadera acerca de los transistores:",
+          "opciones": [
+            "A. Son el resultado de la unión de dos diodos.",
+            "B. Pueden fabricarse como PNP o NPN.",
+            "C. Los terminales del transistor se denominan base, colector y receptor.",
+            "D. Los transistores pueden emplearse como interruptores pero no como amplificadores."
+          ],
+          "respuesta_correcta": "Se pueden construir como PNP o NPN"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Señala la afirmación falsa:",
+          "opciones": [
+            "A. Un diodo se forma mediante la unión de dos semiconductores.",
+            "B. En un diodo, la corriente encuentra la misma resistencia en ambos sentidos de circulación.",
+            "C. En la polarización directa de un diodo es necesario superar una pequeña caída de tensión.",
+            "D. Su función principal está orientada a la corriente alterna."
+          ],
+          "respuesta_correcta": "En un diodo, la corriente recibe una resistencia igual en ambos sentidos de circulación"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "miércoles, 14 de enero de 2026, 15:47",
+        "estado": "Finalizado",
+        "finalizado_en": "miércoles, 14 de enero de 2026, 15:51",
+        "tiempo_empleado": "3 minutos 9 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿A qué máquina eléctrica alude el siguiente símbolo normalizado? (M 3~)",
+          "opciones": [
+            "A. Generador de corriente alterna.",
+            "B. Generador de corriente continua.",
+            "C. Motor asíncrono trifásico de rotor en cortocircuito.",
+            "D. Motor asíncrono monofásico de rotor en cortocircuito."
+          ],
+          "respuesta_correcta": "Motor asíncrono trifásico de rotor en cortocircuito"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Con qué denominación se conoce el esfuerzo que ha de ejercer un motor para que un sistema mecánico entre en movimiento?",
+          "opciones": [
+            "A. Fuerza motor.",
+            "B. Par resistente.",
+            "C. Par reactivo.",
+            "D. Fuerza resistente."
+          ],
+          "respuesta_correcta": "Par resistente"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué elemento de los listados no forma parte de los aspectos mecánicos que deben valorarse al elegir un motor convencional?",
+          "opciones": [
+            "A. Rodamientos.",
+            "B. Envolvente.",
+            "C. Cojinetes.",
+            "D. Transductor."
+          ],
+          "respuesta_correcta": "Transductor"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Cuál de las siguientes no es una propiedad del frenado eléctrico?",
+          "opciones": [
+            "A. Debe ser ágil y fiable.",
+            "B. Permitirá el control del par.",
+            "C. Contará con medios para disipar la energía cinética.",
+            "D. Ante el fallo de cualquier componente del sistema, desactivará el freno."
+          ],
+          "respuesta_correcta": "Ante el fallo de cualquier parte del sistema, desactivará el freno"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Cuál de los siguientes no constituye un método de arranque de motor?",
+          "opciones": [
+            "A. Arranque estrella-triángulo.",
+            "B. Arranque por autotransformador.",
+            "C. Arranque indirecto de electrónica.",
+            "D. Arranque de motores devanados partidos (part-winding)."
+          ],
+          "respuesta_correcta": "Arranque indirecto de electrónica"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Cuál de los siguientes sistemas de transmisión no suele emplearse habitualmente en sistemas motores?",
+          "opciones": [
+            "A. Transmisión por árbol de levas.",
+            "B. Accionamiento por correa.",
+            "C. Accionamiento directo.",
+            "D. Impulsión por cable."
+          ],
+          "respuesta_correcta": "Transmisión por árbol de levas"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿En qué consiste un accionamiento de grupo?",
+          "opciones": [
+            "A. Aquel en el que se emplea un único motor para impulsar un mecanismo.",
+            "B. Comprende varios accionamientos individuales.",
+            "C. Aquel en el que un único motor eléctrico mueve un eje lineal que acciona varias mecánicas.",
+            "D. Ninguna de las anteriores."
+          ],
+          "respuesta_correcta": "Aquel en el que un solo motor eléctrico acciona un eje lineal que mueve varias mecánicas"
+        },
+        {
+          "numero": 8,
+          "enunciado": "¿Qué modalidad de frenado consiste en que la carga acciona el motor superando la velocidad de sincronismo, de modo que actúa como generador asíncrono y genera un par de frenado?",
+          "opciones": [
+            "A. Frenado por funcionamiento o hipersincronismo.",
+            "B. Frenado por inyección de corriente continua.",
+            "C. Frenado por contracorriente.",
+            "D. Ninguna de las anteriores es correcta."
+          ],
+          "respuesta_correcta": "Frenado por funcionamiento o hipersincronismo"
+        },
+        {
+          "numero": 9,
+          "enunciado": "Al seleccionar un motor de menor potencia de la requerida para una aplicación, se podrán experimentar:",
+          "opciones": [
+            "A. Una implosión de la envolvente.",
+            "B. Sobrecarga y sobrecalentamiento del motor.",
+            "C. Velocidades elevadas no deseadas.",
+            "D. Pares resistentes que superan la capacidad de las transmisiones."
+          ],
+          "respuesta_correcta": "Sobrecarga y sobrecalentamiento del motor"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Si en el control electrónico de velocidad de un motor se mantiene constante el par dentro de un determinado rango de velocidad, se trata de un control de tipo:",
+          "opciones": [
+            "A. Accionamiento de par constante.",
+            "B. Accionamiento de potencia constante.",
+            "C. Accionamiento con potencia variable.",
+            "D. Accionamiento con velocidad variable."
+          ],
+          "respuesta_correcta": "Accionamiento de par constante"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "lunes, 16 de marzo de 2026, 18:09",
+        "estado": "Finalizado",
+        "finalizado_en": "lunes, 16 de marzo de 2026, 18:10",
+        "tiempo_empleado": "42 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿Ante cuál de las siguientes situaciones podría activarse un relé térmico?",
+          "opciones": [
+            "A. Cortocircuito.",
+            "B. Caída de tensión.",
+            "C. Carga mecánica excesiva.",
+            "D. Ciclos de trabajo demasiado lentos."
+          ],
+          "respuesta_correcta": "Carga mecánica excesiva"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Cómo no se clasifican los fusibles?",
+          "opciones": [
+            "A. Según su curva de fusión mediante el uso de dos letras.",
+            "B. Según su forma.",
+            "C. Según su color.",
+            "D. Todas las anteriores son correctas."
+          ],
+          "respuesta_correcta": "Según su color"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué herramienta permite obtener una medición más precisa del diámetro de un eje de motor?",
+          "opciones": [
+            "A. Micrómetro o tornillo de Palmer.",
+            "B. Calibre o pie de rey.",
+            "C. Regla con escala.",
+            "D. Cinta métrica."
+          ],
+          "respuesta_correcta": "Micrómetro o tornillo de Palmer"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Cuál de los siguientes no constituye una avería habitual en un motor eléctrico?",
+          "opciones": [
+            "A. Desequilibrio de tensión.",
+            "B. Distorsión armónica.",
+            "C. Desalineación.",
+            "D. Fallo del sensor de velocidad."
+          ],
+          "respuesta_correcta": "Fallo del sensor de velocidad"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Cuál de los siguientes grados de protección IP (siempre que existan) implica una mayor protección?",
+          "opciones": [
+            "A. IP00.",
+            "B. IP80.",
+            "C. IP67.",
+            "D. IP01."
+          ],
+          "respuesta_correcta": "IP67"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Cuál es la primera acción a llevar a cabo al detectar un problema en un sistema eléctrico?",
+          "opciones": [
+            "A. Observar el comportamiento del proceso y verificar los síntomas anómalos.",
+            "B. Localizar el problema por área, ubicación o equipo.",
+            "C. Aislar el fallo.",
+            "D. Reparar el error con rapidez."
+          ],
+          "respuesta_correcta": "Observaremos cómo se comporta el proceso y se verifica los síntomas anormales"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿En qué se diferencian los transformadores con dieléctrico líquido de los transformadores secos?",
+          "opciones": [
+            "A. Los secos requieren mantenimiento periódico y los líquidos no.",
+            "B. Los líquidos requieren mantenimiento periódico y los secos no.",
+            "C. Los secos están diseñados para aplicaciones con consumo cíclico.",
+            "D. Los líquidos se instalan en edificios de gran altura por su comportamiento ante el fuego."
+          ],
+          "respuesta_correcta": "Los secos precisan de mantenimiento y los líquidos no"
+        },
+        {
+          "numero": 8,
+          "enunciado": "¿Qué registra una cámara termográfica?",
+          "opciones": [
+            "A. Las intensidades de la radiación electromagnética de cada componente principal.",
+            "B. La altura a la que se ubica un equipo.",
+            "C. La cantidad de colores presentes en un espacio.",
+            "D. Ninguna de las anteriores es correcta."
+          ],
+          "respuesta_correcta": "Las intensidades de la radiación electromagnética que tiene cada componente principal"
+        },
+        {
+          "numero": 9,
+          "enunciado": "¿Qué condición debe darse para que un fusible se funda?",
+          "opciones": [
+            "A. Que se produzca una caída de tensión.",
+            "B. Que reciba un golpe seco en la carcasa.",
+            "C. Que se supere la intensidad máxima que es capaz de soportar.",
+            "D. Que la temperatura ambiente supere los 50°C."
+          ],
+          "respuesta_correcta": "Que se sobrepase la intensidad que es capaz de soportar"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Ante un cortocircuito, el interruptor magnetotérmico experimentará un:",
+          "opciones": [
+            "A. Corte circuital.",
+            "B. Corte térmico.",
+            "C. Corte magnetotérmico.",
+            "D. Corte magnético."
+          ],
+          "respuesta_correcta": "Corte magnético"
+        }
+      ]
+    },
+    {
+      "metadatos": {
+        "comenzado_el": "martes, 17 de marzo de 2026, 19:18",
+        "estado": "Finalizado",
+        "finalizado_en": "martes, 17 de marzo de 2026, 19:18",
+        "tiempo_empleado": "37 segundos",
+        "calificacion": "10 de 10 (100%)"
+      },
+      "preguntas": [
+        {
+          "numero": 1,
+          "enunciado": "¿A qué fenómeno se atribuye el incremento de temperatura en equipos estáticos que origina tantos fallos?",
+          "opciones": [
+            "A. Ley de Faraday-Lenz.",
+            "B. Efecto Joule.",
+            "C. Ley de Murphy.",
+            "D. Ley de Ampere."
+          ],
+          "respuesta_correcta": "Efecto Joule"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Cómo recibe el nombre la modalidad de mantenimiento predictivo que consiste en observar el comportamiento de cada máquina, registrarlo y analizar sus datos de funcionamiento?",
+          "opciones": [
+            "A. Mantenimiento conductista.",
+            "B. Mantenimiento conductivo.",
+            "C. Mantenimiento de conducta.",
+            "D. Mantenimiento Industria 4.0."
+          ],
+          "respuesta_correcta": "Mantenimiento conductivo"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Cómo recibe el nombre la modalidad de mantenimiento preventivo que consiste en intervenir sobre piezas y componentes para devolver la máquina a un estado similar al de su primera puesta en marcha?",
+          "opciones": [
+            "A. Mantenimiento de kilómetro cero.",
+            "B. Mantenimiento preventivo renovador.",
+            "C. Mantenimiento total.",
+            "D. Mantenimiento cero horas."
+          ],
+          "respuesta_correcta": "Mantenimiento cero horas"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Cuál de los siguientes factores no incide en la planificación de los tiempos de revisión y supervisión del mantenimiento de una máquina eléctrica?",
+          "opciones": [
+            "A. Ubicación de la máquina.",
+            "B. Herramientas, medios auxiliares y maquinaria necesaria.",
+            "C. Ambiente de trabajo de la máquina.",
+            "D. Formación de los responsables de la tarea de mantenimiento."
+          ],
+          "respuesta_correcta": "Formación de los involucrados en la tarea de mantenimiento"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Cuál de los siguientes programas no se corresponde a un software de gestión de mantenimiento asistido?",
+          "opciones": [
+            "A. SAP PM.",
+            "B. ORACLE.",
+            "C. EXCEL.",
+            "D. Todos son programas de gestión de mantenimiento asistido."
+          ],
+          "respuesta_correcta": "EXCEL"
+        },
+        {
+          "numero": 6,
+          "enunciado": "¿Qué tipología de mantenimiento se lleva a cabo al engrasar unos rodamientos?",
+          "opciones": [
+            "A. Mantenimiento correctivo.",
+            "B. Mantenimiento preventivo.",
+            "C. Mantenimiento predictivo.",
+            "D. Mantenimiento total."
+          ],
+          "respuesta_correcta": "Mantenimiento preventivo"
+        },
+        {
+          "numero": 7,
+          "enunciado": "¿Cuál de las siguientes normativas no guarda relación con el mantenimiento de máquinas eléctricas?",
+          "opciones": [
+            "A. Reglamento Electrotécnico para Baja Tensión (REBT).",
+            "B. Reglamento de Instalaciones Eléctricas de Alta Tensión (RAT).",
+            "C. Ley de Mantenimiento Industrial RD 129/2012.",
+            "D. Ley de Prevención de Riesgos Laborales RD 31/1995."
+          ],
+          "respuesta_correcta": "Ley de Mantenimiento Industrial RD 129/2012"
+        },
+        {
+          "numero": 8,
+          "enunciado": "¿Qué nombre recibe el documento en el que se recogen todas las actividades, recursos personales y materiales, tiempos, procesos, procedimientos, etc., que velan por el correcto funcionamiento de todas las máquinas eléctricas de una instalación?",
+          "opciones": [
+            "A. Plan de mantenimiento.",
+            "B. Agenda de mantenimiento.",
+            "C. Libro de mantenimiento.",
+            "D. Ficha de mantenimiento correctivo."
+          ],
+          "respuesta_correcta": "Plan de mantenimiento"
+        },
+        {
+          "numero": 9,
+          "enunciado": "Cuando se produce un fallo imprevisto y es necesario sustituir una pieza de forma urgente, se trata de un:",
+          "opciones": [
+            "A. Mantenimiento correctivo sin planificar.",
+            "B. Mantenimiento correctivo planificado.",
+            "C. Mantenimiento de sustitución.",
+            "D. Mantenimiento preventivo."
+          ],
+          "respuesta_correcta": "Mantenimiento correctivo sin planificar"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Señala cuál de las siguientes afirmaciones es falsa:",
+          "opciones": [
+            "A. En el mantenimiento del transformador, se deberá verificar la presión y temperatura del líquido refrigerante.",
+            "B. La excitatriz de un generador es la máquina responsable de excitar las bobinas del estator.",
+            "C. En las dinamos, el componente que habitualmente experimenta mayor desgaste son las escobillas.",
+            "D. En los motores de corriente alterna, el componente que habitualmente experimenta mayor desgaste son las escobillas."
+          ],
+          "respuesta_correcta": "En los motores de corriente alterna, el componente que mayor desgaste suele sufrir son las escobillas"
+        }
+      ]
+    }
+  ]
+}

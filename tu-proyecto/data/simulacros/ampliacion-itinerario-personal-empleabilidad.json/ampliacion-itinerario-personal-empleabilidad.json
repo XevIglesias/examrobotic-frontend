@@ -1,0 +1,307 @@
+{
+  "asignatura": "Ampliación de itinerario personal para la empleabilidad",
+  "archivo_origen": "Ampliación de itinerario personal para la empleabilidad.pdf",
+  "total_preguntas": 60,
+  "preguntas": [
+    {
+      "enunciado": "Identifica cuál de estas afirmaciones no corresponde a una característica propia del préstamo hipotecario:",
+      "opciones": ["El importe concedido dependerá del valor del inmueble.", "Por lo general, el importe otorgado no sobrepasará el 80% del valor de tasación.", "Su período máximo de devolución no suele ir más allá de 8 años.", "Se emplea habitualmente para adquirir bienes inmuebles."],
+      "correcta": 2
+    },
+    {
+      "enunciado": "Señala cuál de las siguientes opciones representa un agente que participa en la economía:",
+      "opciones": ["Los hogares o familias.", "Las empresas.", "La administración pública.", "Las tres opciones anteriores son válidas."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "¿En qué se fundamenta la elección que se realiza para atender una necesidad?",
+      "opciones": ["En un acto impulsivo.", "En una valoración comparativa.", "En los resultados de una encuesta.", "En imitar el comportamiento del entorno social."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "En el proceso de toma de decisiones, los desembolsos realizados en el pasado que no deberían influir en las elecciones futuras reciben el nombre de:",
+      "opciones": ["Coste operacional.", "Coste duplicado.", "Coste irrecuperable.", "Coste de ahorro."],
+      "correcta": 2
+    },
+    {
+      "enunciado": "El importe total de un préstamo resulta de sumar:",
+      "opciones": ["El capital inicial más los intereses generados.", "El interés fijo más el interés variable.", "El nominal, la amortización, las comisiones y las tasas.", "El nominal, los intereses, las comisiones y los gastos asociados."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "El presupuesto de una unidad familiar está integrado por:",
+      "opciones": ["Gastos de carácter fijo.", "Gastos de carácter corriente.", "Gastos de naturaleza ocasional.", "Las tres categorías anteriores son correctas."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "En cuanto a la capacidad de endeudamiento de una persona, esta:",
+      "opciones": ["No debe superar el 35% de los ingresos netos.", "No debe superar el 45% de los ingresos netos.", "Es equivalente al límite máximo de endeudamiento permitido.", "Equivale al total de los ingresos netos percibidos."],
+      "correcta": 0
+    },
+    {
+      "enunciado": "El importe aconsejado para constituir un fondo de emergencia es aquel que posibilita asumir todos los gastos durante un período de:",
+      "opciones": ["6 meses.", "3 meses.", "12 meses.", "Toda la vida del titular."],
+      "correcta": 0
+    },
+    {
+      "enunciado": "Acerca de las tarjetas revolving, señala la afirmación correcta:",
+      "opciones": ["Son aquellas que emiten las compañías comerciales.", "Se consideran una deuda de carácter indefinido.", "El cargo se realiza de forma inmediata en la cuenta asociada.", "Todas las afirmaciones anteriores son correctas."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "Prescindir del consumo presente con el propósito de disponer de mayor capacidad de consumo en el futuro alude al concepto de:",
+      "opciones": ["Consumo.", "Financiación.", "Planificación.", "Ahorro."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "¿De qué manera se genera valor en un producto?",
+      "opciones": ["Incrementando la participación en el mercado.", "A través de una cadena de aprovisionamiento bien gestionada.", "Mediante el uso de nuevas tecnologías y personal altamente cualificado.", "Incorporándole utilidad para que sea capaz de satisfacer necesidades."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "Define el tipo de tributo que no lleva asociada una contraprestación directa y se destina a financiar el gasto público en términos generales:",
+      "opciones": ["Impuestos.", "Contribuciones especiales.", "Tasas.", "Aportaciones voluntarias."],
+      "correcta": 0
+    },
+    {
+      "enunciado": "Cuando el vendedor desea dejar constancia escrita de la oferta de un bien o servicio junto con sus condiciones de entrega, hará uso de:",
+      "opciones": ["La factura.", "El presupuesto.", "El albarán.", "El pedido."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "El documento formal que contiene una orden de pago mediante la cual una persona encarga abonar una cantidad determinada de dinero al tenedor del mismo en la fecha de vencimiento corresponde a:",
+      "opciones": ["Un cheque.", "Una letra de cambio.", "Un recibo normalizado.", "Una transferencia bancaria."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "El documento que registra los cobros y pagos previstos por la empresa en función de las operaciones que planea ejecutar a corto plazo recibe la denominación de:",
+      "opciones": ["Plan de marketing.", "Plan de tesorería.", "Plan contable.", "Sistema tributario."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "Las fuentes de las que el Estado puede obtener ingresos públicos son:",
+      "opciones": ["Las donaciones y la deuda pública.", "La extracción o expropiación.", "Los ingresos de naturaleza contractual.", "Todas las opciones anteriores son válidas."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "El tributo cuya función es gravar el acto de consumo es:",
+      "opciones": ["El IVA.", "El IRPF.", "El Impuesto sobre Sociedades.", "La declaración censal."],
+      "correcta": 0
+    },
+    {
+      "enunciado": "El tributo que grava las rentas obtenidas por las personas físicas es:",
+      "opciones": ["El IVA.", "El IRPF.", "El Impuesto sobre Sociedades.", "La declaración censal."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "En el IRPF, la base liquidable es:",
+      "opciones": ["Idéntica a la base imponible.", "La parte que queda libre de la aplicación del tributo.", "La cantidad que queda sujeta finalmente al gravamen.", "El tipo impositivo de carácter progresivo."],
+      "correcta": 2
+    },
+    {
+      "enunciado": "Dentro del análisis PESTEL, el factor ecológico del macroentorno alude a aspectos como:",
+      "opciones": ["Inflación, política monetaria, nivel de desempleo...", "Demografía, niveles educativos, estilos de vida...", "Contabilidad, normativa legal, condiciones sanitarias...", "Fuentes de energía, conciencia medioambiental, limitaciones de emisiones..."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "Identifica cuál de las siguientes no corresponde a una orientación válida para la actividad comercial dentro del enfoque del marketing:",
+      "opciones": ["Orientación centrada en el producto.", "Orientación centrada en las ventas.", "Orientación centrada en el cliente o consumidor.", "Orientación centrada en la innovación tecnológica."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "Señala cuál de los siguientes elementos no forma parte del concepto de mercado:",
+      "opciones": ["Los beneficios obtenidos por la organización empresarial.", "El conjunto de individuos con necesidades a satisfacer.", "La disponibilidad de recursos y capacidad adquisitiva.", "El espacio donde se realizan intercambios comerciales."],
+      "correcta": 0
+    },
+    {
+      "enunciado": "¿Cuál es la finalidad principal del marketing relacional?",
+      "opciones": ["Aumentar las ventas en el corto plazo.", "Establecer y sostener una relación duradera y significativa con el público objetivo.", "Llevar a cabo promociones y descuentos periódicos.", "Captar nuevos clientes a través de publicidad de alcance masivo."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes opciones recoge de forma más completa la definición de marketing?",
+      "opciones": ["El proceso enfocado en la venta de productos y servicios.", "El estudio de la competencia y el comportamiento del consumidor.", "El conjunto de actividades de publicidad y análisis del mercado.", "La planificación y ejecución de la concepción del producto, la fijación de precios, la promoción y la distribución de ideas, bienes y servicios para generar relaciones de intercambio que satisfagan los objetivos tanto individuales como organizacionales."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "¿En qué radica la distinción fundamental entre el marketing estratégico y el marketing operativo?",
+      "opciones": ["El marketing estratégico se orienta al corto plazo, mientras que el operativo lo hace al largo plazo.", "El marketing estratégico gestiona la puesta en marcha de acciones, mientras que el operativo se ocupa del análisis de las necesidades del público objetivo.", "El marketing estratégico abarca la publicidad, mientras que el marketing operativo se focaliza en las ventas.", "El marketing estratégico se dedica al análisis continuo y la detección de necesidades del público objetivo, mientras que el marketing operativo se centra en la implementación de medidas para aprovechar las oportunidades identificadas."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "¿Cuáles son las funciones que el marketing desempeña dentro de la empresa?",
+      "opciones": ["Funciones de producción y funciones de comercialización.", "Funciones de dirección y gestión, y funciones de acción.", "Funciones de evaluación del mercado.", "Funciones de análisis y funciones de planificación y decisión."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "¿Qué rasgo define al marketing emocional?",
+      "opciones": ["La segmentación del mercado apoyada en variables demográficas.", "El empleo intensivo de técnicas de venta de tipo agresivo.", "La aplicación de estrategias de precios con carácter competitivo.", "El establecimiento de un vínculo emocional entre el producto y el consumidor."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "¿Qué orientación de marketing se caracteriza por anticiparse a las dificultades y demandas futuras del mercado?",
+      "opciones": ["Orientación centrada en el producto.", "Orientación centrada en las ventas.", "Orientación centrada en la competencia.", "Orientación centrada en el mercado."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "En el marco del método Lean Startup, ¿cómo se define el Producto Mínimo Viable (PMV)?",
+      "opciones": ["Una versión inicial del producto que incorpora las características esenciales para atender las necesidades básicas de los clientes.", "Una versión final y completa del producto.", "Un planteamiento teórico sin ningún tipo de aplicación práctica.", "Un documento detallado de estrategia de marketing."],
+      "correcta": 0
+    },
+    {
+      "enunciado": "El marketing interno hace referencia a:",
+      "opciones": ["Las acciones de marketing desarrolladas dentro de la organización y dirigidas a sus propios miembros.", "Las estrategias de comunicación que la empresa proyecta hacia su público objetivo externo.", "La publicidad llevada a cabo dentro del país de origen de la empresa.", "Las ventas realizadas directamente a los empleados de la organización."],
+      "correcta": 0
+    },
+    {
+      "enunciado": "Identifica cuál de las siguientes no es una estrategia basada en la ventaja competitiva:",
+      "opciones": ["Estrategia de liderazgo en costes.", "Estrategia de diferenciación.", "Estrategia de enfoque o concentración.", "Estrategia de diversificación."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "Señala cuál de los siguientes no es un criterio habitualmente empleado para clasificar los datos en el análisis de mercado:",
+      "opciones": ["Según su naturaleza.", "Según su ubicación geográfica.", "Según su fuente de origen.", "Según su coste de obtención."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "¿Cuál es el punto de partida en el proceso de análisis de mercados?",
+      "opciones": ["El análisis de la información recabada.", "La búsqueda y obtención de la información.", "El planteamiento de la investigación.", "La obtención y presentación de los resultados."],
+      "correcta": 2
+    },
+    {
+      "enunciado": "¿Cuál es la herramienta central del marketing estratégico?",
+      "opciones": ["El análisis DAFO.", "El plan de marketing.", "La investigación de mercado.", "La política de precios."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes análisis no forma parte del análisis de la situación contemplado en el plan de marketing?",
+      "opciones": ["Análisis de la demanda.", "Análisis de la competencia.", "Análisis del producto.", "Análisis interno de la propia empresa."],
+      "correcta": 2
+    },
+    {
+      "enunciado": "¿En qué apartado del plan de marketing se establecen las metas comerciales a medio y largo plazo?",
+      "opciones": ["Análisis de la situación.", "Evaluación y control.", "Definición estratégica.", "Implantación de la estrategia."],
+      "correcta": 2
+    },
+    {
+      "enunciado": "¿Qué instrumento posibilita examinar las debilidades, amenazas, fortalezas y oportunidades de una organización?",
+      "opciones": ["El análisis PEST.", "El análisis DAFO.", "La investigación de mercado.", "La matriz de crecimiento."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "¿Con cuál de las políticas del marketing mix se vincula la forma y el lugar en que los bienes y servicios se ponen al alcance del público?",
+      "opciones": ["Política de precio.", "Política de producto.", "Política de distribución.", "Política de comunicación."],
+      "correcta": 2
+    },
+    {
+      "enunciado": "En cuanto al informe final de la investigación, señala la afirmación correcta:",
+      "opciones": ["Tendrá un carácter formal, público y subjetivo.", "Consiste en un vídeo de presentación de resultados.", "Se orienta a clasificar las opiniones obtenidas y valorarlas en función de los criterios establecidos.", "Debe ser ordenado, preciso, objetivo y de carácter confidencial."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "La política de comunicación dentro del marketing mix:",
+      "opciones": ["Se vincula con la forma y el lugar en que los bienes y servicios se ponen a disposición del público.", "Tiene como propósito informar, recordar y persuadir a los consumidores potenciales.", "Es sinónimo de llevar a cabo acciones publicitarias.", "Posibilita delimitar los segmentos del mercado más adecuados y afines."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "Al profesional responsable de recursos humanos se le presuponen diversas competencias, entre ellas:",
+      "opciones": ["Contar con motivación propia y ser capaz de transmitirla al equipo.", "Comunicarse de manera eficaz.", "Ser resolutivo y firme en la toma de decisiones.", "Todas las opciones anteriores son correctas."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "El cálculo de las nóminas y la gestión del pago a los trabajadores se encuadra dentro de la siguiente función del departamento de RRHH:",
+      "opciones": ["Función de empleo.", "Función de administración del personal.", "Función de retribución o contraprestación de servicios.", "Función de desarrollo y servicios sociales."],
+      "correcta": 2
+    },
+    {
+      "enunciado": "El modelo de gestión por competencias se integra dentro de los:",
+      "opciones": ["Modelos de gestión tradicionales.", "Modelos de gestión actuales.", "Modelos de gestión históricos.", "Ninguna de las opciones es correcta."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "El plan de acción destinado a mantener la plantilla ajustada, tanto en términos cuantitativos como cualitativos, a los objetivos fijados en la previsión previa deberá incorporar:",
+      "opciones": ["Prioridades y una planificación temporal.", "La asignación de los presupuestos necesarios.", "La distribución de responsabilidades.", "Todas las opciones anteriores son correctas."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "La función de desarrollo y servicios sociales del departamento de RRHH se ocupa de:",
+      "opciones": ["Proveer a la organización del personal necesario.", "La gestión administrativa de contratos, justificantes, bajas, etc.", "Fomentar la motivación, la satisfacción y el desempeño adecuado en el puesto de trabajo.", "La elaboración de nóminas y la gestión del pago a los empleados."],
+      "correcta": 2
+    },
+    {
+      "enunciado": "La metodología de análisis de puestos de trabajo en la que el propio empleado que ocupa el puesto responde a un cuestionario sobre sus funciones y tareas recibe el nombre de:",
+      "opciones": ["Observación directa.", "Cuestionarios.", "Entrevista.", "Diarios de trabajo."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "La metodología de análisis de puestos de trabajo en la que los empleados registran diariamente sus tareas, el tiempo que les dedican, las personas a quienes informan de sus avances y las observaciones que estiman pertinentes se denomina:",
+      "opciones": ["Observación directa.", "Cuestionarios.", "Entrevista.", "Diarios de trabajo."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "Los grupos profesionales quedan definidos por:",
+      "opciones": ["Las características personales del trabajador.", "La titulación académica del trabajador.", "Las aptitudes del trabajador.", "La combinación de todas las anteriores."],
+      "correcta": 3
+    },
+    {
+      "enunciado": "Para llevar a cabo una planificación adecuada de los recursos humanos:",
+      "opciones": ["Es imprescindible contemplar incrementos constantes en la plantilla.", "Se establecen objetivos tanto logísticos como estratégicos.", "Las desviaciones que se producen obedecen siempre a causas extraordinarias.", "Todas las afirmaciones anteriores son correctas."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "Una organización de carácter informal:",
+      "opciones": ["Es aquella cuya estructura organizativa viene determinada por la dirección y se plasma en un organigrama con los puestos, las relaciones jerárquicas y las funciones.", "Es aquella cuya estructura organizativa se conforma a partir de las relaciones personales que surgen espontáneamente entre los trabajadores.", "Es aquella que se preocupa por mantener su estructura debidamente dotada de personal, tanto en el plano cuantitativo como en el cualitativo.", "Es aquella que impulsa la transformación digital implicando a toda la plantilla en el uso de la tecnología para promover un ecosistema abierto y digitalizado."],
+      "correcta": 1
+    },
+    {
+      "enunciado": "Las personas que, sin haber recibido autoridad formal, poseen la capacidad de ejercer influencia sobre los demás gracias a su carisma y personalidad, reciben la denominación de:",
+      "opciones": ["Líderes", "Directores", "Jefes", "Mandos intermedios"],
+      "correcta": 0
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes representa una tendencia actual en materia de comunicación interna?",
+      "opciones": ["Motor de digitalización", "Employer Branding", "Aplicaciones internas corporativas", "Todas las opciones anteriores son correctas"],
+      "correcta": 3
+    },
+    {
+      "enunciado": "El estilo de liderazgo en el que el líder solo interviene cuando lo considera necesario, otorgando el máximo grado de autonomía a sus colaboradores y ejerciendo el mínimo control posible, recibe el nombre de:",
+      "opciones": ["Liderazgo laissez faire", "Liderazgo democrático", "Liderazgo paternalista", "Liderazgo visionario"],
+      "correcta": 0
+    },
+    {
+      "enunciado": "El estilo de liderazgo en el que el líder tiene una visión clara de hacia dónde se dirige y trata de que el equipo comparta y visualice esa meta se denomina:",
+      "opciones": ["Liderazgo laissez faire", "Liderazgo democrático", "Liderazgo paternalista", "Liderazgo visionario"],
+      "correcta": 3
+    },
+    {
+      "enunciado": "El enfoque de liderazgo que sostiene que la eficacia del liderazgo depende de las circunstancias concretas en las que este se ejerce es conocido como:",
+      "opciones": ["Enfoque situacional", "Enfoque funcional", "Enfoque empírico", "Ninguna de las opciones es correcta"],
+      "correcta": 0
+    },
+    {
+      "enunciado": "Según la teoría de Herzberg, las variables que por sí mismas no generan motivación, pero cuya ausencia sí provoca insatisfacción, se conocen como:",
+      "opciones": ["Factores motivacionales", "Factores higiénicos", "Factores laborales", "Factores de afiliación"],
+      "correcta": 1
+    },
+    {
+      "enunciado": "La teoría que caracteriza el estilo de liderazgo identificando cinco niveles que combinan distintos grados de atención hacia las personas y hacia las tareas se denomina:",
+      "opciones": ["Teoría del gran hombre o de rasgos", "Teoría X e Y de McGregor", "Teoría de Boyatzis y McKee", "Teoría de la malla gerencial de Blake y Mouton"],
+      "correcta": 3
+    },
+    {
+      "enunciado": "Este autor formuló una pirámide de necesidades en la que las situadas en la base respondían a la supervivencia y, conforme se ascendía, aparecían aspectos vinculados al crecimiento personal y social del individuo:",
+      "opciones": ["Abraham Maslow", "McClelland", "Herzberg", "McGregor"],
+      "correcta": 0
+    },
+    {
+      "enunciado": "Las habilidades interpersonales, conocidas también como habilidades ________, aluden a la capacidad de una persona para relacionarse de forma eficaz con su entorno:",
+      "opciones": ["Duras", "Ásperas", "Blandas", "Opacas"],
+      "correcta": 2
+    },
+    {
+      "enunciado": "La capacidad de comprender y compartir los sentimientos ajenos recibe el nombre de:",
+      "opciones": ["Comunicación efectiva", "Empatía", "Resolución de conflictos", "Adaptabilidad"],
+      "correcta": 1
+    }
+  ]
+}

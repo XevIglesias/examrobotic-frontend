@@ -1,5 +1,4 @@
 backend/
-tu-proyecto/
 .env
 .env.*
 node_modules/
