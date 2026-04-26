@@ -9,14 +9,33 @@ function escHtml(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
 }
 
-try {
-    startExam();
-} catch(e) {
-    document.getElementById('q-text').innerText = 'Error al cargar: ' + e.message;
+// Función auxiliar para escribir texto de forma segura
+function setSafeText(id, text) {
+    const el = document.getElementById(id);
+    if (el) el.innerText = text;
 }
 
+// Función auxiliar para escribir HTML de forma segura
+function setSafeHtml(id, html) {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = html;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    try {
+        startExam();
+    } catch(e) {
+        console.error(e);
+        setSafeText('q-text', 'Error al cargar: ' + e.message);
+    }
+});
+
 function startExam() {
-    // Escoge 40 preguntas aleatorias de la base de 80
+    if (typeof EXAM_DATA === 'undefined') {
+        setSafeText('q-text', 'Error: No se han encontrado los datos del examen.');
+        return;
+    }
+    // Escoge 40 preguntas aleatorias de la base
     let pool = [...EXAM_DATA];
     activeQs = pool.sort(() => Math.random() - 0.5).slice(0, 40);
     
@@ -25,8 +44,10 @@ function startExam() {
     isFinished = false; 
     timeLeft = 3000;
     
-    document.getElementById('quiz').style.display = 'block';
-    document.getElementById('results').style.display = 'none';
+    const quizEl = document.getElementById('quiz');
+    if (quizEl) quizEl.style.display = 'block';
+    const resEl = document.getElementById('results');
+    if (resEl) resEl.style.display = 'none';
     
     clearInterval(timerID);
     timerID = setInterval(updateTime, 1000);
@@ -38,58 +59,64 @@ function updateTime() {
     timeLeft--;
     let m = Math.floor(timeLeft/60);
     let s = timeLeft%60;
-    document.getElementById('timer').innerText = `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+    setSafeText('timer', `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`);
     if(timeLeft <= 0) finish();
 }
 
 function showQ() {
     const q = activeQs[current];
-    document.getElementById('q-progress').innerText = `Pregunta ${current+1} de 40`;
+    setSafeText('q-progress', `Pregunta ${current+1} de 40`);
     
-    // Update visual progress bar if exists
     const pBar = document.getElementById('progress-bar');
     if (pBar) {
         const percent = ((current + 1) / 40) * 100;
         pBar.style.width = percent + '%';
     }
 
-    document.getElementById('q-unit').innerText = q.u;
-    document.getElementById('q-text').innerText = q.q; 
+    setSafeText('q-unit', q.u);
+    setSafeText('q-text', q.q); 
     
     const area = document.getElementById('options-area');
-    area.innerHTML = '';
-    
-    q.opts.forEach((opt, i) => {
-        let cls = 'option';
-        if(isFinished) {
-            if(i === q.ans) cls += ' correct';
-            else if(userAns[current] === i) cls += ' incorrect';
-        } else {
-            if(userAns[current] === i) cls += ' selected';
-        }
-        
-        let icon = '';
-        if(isFinished) {
-            if(i === q.ans) icon = '<span style="margin-left:auto;font-weight:900">✓</span>';
-            else if(userAns[current] === i) icon = '<span style="margin-left:auto;font-weight:900">✗</span>';
-        }
-        
-        area.innerHTML += `<div class="${cls}" onclick="pick(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){pick(${i});event.preventDefault()}" tabindex="0" role="button" aria-pressed="${userAns[current]===i}">
-            <span style="opacity:0.3; margin-right:15px; font-weight:800" aria-hidden="true">${String.fromCharCode(65+i)}</span>
-            ${escHtml(opt)} ${icon}
-        </div>`;
-    });
-
-    const exp = document.getElementById('explanation');
-    if(isFinished) {
-        exp.style.display = 'block';
-        exp.innerHTML = `<strong>EXPLICACIÓN:</strong> ${escHtml(q.exp)}`;
-    } else {
-        exp.style.display = 'none';
+    if (area) {
+        area.innerHTML = '';
+        q.opts.forEach((opt, i) => {
+            let cls = 'option';
+            if(isFinished) {
+                if(i === q.ans) cls += ' correct';
+                else if(userAns[current] === i) cls += ' incorrect';
+            } else {
+                if(userAns[current] === i) cls += ' selected';
+            }
+            
+            let icon = '';
+            if(isFinished) {
+                if(i === q.ans) icon = '<span style="margin-left:auto;font-weight:900">✓</span>';
+                else if(userAns[current] === i) icon = '<span style="margin-left:auto;font-weight:900">✗</span>';
+            }
+            
+            area.innerHTML += `<div class="${cls}" onclick="pick(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){pick(${i});event.preventDefault()}" tabindex="0" role="button" aria-pressed="${userAns[current]===i}">
+                <span style="opacity:0.3; margin-right:15px; font-weight:800" aria-hidden="true">${String.fromCharCode(65+i)}</span>
+                ${escHtml(opt)} ${icon}
+            </div>`;
+        });
     }
 
-    document.getElementById('btn-finish').style.display = (!isFinished) ? 'block' : 'none';
-    document.getElementById('btn-menu-review').style.display = (isFinished) ? 'block' : 'none';
+    const exp = document.getElementById('explanation');
+    if(exp) {
+        if(isFinished) {
+            exp.style.display = 'block';
+            exp.innerHTML = `<strong>EXPLICACIÓN:</strong> ${escHtml(q.exp)}`;
+        } else {
+            exp.style.display = 'none';
+        }
+    }
+
+    const btnFin = document.getElementById('btn-finish');
+    if (btnFin) btnFin.style.display = (!isFinished) ? 'block' : 'none';
+    
+    const btnRev = document.getElementById('btn-menu-review');
+    if (btnRev) btnRev.style.display = (isFinished) ? 'block' : 'none';
+    
     renderDots();
 }
 
@@ -106,6 +133,7 @@ function move(d) {
 
 function renderDots() {
     const grid = document.getElementById('dot-grid');
+    if (!grid) return;
     grid.innerHTML = '';
     activeQs.forEach((_, i) => {
         let cls = 'dot';
@@ -127,18 +155,30 @@ function finish() {
     let final = Math.max(0, (score / 40) * 10).toFixed(2);
 
     const slug = document.querySelector('script[src*="data/"]')?.src.match(/data\/(\w+)\//)?.[1] || 'unknown';
+    const themeMatch = document.querySelector('script[src*="data/"]')?.src.match(/t(\d+)\.js/);
+    const theme = themeMatch ? parseInt(themeMatch[1]) : null;
     const timeSpent = 3000 - timeLeft;
-    if (typeof saveAttempt === 'function') saveAttempt(slug, 'real', parseFloat(final), score, timeSpent, userAns);
 
-    document.getElementById('quiz').style.display = 'none';
-    document.getElementById('results').style.display = 'block';
-    document.getElementById('res-score').innerText = final;
-    document.getElementById('res-msg').innerText = final >= 5.00 ? "¡APTO! Has superado el umbral del 5." : "NO APTO. Repasa la teoría.";
+    if (typeof saveAttempt === 'function') saveAttempt(slug, 'real', parseFloat(final), score, timeSpent, userAns);
+    
+    if (final >= 10.0 && theme && typeof markThemeCompleted === 'function') {
+        markThemeCompleted(slug, theme);
+    }
+
+    const quizEl = document.getElementById('quiz');
+    if (quizEl) quizEl.style.display = 'none';
+    const resEl = document.getElementById('results');
+    if (resEl) resEl.style.display = 'block';
+    
+    setSafeText('res-score', final);
+    setSafeText('res-msg', final >= 5.00 ? "¡APTO! Has superado el umbral del 5." : "NO APTO. Repasa la teoría.");
 }
 
 function showReview() {
     current = 0;
-    document.getElementById('results').style.display = 'none';
-    document.getElementById('quiz').style.display = 'block';
+    const resEl = document.getElementById('results');
+    if (resEl) resEl.style.display = 'none';
+    const quizEl = document.getElementById('quiz');
+    if (quizEl) quizEl.style.display = 'block';
     showQ();
 }
