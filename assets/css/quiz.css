@@ -263,6 +263,11 @@ header h1 {
 
 /* Responsive móvil */
 @media (max-width: 640px) {
+    /* Header: ocultar logo y colapsar a 2 columnas */
+    header > div > div:first-child { display: none !important; }
+    header > div { grid-template-columns: 1fr auto !important; }
+    .timer-box   { padding: 7px 14px; font-size: 1rem; letter-spacing: 1px; }
+
     #quiz        { padding: 10px; }
     .q-card      { padding: 20px; min-height: auto; }
     .q-text      { font-size: 1.1rem; }
