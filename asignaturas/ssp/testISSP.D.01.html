@@ -1,9 +1,9 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Test de autoevaluaciÃ³n de Sistemas Secuenciales Programables. Selecciona una unidad y practica con PLCs, GRAFCET y STEP 7.">
+    <meta name="description" content="Test de autoevaluación de Sistemas Secuenciales Programables. Selecciona una unidad y practica con PLCs, GRAFCET y STEP 7.">
     <link rel="icon" href="../../assets/img/favicon.svg?v=2" type="image/svg+xml">
     <title>EXAMROBOTIC - Sistemas Secuenciales Programables</title>
     
@@ -13,7 +13,7 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="../../assets/css/menu.css?v=4">
+    <link rel="stylesheet" href="../../assets/css/menu.css?v=5">
     <script src="../../assets/js/tailwind-config.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1189262088313724" crossorigin="anonymous"></script>
 </head>
@@ -41,7 +41,7 @@
     <!-- Auth Modal -->
     <div id="auth-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center;padding:16px">
         <div style="background:#fff;border-radius:16px;width:100%;max-width:400px;padding:32px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.2)">
-            <button onclick="closeAuth()" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#94a3b8;line-height:1">âœ•</button>
+            <button onclick="closeAuth()" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#94a3b8;line-height:1">?</button>
             <h2 style="font-size:1.25rem;font-weight:800;margin-bottom:24px;color:#0f172a">Mi cuenta</h2>
 
             <div style="display:flex;gap:8px;margin-bottom:24px">
@@ -52,16 +52,16 @@
             <p id="auth-error" style="color:#ef4444;font-size:0.8rem;font-weight:600;min-height:1.2em;margin-bottom:8px"></p>
 
             <form id="form-login" onsubmit="doLogin(event)" style="display:flex;flex-direction:column;gap:12px">
-                <input id="auth-email" type="email" placeholder="Correo electrÃ³nico" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
-                <input id="auth-password" type="password" placeholder="ContraseÃ±a" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
+                <input id="auth-email" type="email" placeholder="Correo electrónico" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
+                <input id="auth-password" type="password" placeholder="Contraseña" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
                 <button id="btn-login" type="submit" style="padding:11px;background:#2563eb;color:#fff;border:none;border-radius:8px;font-weight:700;font-size:0.95rem;cursor:pointer;margin-top:4px">Entrar</button>
             </form>
 
             <form id="form-register" onsubmit="doRegister(event)" style="display:none;flex-direction:column;gap:12px">
                 <input id="reg-name" type="text" placeholder="Nombre completo" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
-                <input id="reg-email" type="email" placeholder="Correo electrÃ³nico" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
-                <input id="reg-password" type="password" placeholder="ContraseÃ±a (mÃ­n. 6 caracteres)" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
-                <input id="reg-password2" type="password" placeholder="Repetir contraseÃ±a" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
+                <input id="reg-email" type="email" placeholder="Correo electrónico" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
+                <input id="reg-password" type="password" placeholder="Contraseña (mín. 6 caracteres)" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
+                <input id="reg-password2" type="password" placeholder="Repetir contraseña" required style="padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.9rem;outline:none">
                 <button id="btn-register" type="submit" style="padding:11px;background:#2563eb;color:#fff;border:none;border-radius:8px;font-weight:700;font-size:0.95rem;cursor:pointer;margin-top:4px">Crear cuenta</button>
             </form>
         </div>
@@ -109,14 +109,14 @@
 
                         <div class="mb-10 bg-blue-50/50 border border-blue-100 rounded-2xl p-6 md:p-8">
                             <h3 class="text-lg font-bold text-primary mb-3 flex items-center gap-2">
-                                <span>ðŸ“˜</span> Gu&iacute;a de Estudio: Sistemas Secuenciales Programables
+                                <span>??</span> Gu&iacute;a de Estudio: Sistemas Secuenciales Programables
                             </h3>
                             <div class="text-sm text-foreground/80 leading-relaxed space-y-4">
                                 <p>
-                                    La asignatura de <strong>Sistemas Secuenciales Programables</strong> es la piedra angular de la robÃ³tica y la automatizaciÃ³n industrial avanzada. Aqu&iacute; dominar&aacute;s la inteligencia que gobierna los procesos de fabricaciÃ³n mediante aut&oacute;matas industriales.
+                                    La asignatura de <strong>Sistemas Secuenciales Programables</strong> es la piedra angular de la robótica y la automatización industrial avanzada. Aqu&iacute; dominar&aacute;s la inteligencia que gobierna los procesos de fabricación mediante aut&oacute;matas industriales.
                                 </p>
                                 <p>
-                                    A trav&eacute;s de nuestros tests, perfeccionar&aacute;s tu dominio del <strong>GRAFCET</strong> como herramienta de diseÃ±o secuencial y aprender&aacute;s a traducirlo a lenguajes oficiales como KOP (Ladder) o FBD (Bloques de Funciones). El contenido se centra en la plataforma <strong>Siemens STEP 7</strong> (TIA Portal), cubriendo desde el tratamiento de seÃ±ales digitales y analÃ³gicas hasta la estructuraciÃ³n compleja de bloques y el manejo de datos para sistemas de control de alto rendimiento.
+                                    A trav&eacute;s de nuestros tests, perfeccionar&aacute;s tu dominio del <strong>GRAFCET</strong> como herramienta de diseño secuencial y aprender&aacute;s a traducirlo a lenguajes oficiales como KOP (Ladder) o FBD (Bloques de Funciones). El contenido se centra en la plataforma <strong>Siemens STEP 7</strong> (TIA Portal), cubriendo desde el tratamiento de señales digitales y analógicas hasta la estructuración compleja de bloques y el manejo de datos para sistemas de control de alto rendimiento.
                                 </p>
                                 <div class="pt-2 flex gap-4">
                                     <span class="flex items-center gap-1.5 text-xs font-bold text-primary">
@@ -135,7 +135,7 @@
                                     <div class="number-badge w-12 h-12 shrink-0 bg-blue-50 text-primary border border-blue-100 rounded-lg flex items-center justify-center text-xl font-extrabold shadow-sm">1</div>
                                     <div class="flex-grow">
                                         <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">L&oacute;gica Digital y Secuencial</h3>
-                                        <p class="text-sm text-muted   transition-all duration-300">Fundamentos de la automatizaci&oacute;n: sistemas de numeraci&oacute;n, l&oacute;gica combinacional y circuitos secuenciales. Tipos de seÃ±ales industriales y su tratamiento binario.</p>
+                                        <p class="text-sm text-muted   transition-all duration-300">Fundamentos de la automatizaci&oacute;n: sistemas de numeraci&oacute;n, l&oacute;gica combinacional y circuitos secuenciales. Tipos de señales industriales y su tratamiento binario.</p>
                                     </div>
                                     <div class="hidden sm:flex shrink-0 items-center justify-center">
                                         <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
@@ -187,7 +187,7 @@
                                     <div class="number-badge w-12 h-12 shrink-0 bg-blue-50 text-primary border border-blue-100 rounded-lg flex items-center justify-center text-xl font-extrabold shadow-sm">5</div>
                                     <div class="flex-grow">
                                         <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Programaci&oacute;n STEP 7: Funciones Avanzadas</h3>
-                                        <p class="text-sm text-muted   transition-all duration-300">Dominio de instrucciones de tiempo y conteo estÃ¡ndar de Siemens. Operaciones con flancos, comparadores y l&oacute;gica de control bit a bit.</p>
+                                        <p class="text-sm text-muted   transition-all duration-300">Dominio de instrucciones de tiempo y conteo estándar de Siemens. Operaciones con flancos, comparadores y l&oacute;gica de control bit a bit.</p>
                                     </div>
                                     <div class="hidden sm:flex shrink-0 items-center justify-center">
                                         <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
@@ -239,7 +239,7 @@
                                     <div class="number-badge w-12 h-12 shrink-0 bg-blue-50 text-primary border border-blue-100 rounded-lg flex items-center justify-center text-xl font-extrabold shadow-sm">9</div>
                                     <div class="flex-grow">
                                         <h3 class="text-lg md:text-xl font-bold mb-1 leading-tight group-hover:text-primary transition-colors">Tratamiento Anal&oacute;gico y Datos</h3>
-                                        <p class="text-sm text-muted   transition-all duration-300">Escalado de seÃ±ales anal&oacute;gicas (presi&oacute;n, temperatura). Operaciones de transferencia MOVE, bloques de datos (DB) y funciones matem&aacute;ticas.</p>
+                                        <p class="text-sm text-muted   transition-all duration-300">Escalado de señales anal&oacute;gicas (presi&oacute;n, temperatura). Operaciones de transferencia MOVE, bloques de datos (DB) y funciones matem&aacute;ticas.</p>
                                     </div>
                                     <div class="hidden sm:flex shrink-0 items-center justify-center">
                                         <span class="text-sm font-bold text-primary flex items-center gap-1">Iniciar <span class="arrow-icon">&rarr;</span></span>
@@ -284,8 +284,8 @@
         </div>
     </main>
 
-        <script src="../../assets/js/api.js?v=2"></script>
-    <script src="../../assets/js/auth-ui.js?v=2"></script>
+        <script src="../../assets/js/api.js?v=3"></script>
+    <script src="../../assets/js/auth-ui.js?v=3"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const pathParts = window.location.pathname.split('/');
