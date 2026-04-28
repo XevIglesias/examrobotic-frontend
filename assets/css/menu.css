@@ -54,11 +54,41 @@ button:focus {
 
 /* Reemplazar la letra "U" por el icono del avatar en el header */
 .w-10.h-10.bg-primary.rounded-lg.flex.items-center.justify-center.text-white.font-bold.text-xl.shrink-0 {
-    background-image: url('../img/robot-avatar.jpg') !important;
+    background-image: url('../img/robot-avatar.png') !important;
     background-size: cover !important;
     background-position: center !important;
     color: transparent !important; /* Oculta la letra U */
     user-select: none !important; /* Evita que la U se pueda seleccionar con el ratón */
     font-size: 0 !important; /* Elimina el tamaño del texto para ocultarlo por completo */
     border-radius: 50% !important; /* Hace que el contenedor sea un círculo perfecto (estilo GitHub) */
+}
+
+/* Mobile refinements */
+@media (max-width: 640px) {
+    .module-card h3 { font-size: 1.1rem !important; min-height: auto !important; }
+    .module-card p { font-size: 0.8rem !important; }
+    .list-card h3 { font-size: 1rem !important; }
+    .list-card p { font-size: 0.75rem !important; }
+    .number-badge { width: 36px !important; height: 36px !important; font-size: 1rem !important; }
+    
+    header { h-16 !important; }
+    header .h-20 { height: 4rem !important; }
+    
+    .stat-card p.text-3xl { font-size: 1.5rem !important; }
+    .stat-card p.text-xs { font-size: 0.65rem !important; }
+}
+
+.locked-card {
+    filter: grayscale(1);
+    opacity: 0.7;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.locked-card::after {
+    content: '🔒';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
 }

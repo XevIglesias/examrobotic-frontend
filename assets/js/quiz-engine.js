@@ -42,8 +42,8 @@ function startExam() {
     // Escoge 40 preguntas aleatorias de la base
     let pool = [...EXAM_DATA];
     activeQs = pool.sort(() => Math.random() - 0.5).slice(0, 40);
-    
-    userAns = new Array(40).fill(null);
+    const totalQs = activeQs.length;
+    userAns = new Array(totalQs).fill(null);
     current = 0; 
     isFinished = false; 
     timeLeft = 3000;
@@ -69,11 +69,12 @@ function updateTime() {
 
 function showQ() {
     const q = activeQs[current];
-    setSafeText('q-progress', `Pregunta ${current+1} de 40`);
+    const totalQs = activeQs.length;
+    setSafeText('q-progress', `Pregunta ${current+1} de ${totalQs}`);
     
     const pBar = document.getElementById('progress-bar');
     if (pBar) {
-        const percent = ((current + 1) / 40) * 100;
+        const percent = ((current + 1) / totalQs) * 100;
         pBar.style.width = percent + '%';
     }
 
@@ -132,7 +133,7 @@ function pick(i) {
 
 function move(d) {
     let next = current + d;
-    if(next >= 0 && next < 40) { current = next; showQ(); }
+    if(next >= 0 && next < activeQs.length) { current = next; showQ(); }
 }
 
 function renderDots() {
@@ -150,13 +151,13 @@ function renderDots() {
 function finish() {
     clearInterval(timerID);
     isFinished = true;
-    let score = 0;
+    const totalQs = activeQs.length;
     userAns.forEach((a, i) => {
         if(a === activeQs[i].ans) score += 1;
         else if(a !== null) score -= 0.333333; 
     });
     
-    let final = Math.max(0, (score / 40) * 10).toFixed(2);
+    let final = Math.max(0, (score / totalQs) * 10).toFixed(2);
 
     const slug = document.querySelector('script[src*="data/"]')?.src.match(/data\/(\w+)\//)?.[1] || 'unknown';
     const themeMatch = document.querySelector('script[src*="data/"]')?.src.match(/t(\d+)\.js/);

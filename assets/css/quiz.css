@@ -263,19 +263,34 @@ header h1 {
 
 /* Responsive móvil */
 @media (max-width: 640px) {
-    /* Header: ocultar logo y colapsar a 2 columnas */
-    header > div > div:first-child { display: none !important; }
-    header > div { grid-template-columns: 1fr auto !important; }
-    .timer-box   { padding: 7px 14px; font-size: 1rem; letter-spacing: 1px; }
+    /* Header: permitir que el logo se vea pero ajustado */
+    header > div > div:first-child { display: flex !important; scale: 0.85; transform-origin: left; }
+    header > div { 
+        grid-template-columns: auto 1fr auto !important; 
+        gap: 8px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    /* Ocultar texto secundario del logo en móvil para ahorrar espacio */
+    header h1 + p { display: none !important; }
+    header h1 { font-size: 1.1rem !important; }
+    
+    /* Ajustar el progreso en el centro */
+    header #q-progress { font-size: 9px !important; }
+    header .w-52 { width: 6rem !important; } /* Barra de progreso reducida */
+    header .h-20 { height: 4.5rem !important; }
+    
+    .timer-box   { padding: 6px 10px; font-size: 0.9rem; letter-spacing: 1px; min-width: 65px; justify-content: center; }
 
-    #quiz        { padding: 10px; }
-    .q-card      { padding: 20px; min-height: auto; }
-    .q-text      { font-size: 1.1rem; }
-    .option      { padding: 13px 15px; }
+    #quiz        { padding: 10px; margin-top: 5px; }
+    .q-card      { padding: 24px 18px; min-height: auto; border-radius: 16px; }
+    .q-text      { font-size: 1.1rem; margin-bottom: 20px; line-height: 1.4; }
+    .option      { padding: 12px 14px; font-size: 0.85rem; margin-bottom: 8px; }
     .dot-grid    { grid-template-columns: repeat(5, 1fr); gap: 6px; }
     .dot         { height: 34px; font-size: 0.75rem; }
-    .nav-footer  { flex-wrap: wrap; gap: 8px; }
-    .btn         { padding: 13px 8px; font-size: 0.78rem; }
+    .nav-footer  { flex-wrap: nowrap; gap: 8px; }
+    .btn         { padding: 14px 8px; font-size: 0.7rem; }
     .score-badge { font-size: 4rem; }
     #results     { padding: 40px 15px; }
 }
