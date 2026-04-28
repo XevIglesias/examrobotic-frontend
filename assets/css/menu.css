@@ -76,6 +76,19 @@ button:focus {
     
     .stat-card p.text-3xl { font-size: 1.5rem !important; }
     .stat-card p.text-xs { font-size: 0.65rem !important; }
+    
+    header img { width: 2.5rem !important; height: 2.5rem !important; }
+    header h1 { font-size: 1.25rem !important; }
+    header p.text-[10px] { display: none !important; }
+}
+
+header h1 {
+    font-family: 'Manrope', sans-serif !important;
+    transition: font-size 0.2s ease;
+}
+
+header img {
+    transition: width 0.2s ease, height 0.2s ease;
 }
 
 .locked-card {
