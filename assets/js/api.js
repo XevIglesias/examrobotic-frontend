@@ -68,6 +68,11 @@ async function syncProgress() {
         if (!isNaN(themeNum)) {
           subjects[slug][themeNum] = true;
         }
+      } 
+      // FALLBACK para intentos antiguos: si score >= 9.0 y es 'real' o no tiene tipo, 
+      // asumimos que al menos el Tema 1 se completó si no hay otros datos.
+      else if (a.score >= 9.0 && (a.examType === 'real' || !a.examType)) {
+        if (!subjects[slug][1]) subjects[slug][1] = true;
       }
     });
 
