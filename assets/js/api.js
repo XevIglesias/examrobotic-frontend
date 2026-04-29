@@ -25,7 +25,12 @@ async function saveAttempt(subjectSlug, examType, score, rawScore, timeSpentSec,
 
 async function login(email, password) {
   const data = await apiPost('/auth/login', { email, password });
-  if (data.token) { localStorage.setItem('token', data.token); localStorage.setItem('user', JSON.stringify(data.user)); }
+  if (data.token) { 
+    localStorage.setItem('token', data.token); 
+    localStorage.setItem('user', JSON.stringify(data.user)); 
+    // Sincronizar progreso tras login
+    await syncProgress();
+  }
   return data;
 }
 
@@ -44,6 +49,40 @@ function currentUser() {
     if (!parsed || !parsed.id || !parsed.name) { localStorage.removeItem('user'); return null; }
     return parsed;
   } catch { localStorage.removeItem('user'); return null; }
+}
+
+async function syncProgress() {
+  if (!apiToken()) return;
+  try {
+    const attempts = await apiGet('/attempts/me');
+    const subjects = {};
+    
+    attempts.forEach(a => {
+      const slug = a.subject?.slug;
+      if (!slug) return;
+      if (!subjects[slug]) subjects[slug] = {};
+      
+      // Si el examType es 'tema_X' y la nota >= 9.0, lo marcamos como completado
+      if (a.examType && a.examType.startsWith('tema_') && a.score >= 9.0) {
+        const themeNum = parseInt(a.examType.replace('tema_', ''));
+        if (!isNaN(themeNum)) {
+          subjects[slug][themeNum] = true;
+        }
+      }
+    });
+
+    // Guardar en localStorage lo recuperado
+    Object.keys(subjects).forEach(slug => {
+      const localProgress = getSubjectProgress(slug);
+      const merged = { ...localProgress, ...subjects[slug] };
+      localStorage.setItem(`progress_${slug}`, JSON.stringify(merged));
+    });
+    
+    return true;
+  } catch (e) {
+    console.warn('Error sincronizando progreso:', e);
+    return false;
+  }
 }
 
 function getSubjectProgress(subjectSlug) {
@@ -67,7 +106,12 @@ function isThemeLocked(subjectSlug, themeNumber) {
   return false;
 }
 
-function applyProgression(subjectSlug) {
+async function applyProgression(subjectSlug) {
+  // Intentar sincronizar si hay usuario
+  if (apiToken()) {
+    await syncProgress();
+  }
+
   const cards = Array.from(document.querySelectorAll('.list-card'));
   const progress = getSubjectProgress(subjectSlug);
   

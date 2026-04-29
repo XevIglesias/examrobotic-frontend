@@ -165,7 +165,8 @@ function finish() {
     const theme = themeMatch ? parseInt(themeMatch[1]) : null;
     const timeSpent = 3000 - timeLeft;
 
-    if (typeof saveAttempt === 'function') saveAttempt(slug, 'real', parseFloat(final), score, timeSpent, userAns);
+    const type = theme ? `tema_${theme}` : 'real';
+    if (typeof saveAttempt === 'function') saveAttempt(slug, type, parseFloat(final), score, timeSpent, userAns);
     
     if (final >= 9.0 && theme && typeof markThemeCompleted === 'function') {
         markThemeCompleted(slug, theme);
