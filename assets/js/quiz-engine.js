@@ -167,7 +167,7 @@ function finish() {
 
     if (typeof saveAttempt === 'function') saveAttempt(slug, 'real', parseFloat(final), score, timeSpent, userAns);
     
-    if (final >= 10.0 && theme && typeof markThemeCompleted === 'function') {
+    if (final >= 9.0 && theme && typeof markThemeCompleted === 'function') {
         markThemeCompleted(slug, theme);
     }
 

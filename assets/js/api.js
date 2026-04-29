@@ -60,7 +60,7 @@ function markThemeCompleted(subjectSlug, themeNumber) {
 function isThemeLocked(subjectSlug, themeNumber) {
   if (themeNumber <= 1) return false;
   const progress = getSubjectProgress(subjectSlug);
-  // Requisito: todos los anteriores aprobados con 10
+  // Requisito: todos los anteriores aprobados con 9
   for (let i = 1; i < themeNumber; i++) {
     if (!progress[i]) return true;
   }
@@ -99,12 +99,12 @@ function applyProgression(subjectSlug) {
     if (!isNaN(themeNum)) {
       if (isThemeLocked(subjectSlug, themeNum)) {
         locked = true;
-        lockReason = 'Consigue un 10 en el tema anterior para desbloquear';
+        lockReason = 'Consigue un 9 en el tema anterior para desbloquear';
       }
     } else if (badgeText === 'E') {
       if (!allThemesDone) {
         locked = true;
-        lockReason = 'Consigue un 10 en TODOS los temas para desbloquear el examen real';
+        lockReason = 'Consigue un 9 en TODOS los temas para desbloquear el examen real';
       }
     }
 
