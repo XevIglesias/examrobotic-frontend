@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // NO mostrar en móviles (menos de 1024px de ancho)
     if (window.innerWidth < 1024) return;
 
+    // Calcular ruta base para las imágenes
+    const scripts = document.getElementsByTagName('script');
+    let basePath = '/';
+    for (let s of scripts) {
+        if (s.src.includes('ux-notif.js')) {
+            basePath = s.src.split('assets/js/ux-notif.js')[0];
+            break;
+        }
+    }
+
     const notif = document.createElement('div');
     notif.id = 'shortcuts-notif';
     notif.style.cssText = `
@@ -24,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         transform: translateY(0);
         opacity: 1;
     `;
+
 
     // Estilos de animación
     const style = document.createElement('style');
@@ -51,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         <div style="display:flex; align-items:center; gap:16px; margin-bottom:18px;">
             <div style="position:relative;">
-                <img src="/assets/img/robot-avatar.png" style="width:56px; height:56px; border-radius:16px; border: 2px solid #eff6ff;">
+                <img src="${basePath}assets/img/robot-avatar.png" style="width:56px; height:56px; border-radius:16px; border: 2px solid #eff6ff;">
                 <div style="position:absolute; -right:4px; -bottom:4px; width:20px; height:20px; background:#22c55e; border:3px solid #fff; border-radius:50%;"></div>
             </div>
             <div>
