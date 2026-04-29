@@ -151,6 +151,7 @@ function renderDots() {
 function finish() {
     clearInterval(timerID);
     isFinished = true;
+    let score = 0;
     const totalQs = activeQs.length;
     userAns.forEach((a, i) => {
         if(a === activeQs[i].ans) score += 1;
