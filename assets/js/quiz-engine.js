@@ -189,3 +189,28 @@ function showReview() {
     if (quizEl) quizEl.style.display = 'block';
     showQ();
 }
+
+// Sistema de atajos de teclado (UX)
+document.addEventListener('keydown', (e) => {
+    const quizVisible = document.getElementById('quiz')?.style.display !== 'none';
+    if (!quizVisible || isFinished) return;
+
+    // Teclas 1, 2, 3, 4 para seleccionar opciones A, B, C, D
+    if (['1', '2', '3', '4'].includes(e.key)) {
+        e.preventDefault();
+        const index = parseInt(e.key) - 1;
+        pick(index);
+    }
+    
+    // Tecla ArrowRight (Flecha Derecha) para Siguiente
+    if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        move(1);
+    } 
+    // Tecla ArrowLeft (Flecha Izquierda) para Atrás
+    else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        move(-1);
+    }
+});
+
