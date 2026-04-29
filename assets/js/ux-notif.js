@@ -1,20 +1,14 @@
-// ux-notif.js - Sistema de avisos de novedades (Solo Escritorio)
-document.addEventListener('DOMContentLoaded', () => {
+// ux-notif.js - Sistema de avisos de novedades (Solo Escritorio y Solo en el Test)
+window.initShortcutNotif = function() {
     // No mostrar si ya se cerró antes
     if (localStorage.getItem('shortcuts_notif_closed')) return;
     
     // NO mostrar en móviles (menos de 1024px de ancho)
     if (window.innerWidth < 1024) return;
 
-    // Calcular ruta base para las imágenes
-    const scripts = document.getElementsByTagName('script');
-    let basePath = '/';
-    for (let s of scripts) {
-        if (s.src.includes('ux-notif.js')) {
-            basePath = s.src.split('assets/js/ux-notif.js')[0];
-            break;
-        }
-    }
+    // Verificar que el elemento del quiz exista
+    const quizEl = document.getElementById('quiz');
+    if (!quizEl) return;
 
     const notif = document.createElement('div');
     notif.id = 'shortcuts-notif';
@@ -35,6 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity: 1;
     `;
 
+    // Calcular ruta base para las imágenes
+    const scripts = document.getElementsByTagName('script');
+    let basePath = '/';
+    for (let s of scripts) {
+        if (s.src.includes('ux-notif.js')) {
+            basePath = s.src.split('assets/js/ux-notif.js')[0];
+            break;
+        }
+    }
 
     // Estilos de animación
     const style = document.createElement('style');
@@ -78,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div style="display:grid; gap:10px;">
             <div style="display:flex; justify-content:space-between; align-items:center; background:#f8fafc; padding:10px 14px; border-radius:12px; border: 1px solid #f1f5f9;">
                 <div style="display:flex; gap:4px;">
-                    <span class="key-1 key-badge">1</span>
+                    <span class="key-badge">1</span>
                     <span class="key-badge">2</span>
                     <span class="key-badge">3</span>
                     <span class="key-badge">4</span>
@@ -100,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
 
     document.body.appendChild(notif);
-});
+}
 
 window.closeNotif = function() {
     const el = document.getElementById('shortcuts-notif');

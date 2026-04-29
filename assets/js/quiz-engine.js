@@ -56,6 +56,9 @@ function startExam() {
     clearInterval(timerID);
     timerID = setInterval(updateTime, 1000);
     showQ();
+
+    // Mostrar disclaimer de atajos si existe la función
+    if (typeof initShortcutNotif === 'function') initShortcutNotif();
 }
 
 function updateTime() {
